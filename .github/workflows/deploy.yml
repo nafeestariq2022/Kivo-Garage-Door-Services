@@ -26,12 +26,36 @@ jobs:
         run: npm run build
 
       - name: Deploy to SiteGround via Rsync
-        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SITEGROUND_SSH_KEY }}
-          ARGS: "-rltgoDzvO --delete"
-          SOURCE: "dist/"
+          SSH_PASSPHRASE: ${{ secrets.SITEGROUND_SSH_PASSPHRASE }}
           REMOTE_HOST: ${{ secrets.SITEGROUND_HOST }}
           REMOTE_USER: ${{ secrets.SITEGROUND_USER }}
           REMOTE_PORT: ${{ secrets.SITEGROUND_PORT }}
           TARGET: ${{ secrets.SITEGROUND_TARGET_DIR }}
+        run: |
+          # Start SSH Agent
+          eval $(ssh-agent -s)
+          
+          # Write private key to a temporary file
+          echo "$SSH_PRIVATE_KEY" > deploy_key
+          chmod 600 deploy_key
+          
+          # Use expect to pass the passphrase to ssh-add
+          sudo apt-get update -y && sudo apt-get install -y expect
+          expect << EOF
+            spawn ssh-add deploy_key
+            expect "Enter passphrase"
+            send "$SSH_PASSPHRASE\r"
+            expect eof
+          EOF
+          
+          # Add remote host to known_hosts to prevent SSH prompt
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "$REMOTE_PORT" "$REMOTE_HOST" >> ~/.ssh/known_hosts
+          
+          # Run Rsync to deploy
+          rsync -rltgoDzvO --delete -e "ssh -p $REMOTE_PORT" dist/ "$REMOTE_USER@$REMOTE_HOST:$TARGET"
+          
+          # Clean up private key
+          rm -f deploy_key
