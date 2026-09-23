@@ -28,8 +28,8 @@ const services = await getCollection('services');
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {services.map(service => (
         <a href={`/services/#${service.id}`} class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col h-full">
-          <div class="aspect-w-16 aspect-h-9 w-full bg-gray-200 overflow-hidden">
-             <img src={service.data.hero.imageSrc} alt={service.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="aspect-video relative w-full bg-gray-200 overflow-hidden">
+             <img src={service.data.hero.imageSrc} alt={service.data.title} class="absolute inset-0 object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" loading="lazy" />
           </div>
           <div class="p-6 flex-grow flex flex-col">
             <h3 class="text-xl font-heading font-bold text-brand-charcoal mb-3 group-hover:text-brand-accent transition-colors">{service.data.title}</h3>

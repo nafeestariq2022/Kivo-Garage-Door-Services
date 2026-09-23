@@ -19,8 +19,8 @@ const { eyebrow, headline, subheadline, imageSrc, imageAlt, imageRight = false }
     <div class={`grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start`}>
       
       <div class={`relative rounded-sm overflow-hidden shadow-xl lg:col-span-5 ${imageRight ? 'lg:order-2' : 'lg:order-1'}`}>
-        <div class="aspect-w-4 aspect-h-3 lg:aspect-none lg:h-[600px] xl:h-[700px]">
-          <img src={imageSrc} alt={imageAlt} class="object-cover w-full h-full" loading="lazy" />
+        <div class="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px] xl:h-[700px]">
+          <img src={imageSrc} alt={imageAlt} class="absolute lg:static inset-0 object-cover w-full h-full" loading="lazy" />
         </div>
       </div>
 

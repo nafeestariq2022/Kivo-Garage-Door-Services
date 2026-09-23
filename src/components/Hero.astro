@@ -37,8 +37,8 @@ const { eyebrow, headline, subheadline, imageSrc, imageAlt } = Astro.props;
     
     <!-- Asymmetrical Right: Image (No Dark Overlay) -->
     <div class="lg:col-span-5 relative mt-12 lg:mt-0">
-      <div class="aspect-w-4 aspect-h-3 lg:aspect-w-3 lg:aspect-h-4 xl:aspect-w-4 xl:aspect-h-5">
-        <img src={imageSrc} alt={imageAlt} class="object-cover w-full h-full rounded-sm shadow-xl" loading="eager" />
+      <div class="relative w-full aspect-video lg:aspect-[3/4] xl:aspect-[4/5]">
+        <img src={imageSrc} alt={imageAlt} class="absolute inset-0 object-cover w-full h-full rounded-sm shadow-xl" loading="eager" />
       </div>
       <!-- Decorative strict geometry element -->
       <div class="absolute -bottom-6 -left-6 w-32 h-32 border-l-4 border-b-4 border-brand-accent hidden lg:block z-0"></div>
