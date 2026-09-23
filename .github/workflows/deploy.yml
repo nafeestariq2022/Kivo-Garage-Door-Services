@@ -54,22 +54,6 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -p "$REMOTE_PORT" "$REMOTE_HOST" >> ~/.ssh/known_hosts
           
-          # Diagnostic: Check where we are and where the site is
-          echo "=== DIAGNOSTICS ==="
-          ssh -p $REMOTE_PORT "$REMOTE_USER@$REMOTE_HOST" '
-            echo "Current Directory (PWD):"
-            pwd
-            echo "Directory contents:"
-            ls -la
-            echo "Checking www/ directory:"
-            ls -la www/ || true
-            echo "Checking www/matifs8.sg-host.com/ :"
-            ls -la www/matifs8.sg-host.com/ || true
-            echo "Finding the uploaded index.html:"
-            find . -name "index.html" -maxdepth 4 || true
-          '
-          echo "==================="
-          
           # Run Rsync to deploy
           rsync -rltgoDzvO --delete -e "ssh -p $REMOTE_PORT" dist/ "$REMOTE_USER@$REMOTE_HOST:$TARGET"
           
