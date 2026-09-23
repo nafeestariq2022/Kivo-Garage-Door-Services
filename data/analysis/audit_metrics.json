@@ -1,0 +1,166 @@
+{
+  "leadsmart_cpl": {
+    "total_unique_city_states_with_cpl": 1800,
+    "cpl_min": 13.0,
+    "cpl_max": 86.0,
+    "cpl_median": 38.5,
+    "cpl_avg": 50.67861111111111,
+    "thresholds": {
+      "20": 1654,
+      "40": 722,
+      "50": 703,
+      "60": 703,
+      "70": 703,
+      "74": 703,
+      "80": 199
+    }
+  },
+  "join_audit": {
+    "mentor_total": 1000,
+    "exact_matches": 893,
+    "fuzzy_matches": 893,
+    "missed_due_to_exact_match": 0
+  },
+  "keyword_audit": {
+    "repair": {
+      "total_kw": 511,
+      "total_vol": 4875100,
+      "commercial_kw": 455,
+      "commercial_vol": 4695450,
+      "top": [
+        [
+          "garage door repair",
+          500000
+        ],
+        [
+          "garage door repair near me",
+          500000
+        ],
+        [
+          "garage door repair service near me",
+          500000
+        ],
+        [
+          "repair garage door near me",
+          500000
+        ],
+        [
+          "garage repair door",
+          500000
+        ]
+      ]
+    },
+    "installation": {
+      "total_kw": 338,
+      "total_vol": 528700,
+      "commercial_kw": 237,
+      "commercial_vol": 512900,
+      "top": [
+        [
+          "garage door installation",
+          50000
+        ],
+        [
+          "garage door installation near me",
+          50000
+        ],
+        [
+          "garage door installation cost",
+          50000
+        ],
+        [
+          "garage door and installation",
+          50000
+        ],
+        [
+          "garage door cost and installation",
+          50000
+        ]
+      ]
+    },
+    "opener": {
+      "total_kw": 835,
+      "total_vol": 7294700,
+      "commercial_kw": 521,
+      "commercial_vol": 5790400,
+      "top": [
+        [
+          "garage door opener",
+          500000
+        ],
+        [
+          "garage door opener repair",
+          500000
+        ],
+        [
+          "garage opener repair",
+          500000
+        ],
+        [
+          "fix garage door opener",
+          500000
+        ],
+        [
+          "garage door and opener",
+          500000
+        ]
+      ]
+    },
+    "spring": {
+      "total_kw": 283,
+      "total_vol": 570900,
+      "commercial_kw": 268,
+      "commercial_vol": 559350,
+      "top": [
+        [
+          "garage door spring repair",
+          50000
+        ],
+        [
+          "garage door springs",
+          50000
+        ],
+        [
+          "torsion spring garage door",
+          50000
+        ],
+        [
+          "garage door springs near me",
+          50000
+        ],
+        [
+          "garage torsion spring",
+          50000
+        ]
+      ]
+    },
+    "replacement": {
+      "total_kw": 994,
+      "total_vol": 1083150,
+      "commercial_kw": 530,
+      "commercial_vol": 895900,
+      "top": [
+        [
+          "garage door replacement",
+          50000
+        ],
+        [
+          "garage door spring replacement cost",
+          50000
+        ],
+        [
+          "garage door replacement cost",
+          50000
+        ],
+        [
+          "garage spring replacement",
+          50000
+        ],
+        [
+          "garage door opener replacement",
+          50000
+        ]
+      ]
+    }
+  }
+}

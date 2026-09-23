@@ -1,0 +1,71 @@
+---
+import PhoneCTA from './ui/PhoneCTA.astro';
+
+const year = new Date().getFullYear();
+---
+<footer class="bg-brand-charcoal text-white pt-20 pb-10 border-t-4 border-brand-accent">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+      
+      <!-- Brand & CTA -->
+      <div class="lg:col-span-1">
+        <a href="/" class="text-3xl font-heading font-bold text-white focus:outline-none focus:ring-2 focus:ring-brand-accent inline-block mb-4">
+          KIVO<span class="text-brand-accent">.</span>
+        </a>
+        <p class="font-sans text-gray-400 leading-relaxed mb-8">
+          Connecting homeowners with highly trained, professional garage door technicians. Reliable repairs and premium installations.
+        </p>
+        <PhoneCTA label="Call for Service" class="w-full justify-center" />
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="font-heading text-lg font-bold text-white mb-6 uppercase tracking-wider">Services</h3>
+        <ul class="space-y-3 font-sans text-gray-400">
+          <li><a href="/services/garage-door-repair" class="hover:text-brand-accent transition-colors">Garage Door Repair</a></li>
+          <li><a href="/services/garage-door-installation" class="hover:text-brand-accent transition-colors">Garage Door Installation</a></li>
+          <li><a href="/services/garage-door-replacement" class="hover:text-brand-accent transition-colors">Garage Door Replacement</a></li>
+          <li><a href="/services/garage-door-opener-repair" class="hover:text-brand-accent transition-colors">Opener Repair</a></li>
+          <li><a href="/services/garage-door-opener-installation" class="hover:text-brand-accent transition-colors">Opener Installation</a></li>
+          <li><a href="/services/garage-door-spring-repair" class="hover:text-brand-accent transition-colors">Spring Repair</a></li>
+          <li><a href="/services/emergency-garage-door-repair" class="hover:text-white transition-colors text-brand-accent font-semibold">Emergency Repair</a></li>
+        </ul>
+      </div>
+
+      <!-- Locations -->
+      <div>
+        <h3 class="font-heading text-lg font-bold text-white mb-6 uppercase tracking-wider">Locations</h3>
+        <ul class="space-y-3 font-sans text-gray-400">
+          <li><a href="/pa" class="hover:text-brand-accent transition-colors">Pennsylvania</a></li>
+          <li><a href="/pa/garage-door-repair-doylestown" class="hover:text-brand-accent transition-colors">Doylestown, PA</a></li>
+          <li><a href="/pa/garage-door-repair-fairless-hills" class="hover:text-brand-accent transition-colors">Fairless Hills, PA</a></li>
+          <li><a href="/pa/garage-door-repair-milford-square" class="hover:text-brand-accent transition-colors">Milford Square, PA</a></li>
+        </ul>
+        <a href="/pa" class="inline-block mt-4 text-sm font-bold font-sans uppercase tracking-wider text-white hover:text-brand-accent transition-colors border-b border-gray-600 hover:border-brand-accent pb-1">
+          View All Areas
+        </a>
+      </div>
+
+      <!-- Company & Legal -->
+      <div>
+        <h3 class="font-heading text-lg font-bold text-white mb-6 uppercase tracking-wider">Company</h3>
+        <ul class="space-y-3 font-sans text-gray-400 mb-10">
+          <li><a href="/about" class="hover:text-brand-accent transition-colors">About Kivo</a></li>
+          <li><a href="/contact" class="hover:text-brand-accent transition-colors">Contact Us</a></li>
+        </ul>
+
+        <h3 class="font-heading text-lg font-bold text-white mb-6 uppercase tracking-wider">Legal</h3>
+        <ul class="space-y-3 font-sans text-gray-400">
+          <li><a href="/privacy-policy" class="hover:text-brand-accent transition-colors">Privacy Policy</a></li>
+          <li><a href="/terms" class="hover:text-brand-accent transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-sans">
+      <p>&copy; {year} Kivo Garage Door Services. All rights reserved.</p>
+      <p>Professional residential garage door solutions.</p>
+    </div>
+  </div>
+</footer>

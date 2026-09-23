@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import ServiceGrid from '../../components/modules/ServiceGrid.astro';
+import WhyItMatters from '../../components/modules/WhyItMatters.astro';
+import ProcessSteps from '../../components/modules/ProcessSteps.astro';
+import CoverageList from '../../components/modules/CoverageList.astro';
+import FAQSection from '../../components/modules/FAQSection.astro';
+import PhoneCTA from '../../components/ui/PhoneCTA.astro';
+
+const genericProcess = [
+  { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
+  { title: "2. Thorough Diagnostic", description: "The technician inspects the door's hardware, balance, and motor to identify the root cause." },
+  { title: "3. Clear Options", description: "You receive a straightforward explanation of the problem and professional recommendations." },
+  { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing." }
+];
+
+const genericBenefits = [
+  { title: "Home Security", description: "A broken door is an entry point. Professional service restores your home's defensive perimeter." },
+  { title: "Reliable Access", description: "Stop worrying about your car getting trapped. Get your schedule back on track." },
+  { title: "Property Value", description: "A beautiful, fully functional garage door is one of the highest ROI improvements for your home." }
+];
+
+const serviceFaqs = [
+  { question: "Do you handle emergency garage door repairs?", answer: "Yes. When a door is derailed, stuck open, or refusing to budge due to a snapped spring, it stops being a minor inconvenience and becomes a serious safety and security issue." },
+  { question: "Can a damaged panel be replaced without buying a new door?", answer: "Yes. If a single panel is dented or damaged, it can often be ordered and swapped out, provided the door model is still being manufactured and the rest of the structure is sound." },
+  { question: "Is it dangerous to fix a garage door myself?", answer: "Yes. The springs and cables hold an immense amount of stored kinetic energy. Attempting repairs without the proper tools and training can result in severe injury or property damage." }
+];
+---
+
+<BaseLayout 
+  title="Garage Door Services | Kivo Garage Door Services"
+  description="Explore our full range of garage door services, including emergency repairs, spring replacement, opener troubleshooting, and complete new installations."
+>
+  <Hero 
+    eyebrow="Our Capabilities"
+    headline="COMPREHENSIVE GARAGE DOOR SERVICES."
+    subheadline="From emergency repairs that restore your security to beautiful new installations that elevate your home's exterior, our professional network handles it all."
+    imageSrc="/images/hero_installation.jpg"
+    imageAlt="A wide shot of a residential driveway with a newly installed modern garage door"
+  />
+
+  <ServiceGrid eyebrow="Service Directory" headline="Explore Our Service Capabilities" subheadline="Click on any service below to learn more about the common problems we solve and how the repair or installation process works." />
+
+  <WhyItMatters eyebrow="The Value of Expertise" benefits={genericBenefits} bg="white" />
+
+  <ProcessSteps eyebrow="How It Works" steps={genericProcess} bg="alabaster" />
+
+  <CoverageList eyebrow="Service Areas" />
+
+  <FAQSection eyebrow="Service FAQs" faqs={serviceFaqs} />
+
+</BaseLayout>

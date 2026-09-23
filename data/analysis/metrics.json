@@ -1,0 +1,61 @@
+{
+  "leadsmart": {
+    "filename": "garage door coverage-2026-09-22.csv",
+    "rows": 3745,
+    "cols": 7,
+    "headers": [
+      "zip",
+      "city",
+      "state",
+      "ringba_offer_name",
+      "top_net_duration_payout",
+      "top_net_cpl_payout",
+      "last_updated"
+    ],
+    "unique_zips": 3745,
+    "unique_cities": 1653,
+    "unique_city_states": 1800,
+    "cpl_min": 13.0,
+    "cpl_max": 86.0,
+    "cpl_median": 38.5,
+    "cpl_avg": 53.5909212283044
+  },
+  "mentor": {
+    "filename": "leadsmart_Garage_Door_CPL.csv",
+    "rows": 1000,
+    "cols": 12,
+    "headers": [
+      "rank",
+      "city",
+      "state",
+      "niche",
+      "payout_type",
+      "payout",
+      "avg_payout",
+      "zips",
+      "population",
+      "density",
+      "county",
+      "score"
+    ],
+    "total_cities": 1000,
+    "overlap_with_leadsmart": 893,
+    "avg_pop": 42449.839,
+    "avg_payout": 63.415
+  },
+  "keywords": {
+    "filename": "Keyword Stats 2026-09-22 at 22_03_50.csv",
+    "rows": 5240,
+    "cols": 26,
+    "clusters_volume": {
+      "repair": 4875100,
+      "other": 7133750,
+      "installation": 528700,
+      "opener": 7294700,
+      "replacement": 1083150,
+      "spring": 570900,
+      "emergency": 13350,
+      "commercial": 39500
+    }
+  }
+}

@@ -1,0 +1,47 @@
+---
+import { generateSEO } from '../../utils/seo';
+import PhoneCTA from '../ui/PhoneCTA.astro';
+import Eyebrow from '../ui/Eyebrow.astro';
+
+interface Problem {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  problems: Problem[];
+  city?: string;
+  state?: string;
+}
+
+const { eyebrow, problems, city, state } = Astro.props;
+---
+
+{problems && problems.length > 0 && (
+  <div class="bg-brand-alabaster py-16 md:py-24 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center text-center mb-12">
+        {eyebrow && <Eyebrow text={eyebrow} centered={true} />}
+        <h2 class="text-3xl md:text-4xl font-heading font-bold uppercase tracking-tight text-brand-charcoal">Common Issues We Address</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {problems.map((problem) => (
+          <div class="bg-white p-6 rounded-sm shadow-sm border border-gray-100">
+            <h3 class="text-xl font-bold font-heading text-brand-charcoal mb-3">
+              {generateSEO(problem.title, { city, state })}
+            </h3>
+            <p class="text-gray-700 font-sans leading-relaxed">
+              {generateSEO(problem.description, { city, state })}
+            </p>
+          </div>
+        ))}
+      </div>
+      <div class="mt-12 text-center bg-white p-8 border border-gray-200 shadow-sm rounded-sm max-w-3xl mx-auto">
+        <h3 class="text-2xl font-bold font-heading text-brand-charcoal mb-4">Dealing with one of these issues?</h3>
+        <p class="text-gray-700 font-sans mb-6">Don't risk further damage or compromise your home's security.</p>
+        <PhoneCTA label="Call for Professional Service" class="w-full sm:w-auto justify-center" />
+      </div>
+    </div>
+  </div>
+)}

@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ServiceGrid from '../components/modules/ServiceGrid.astro';
+import WhyItMatters from '../components/modules/WhyItMatters.astro';
+import SplitContent from '../components/modules/SplitContent.astro';
+import ProcessSteps from '../components/modules/ProcessSteps.astro';
+import RepairVsReplace from '../components/modules/RepairVsReplace.astro';
+import CoverageList from '../components/modules/CoverageList.astro';
+import FAQSection from '../components/modules/FAQSection.astro';
+import PhoneCTA from '../components/ui/PhoneCTA.astro';
+
+const genericProcess = [
+  { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
+  { title: "2. Thorough Diagnostic", description: "The technician inspects the door's hardware, balance, and motor to identify the root cause." },
+  { title: "3. Clear Options", description: "You receive a straightforward explanation of the problem and professional recommendations." },
+  { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing." }
+];
+
+const genericBenefits = [
+  { title: "Home Security", description: "A broken door is an entry point. Professional service restores your home's defensive perimeter." },
+  { title: "Reliable Access", description: "Stop worrying about your car getting trapped. Get your schedule back on track." },
+  { title: "Property Value", description: "A beautiful, fully functional garage door is one of the highest ROI improvements for your home." }
+];
+
+const homeFaqs = [
+  { question: "Why won't my garage door open?", answer: "The most common reasons are a snapped torsion spring, a broken lift cable, a stripped opener gear, or a simple power failure. A professional diagnostic can pinpoint the exact cause safely." },
+  { question: "How long do garage door springs last?", answer: "Standard torsion springs are rated for approximately 10,000 cycles (opening and closing). For most households, this translates to about 7 to 10 years of typical use before they inevitably snap." },
+  { question: "Can a damaged panel be replaced without buying a new door?", answer: "Yes. If a single panel is dented or damaged, it can often be ordered and swapped out, provided the door model is still being manufactured and the rest of the structure is sound." },
+  { question: "Is it dangerous to fix a garage door myself?", answer: "Yes. The springs and cables hold an immense amount of stored kinetic energy. Attempting repairs without the proper tools and training can result in severe injury or property damage." }
+];
+---
+
+<BaseLayout 
+  title="Kivo Garage Door Services | Professional Repair & Installation"
+  description="Kivo Garage Door Services provides reliable, professional garage door repair, replacement, and installation. We fix broken springs, off-track doors, and faulty openers."
+>
+  <Hero 
+    eyebrow="Garage Door Experts"
+    headline="RELIABLE REPAIRS. PREMIUM INSTALLATIONS."
+    subheadline="A broken garage door disrupts your day, traps your vehicles, and compromises your home's security. Kivo Garage Door Services delivers comprehensive, professional solutions that restore your peace of mind and elevate your property's exterior."
+    imageSrc="/images/hero_homepage.jpg"
+    imageAlt="Premium modern dark wood garage door on a luxury suburban home exterior"
+  />
+
+  <ServiceGrid eyebrow="What We Handle" />
+
+  <SplitContent 
+    eyebrow="The Kivo Standard"
+    headline="THE KIVO STANDARD OF EXCELLENCE"
+    subheadline="We believe your garage door should be the most reliable entry point to your home."
+    imageSrc="/images/hero_installation.jpg"
+    imageAlt="A pristine modern garage door perfectly installed"
+    imageRight={true}
+  >
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">When a massive moving wall of metal fails, it is more than an inconvenience—it is a hazard. We focus on diagnosing the root cause of the failure, not just putting a bandage on the symptom.</p>
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">Our approach prioritizes safety, long-term mechanical reliability, and structural integrity. Whether we are replacing a snapped torsion spring, realigning a derailed track, or installing a beautiful modern door, the work is done right the first time.</p>
+  </SplitContent>
+
+  <WhyItMatters eyebrow="Why It Matters" benefits={genericBenefits} bg="alabaster" />
+
+  <ProcessSteps eyebrow="The Process" steps={genericProcess} bg="white" />
+
+  <RepairVsReplace eyebrow="Decision Guide" bg="alabaster" />
+
+  <CoverageList eyebrow="Service Coverage" />
+
+  <FAQSection eyebrow="Common Questions" faqs={homeFaqs} />
+
+</BaseLayout>

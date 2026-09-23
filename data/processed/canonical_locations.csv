@@ -1,0 +1,1802 @@
+state,city,slug,zips,max_cpl,population,mentor_score,status
+MA,Framingham,ma/framingham,01702|01701,18.0,,,candidate
+MA,Acton,ma/acton,01718|01720,18.0,,,candidate
+MA,Boxborough,ma/boxborough,01719,18.0,,,candidate
+MA,Ashland,ma/ashland,01721,18.0,,,candidate
+MA,Bedford,ma/bedford,01730,18.0,,,candidate
+MA,Hanscom Afb,ma/hanscom-afb,01731,18.0,,,candidate
+MA,Carlisle,ma/carlisle,01741,18.0,,,candidate
+MA,Concord,ma/concord,01742,18.0,,,candidate
+MA,Fayville,ma/fayville,01745,18.0,,,candidate
+MA,Holliston,ma/holliston,01746,18.0,,,candidate
+MA,Hopkinton,ma/hopkinton,01748,18.0,,,candidate
+MA,Hudson,ma/hudson,01749,18.0,,,candidate
+MA,Marlborough,ma/marlborough,01752,18.0,,,candidate
+MA,Maynard,ma/maynard,01754,18.0,,,candidate
+MA,Natick,ma/natick,01760,18.0,,,candidate
+MA,Sherborn,ma/sherborn,01770,18.0,,,candidate
+MA,Southborough,ma/southborough,01772,18.0,,,candidate
+MA,Lincoln,ma/lincoln,01773,18.0,,,candidate
+MA,Stow,ma/stow,01775,18.0,,,candidate
+MA,Sudbury,ma/sudbury,01776,18.0,,,candidate
+MA,Wayland,ma/wayland,01778,18.0,,,candidate
+MA,Woburn,ma/woburn,01801,18.0,,,candidate
+MA,Burlington,ma/burlington,01803,18.0,,,candidate
+,,/,55323|75187|20140|75315|64195|19339|31169|78713|20118|30061|30133|41072|27117|30023|66036|30036|64184|30348|76130|19371|75260|76004|75284|36191|30029|36119|75357|78627|37202|75029|76122|35468|75370|78774|19424|19430|75222|75372|75301|19478|75336|46253|64190|66051|37088|27152|37224|66285|75397|78680|27198|18979|30146|75392|30172|27495|30301|76136|64144|64187|35402|76003|75313|19408|20224|46082|30026|19482|75099|75368|75242|76204|19493|18956|30081|60038|36125|46249|76166|27261|30264|46129|27375|30356|60567|75263|39901|27150|75355|20374|20534|27429|37070|66110|01805|30151|27116|20433|75221|27102|36118|75326|76096|75376|78764|19404|37227|27498|75391|78799|37044|78708|18971|19048|45201|31136|75367|78711|30366|36142|75030|76124|27111|78768|78765|21022|19366|37229|19451|37152|60138|75398|60159|27114|80523|64999|30298|78763|28285|19496|19429|27415|66117|75047|30042|46298|36141|18911|46282|27427|75339|78755|27373|78783|35403|76195|18981|75250|75011|78714|19049|37246|37244|75053|18928|19480|27108|78760|30003|76185|66222|19495|64191|76196|37065|37041|64141|37133|20529|30010|64199|78716|18039|75046|30361|45270|45250|75015|28246|27155|27285|27115|30037|66283|80639|75285|64168|76007|37250|46209|31145|64051|46251|02222|64002|30385|27359|24113|02153|30031|78766|19423|19357|37089|75312|46247|19486|37131|18922|75379|60082|75106|37121|30396|18924|66119|30398|20549|75097|18910|18968|27361|27420|66225|27204|19398|19381|76191|45235|75373|75374|30091|20544|75027|30007|18991|36123|19470|27404|97258|64170|30375|20401|75014|60196|75393|30333|80225|75123|75283|19360|60037|27438|30302|30065|78667|27402|30503|27157|20405|76101|20392|76206|30237|21765|35407|30321|30358|75356|36103|66250|36177|78720|20303|33337|30364|27010|46285|19331|30374|60204|30378|31106|35486|78630|20543|30270|19397|36121|60701|66276|27293|76193|19354|46244|75085|30099|37241|75086|55392|27199|30320|60199|46061|60186|27323|66063|75138|78651|18943|37222|35478|18918|75389|30086|75265|78767|78691|37230|75378|19407|19376|66286|24114|75380|78718|27499|31131|20548|37071|30362|78761|78710|36045|30343|75277|30098|30380|30368|76192|30515|78772|30370|18949|30369|75320|19347|19395|30394|46230|60566|19481|30353|30069|37011|75395|30074|75382|20060|30502|30384|18953|76181|27417|66282|46242|30703|78773|35449|36023|75359|76163|02217|20580|31156|55487|36132|76161|18958|45061|66201|64179|30142|75016|36068|76019|46283|19351|19421|19455|75185|75121|24543|30325|76197|75266|47202|31119|30357|46277|27413|46213|73344|78715|37243|31150|30287|36140|30085|31192|64148|78682|19484|46207|64121|27419|64171|31126|75049|75360|27264|37236|18084|31107|76150|30377|30063|18963|30392|55361|27094|31193|30049|31141|64196|76162|46085|76099|30160|64162|20210|27435|27099|30304|19441|27289|75371|20810|76202|66113|75026|78778|60019|75262|30359|27113|24115|36120|64180|75264|19432|80946|37024|20590|19443|20306|37240|75303|22185|19058|28281|75083|47407|18931|20372|27294|64197|27098|18934|76095|30371|27497|76113|78762|27031|27130|30006|75275|19399|30077|20376|37242|78683|75485|18916|36124|46255|64198|64069|76198|30164|76199|19353|31146|76121|30169|64188|85287|30154|75354|27049|75394|20192|20217|20502|75017|76147|80262|37234|30355|60666|18957|47402|37116|46262|27120|37235|12089|37068|19494|36131|37136|80309|75342|19346|19450|75381|30162|20500|31139|27416|30123|30271|36102|75358|64013|27425|60049|19409|76094|36135|27230|47463|73301|30015|78779|75045|33394|75267|78673|30048|19318|60017|47426|78709|27216|30095|78646|36702|37077|30388|30156,86.0,,,approved
+MA,Andover,ma/andover,01810,18.0,,,candidate
+MA,Billerica,ma/billerica,01821,18.0,,,candidate
+MA,Georgetown,ma/georgetown,01833,18.0,,,candidate
+MA,Groveland,ma/groveland,01834,18.0,,,candidate
+MA,Lawrence,ma/lawrence,01843,18.0,,,candidate
+MA,North Andover,ma/north-andover,01845,18.0,,,candidate
+MA,North Reading,ma/north-reading,01864,18.0,,,candidate
+MA,Reading,ma/reading,01867,18.0,,,candidate
+MA,Tewksbury,ma/tewksbury,01876,18.0,,,candidate
+MA,Wakefield,ma/wakefield,01880,18.0,,,candidate
+MA,Wilmington,ma/wilmington,01887,18.0,,,candidate
+MA,Winchester,ma/winchester,01890,18.0,,,candidate
+MA,Lynn,ma/lynn,01901|01902|01905|01904,18.0,,,candidate
+MA,Saugus,ma/saugus,01906,18.0,,,candidate
+MA,Swampscott,ma/swampscott,01907,18.0,,,candidate
+MA,Nahant,ma/nahant,01908,18.0,,,candidate
+MA,Beverly,ma/beverly,01915,18.0,,,candidate
+MA,Boxford,ma/boxford,01921,18.0,,,candidate
+MA,Danvers,ma/danvers,01923,18.0,,,candidate
+MA,Hathorne,ma/hathorne,01937,18.0,,,candidate
+MA,Lynnfield,ma/lynnfield,01940,18.0,,,candidate
+MA,Marblehead,ma/marblehead,01945,18.0,,,candidate
+MA,Middleton,ma/middleton,01949,18.0,,,candidate
+MA,Peabody,ma/peabody,01960,18.0,,,candidate
+MA,Prides Crossing,ma/prides-crossing,01965,18.0,,,candidate
+MA,Salem,ma/salem,01970,18.0,,,candidate
+MA,South Hamilton,ma/south-hamilton,01982,18.0,,,candidate
+MA,Topsfield,ma/topsfield,01983,18.0,,,candidate
+MA,Wenham,ma/wenham,01984,18.0,,,candidate
+MA,Canton,ma/canton,02021,18.0,,,candidate
+MA,Dedham,ma/dedham,02026,18.0,,,candidate
+MA,Dover,ma/dover,02030,18.0,,,candidate
+MA,East Walpole,ma/east-walpole,02032,18.0,,,candidate
+MA,Medfield,ma/medfield,02052,18.0,,,candidate
+MA,Millis,ma/millis,02054,18.0,,,candidate
+MA,Norfolk,ma/norfolk,02056,18.0,,,candidate
+MA,Norwood,ma/norwood,02062,18.0,,,candidate
+MA,Sharon,ma/sharon,02067,18.0,,,candidate
+MA,Stoughton,ma/stoughton,02072,18.0,,,candidate
+MA,Walpole,ma/walpole,02081,18.0,,,candidate
+MA,Westwood,ma/westwood,02090,18.0,,,candidate
+MA,Boston,ma/boston,02116|02199|02111|02215|02163|02210|02203|02118|02108|02133|02114|02110|02113|02109|02115,18.0,,,candidate
+MA,Roxbury,ma/roxbury,02119,18.0,,,candidate
+MA,Roxbury Crossing,ma/roxbury-crossing,02120,18.0,,,candidate
+MA,Dorchester,ma/dorchester,02125|02121|02122,18.0,,,candidate
+MA,Dorchester Center,ma/dorchester-center,02124,18.0,,,candidate
+MA,Mattapan,ma/mattapan,02126,18.0,,,candidate
+MA,South Boston,ma/south-boston,02127,18.0,,,candidate
+MA,East Boston,ma/east-boston,02128,18.0,,,candidate
+MA,Charlestown,ma/charlestown,02129,18.0,,,candidate
+MA,Jamaica Plain,ma/jamaica-plain,02130,18.0,,,candidate
+MA,Roslindale,ma/roslindale,02131,18.0,,,candidate
+MA,West Roxbury,ma/west-roxbury,02132,18.0,,,candidate
+MA,Allston,ma/allston,02134,18.0,,,candidate
+MA,Brighton,ma/brighton,02135,18.0,,,candidate
+MA,Hyde Park,ma/hyde-park,02136,18.0,,,candidate
+MA,Cambridge,ma/cambridge,02142|02139|02140|02141|02138,18.0,,,candidate
+MA,Somerville,ma/somerville,02144|02143|02145,18.0,,,candidate
+MA,Malden,ma/malden,02148,18.0,,,candidate
+MA,Everett,ma/everett,02149,18.0,,,candidate
+MA,Chelsea,ma/chelsea,02150,18.0,,,candidate
+MA,Revere,ma/revere,02151,18.0,,,candidate
+MA,Winthrop,ma/winthrop,02152,18.0,,,candidate
+MA,Medford,ma/medford,02155,18.0,,,candidate
+MA,Quincy,ma/quincy,02171|02169|02170,18.0,,,candidate
+MA,Melrose,ma/melrose,02176,18.0,,,candidate
+MA,Stoneham,ma/stoneham,02180,18.0,,,candidate
+MA,Braintree,ma/braintree,02184,18.0,,,candidate
+MA,Milton,ma/milton,02186,18.0,,,candidate
+MA,Lexington,ma/lexington,02421|02420,18.0,,,candidate
+MA,Brookline,ma/brookline,02445|02446,18.0,,,candidate
+MA,Waltham,ma/waltham,02451|02453|02452,18.0,,,candidate
+MA,Babson Park,ma/babson-park,02457,18.0,,,candidate
+MA,Newton,ma/newton,02458,18.0,,,candidate
+MA,Newton Center,ma/newton-center,02459,18.0,,,candidate
+MA,Newtonville,ma/newtonville,02460,18.0,,,candidate
+MA,Newton Highlands,ma/newton-highlands,02461,18.0,,,candidate
+MA,Newton Lower Falls,ma/newton-lower-falls,02462,18.0,,,candidate
+MA,Newton Upper Falls,ma/newton-upper-falls,02464,18.0,,,candidate
+MA,West Newton,ma/west-newton,02465,18.0,,,candidate
+MA,Auburndale,ma/auburndale,02466,18.0,,,candidate
+MA,Chestnut Hill,ma/chestnut-hill,02467,18.0,,,candidate
+MA,Waban,ma/waban,02468,18.0,,,candidate
+MA,Watertown,ma/watertown,02472,18.0,,,candidate
+MA,Arlington,ma/arlington,02474|02476,18.0,,,candidate
+MA,Belmont,ma/belmont,02478,18.0,,,candidate
+MA,Wellesley Hills,ma/wellesley-hills,02481,18.0,,,candidate
+MA,Wellesley,ma/wellesley,02482,18.0,,,candidate
+MA,Needham,ma/needham,02492,18.0,,,candidate
+MA,Weston,ma/weston,02493,18.0,,,candidate
+MA,Needham Heights,ma/needham-heights,02494,18.0,,,candidate
+NJ,Cherry Hill,nj/cherry-hill,08002|08034|08003,38.5,15173,25.08,approved
+NJ,Barrington,nj/barrington,08007,38.5,,,approved
+NJ,Berlin,nj/berlin,08009,38.5,,,approved
+NJ,Beverly,nj/beverly,08010,38.5,2514,26.63,approved
+NJ,Blackwood,nj/blackwood,08012,38.5,4443,21.2,approved
+NJ,Burlington,nj/burlington,08016,38.5,,,approved
+NJ,Clarksboro,nj/clarksboro,08020,38.5,1155,26.69,approved
+NJ,Clementon,nj/clementon,08021,38.5,5410,19.6,approved
+NJ,Columbus,nj/columbus,08022,38.5,313,26.69,approved
+NJ,Gibbsboro,nj/gibbsboro,08026,38.5,2435,26.69,approved
+NJ,Gibbstown,nj/gibbstown,08027,38.5,3685,22.85,approved
+NJ,Glassboro,nj/glassboro,08028,38.5,,,approved
+NJ,Glendora,nj/glendora,08029,38.5,5431,19.57,approved
+NJ,Gloucester City,nj/gloucester-city,08030,38.5,,,approved
+NJ,Bellmawr,nj/bellmawr,08031,38.5,,,approved
+NJ,Haddonfield,nj/haddonfield,08033,38.5,,,approved
+NJ,Haddon Heights,nj/haddon-heights,08035,38.5,,,approved
+NJ,Hainesport,nj/hainesport,08036,38.5,,,approved
+NJ,Jobstown,nj/jobstown,08041,38.5,286,26.69,approved
+NJ,Juliustown,nj/juliustown,08042,38.5,313,26.69,approved
+NJ,Voorhees,nj/voorhees,08043,38.5,,,approved
+NJ,Lawnside,nj/lawnside,08045,38.5,3200,24.18,approved
+NJ,Willingboro,nj/willingboro,08046,38.5,,,approved
+NJ,Lumberton,nj/lumberton,08048,38.5,,,approved
+NJ,Magnolia,nj/magnolia,08049,38.5,4354,21.37,approved
+NJ,Mantua,nj/mantua,08051,38.5,,,approved
+NJ,Maple Shade,nj/maple-shade,08052,38.5,,,approved
+NJ,Marlton,nj/marlton,08053,38.5,,,approved
+NJ,Mount Laurel,nj/mount-laurel,08054,38.5,6611,18.09,approved
+NJ,Medford,nj/medford,08055,38.5,4297,21.49,approved
+NJ,Mickleton,nj/mickleton,08056,38.5,1786,26.69,approved
+NJ,Moorestown,nj/moorestown,08057,38.5,,,approved
+NJ,Mount Ephraim,nj/mount-ephraim,08059,38.5,4669,20.79,approved
+NJ,Mount Holly,nj/mount-holly,08060,38.5,,,approved
+NJ,Mount Royal,nj/mount-royal,08061,38.5,1155,26.69,approved
+NJ,Mullica Hill,nj/mullica-hill,08062,38.5,4591,20.93,approved
+NJ,National Park,nj/national-park,08063,38.5,3044,24.67,approved
+NJ,Palmyra,nj/palmyra,08065,38.5,,,approved
+NJ,Paulsboro,nj/paulsboro,08066,38.5,6248,18.5,approved
+NJ,Pitman,nj/pitman,08071,38.5,,,approved
+NJ,Rancocas,nj/rancocas,08073,38.5,,,approved
+NJ,Richwood,nj/richwood,08074,38.5,3197,24.19,approved
+NJ,Riverside,nj/riverside,08075,38.5,,,approved
+NJ,Riverton,nj/riverton,08077,38.5,2770,25.61,approved
+NJ,Runnemede,nj/runnemede,08078,38.5,,,approved
+NJ,Sewell,nj/sewell,08080,38.5,2982,24.87,approved
+NJ,Sicklerville,nj/sicklerville,08081,38.5,,,approved
+NJ,Somerdale,nj/somerdale,08083,38.5,5581,19.35,approved
+NJ,Stratford,nj/stratford,08084,38.5,,,approved
+NJ,Swedesboro,nj/swedesboro,08085,38.5,2733,25.75,approved
+NJ,Thorofare,nj/thorofare,08086,38.5,2348,26.69,approved
+NJ,Vincentown,nj/vincentown,08088,38.5,531,26.69,approved
+NJ,Wenonah,nj/wenonah,08090,38.5,2261,26.69,approved
+NJ,West Berlin,nj/west-berlin,08091,38.5,2285,26.69,approved
+NJ,Westville,nj/westville,08093,38.5,4310,21.46,approved
+NJ,Woodbury,nj/woodbury,08096,38.5,,,approved
+NJ,Woodbury Heights,nj/woodbury-heights,08097,38.5,3117,24.43,approved
+NJ,Camden,nj/camden,08103|08102|08104|08105,38.5,,,approved
+NJ,Audubon,nj/audubon,08106,38.5,,,approved
+NJ,Oaklyn,nj/oaklyn,08107,38.5,3947,22.23,approved
+NJ,Collingswood,nj/collingswood,08108,38.5,,,approved
+NJ,Merchantville,nj/merchantville,08109,38.5,3905,22.33,approved
+NJ,Pennsauken,nj/pennsauken,08110,38.5,,,approved
+NJ,Allentown,nj/allentown,08501,38.5,1702,26.69,approved
+NJ,Bordentown,nj/bordentown,08505,38.5,649,26.69,approved
+NJ,Chesterfield,nj/chesterfield,08515,38.5,900,26.69,approved
+NJ,Florence,nj/florence,08518,38.5,,,approved
+NJ,Hightstown,nj/hightstown,08520,38.5,5920,18.9,approved
+NJ,Hopewell,nj/hopewell,08525,38.5,1823,26.69,approved
+NJ,Pennington,nj/pennington,08534,38.5,2827,25.41,approved
+NJ,Princeton,nj/princeton,08544|08542|08540,38.5,30756,18.9,approved
+NJ,Princeton Junction,nj/princeton-junction,08550,38.5,2025,26.69,approved
+NJ,Roebling,nj/roebling,08554,38.5,3452,23.45,approved
+NJ,Windsor,nj/windsor,08561,38.5,325,26.69,approved
+NJ,Trenton,nj/trenton,08619|08610|08690|08620,38.5,,,approved
+NJ,Lawrence Township,nj/lawrence-township,08648,38.5,3924,22.28,approved
+NJ,Robbinsville,nj/robbinsville,08691,38.5,,,approved
+NY,Alcove,ny/alcove,12007,36.5,,,approved
+NY,Alplaus,ny/alplaus,12008,36.5,,,approved
+NY,Altamont,ny/altamont,12009,36.5,1855,25.3,approved
+NY,Amsterdam,ny/amsterdam,12010,36.5,,,approved
+NY,Athens,ny/athens,12015,36.5,1354,25.3,approved
+NY,Austerlitz,ny/austerlitz,12017,36.5,,,approved
+NY,Averill Park,ny/averill-park,12018,36.5,1615,25.3,approved
+NY,Ballston Lake,ny/ballston-lake,12019,36.5,5445,18.53,approved
+NY,Ballston Spa,ny/ballston-spa,12020,36.5,5027,19.13,approved
+NY,Berlin,ny/berlin,12022,36.5,,,approved
+NY,Berne,ny/berne,12023,36.5,,,approved
+NY,Brainard,ny/brainard,12024,36.5,,,approved
+NY,Broadalbin,ny/broadalbin,12025,36.5,,,approved
+NY,Burnt Hills,ny/burnt-hills,12027,36.5,,,approved
+NY,Buskirk,ny/buskirk,12028,36.5,,,approved
+NY,Canaan,ny/canaan,12029,36.5,,,approved
+NY,Carlisle,ny/carlisle,12031,36.5,,,approved
+NY,Caroga Lake,ny/caroga-lake,12032,36.5,448,25.3,approved
+NY,Castleton On Hudson,ny/castleton-on-hudson,12033,36.5,1591,25.3,approved
+NY,Central Bridge,ny/central-bridge,12035,36.5,456,25.3,approved
+NY,Charlotteville,ny/charlotteville,12036,36.5,,,approved
+NY,Chatham,ny/chatham,12037,36.5,,,approved
+NY,Cherry Plain,ny/cherry-plain,12040,36.5,,,approved
+NY,Clarksville,ny/clarksville,12041,36.5,,,approved
+NY,Climax,ny/climax,12042,36.5,,,approved
+NY,Cobleskill,ny/cobleskill,12043,36.5,,,approved
+NY,Coeymans,ny/coeymans,12045,36.5,,,approved
+NY,Coeymans Hollow,ny/coeymans-hollow,12046,36.5,,,approved
+NY,Cohoes,ny/cohoes,12047,36.5,,,approved
+NY,Coxsackie,ny/coxsackie,12051,36.5,,,approved
+NY,Cropseyville,ny/cropseyville,12052,36.5,,,approved
+NY,Delanson,ny/delanson,12053,36.5,263,25.3,approved
+NY,Delmar,ny/delmar,12054,36.5,,,approved
+NY,Duanesburg,ny/duanesburg,12056,36.5,236,25.3,approved
+NY,Eagle Bridge,ny/eagle-bridge,12057,36.5,,,approved
+NY,Earlton,ny/earlton,12058,36.5,,,approved
+NY,East Berne,ny/east-berne,12059,36.5,,,approved
+NY,East Chatham,ny/east-chatham,12060,36.5,,,approved
+NY,East Greenbush,ny/east-greenbush,12061,36.5,,,approved
+NY,East Nassau,ny/east-nassau,12062,36.5,613,25.3,approved
+NY,East Schodack,ny/east-schodack,12063,36.5,,,approved
+NY,East Worcester,ny/east-worcester,12064,36.5,270,25.3,approved
+NY,Clifton Park,ny/clifton-park,12065,36.5,5445,18.53,approved
+NY,Esperance,ny/esperance,12066,36.5,,,approved
+NY,Feura Bush,ny/feura-bush,12067,36.5,,,approved
+NY,Fonda,ny/fonda,12068,36.5,596,25.3,approved
+NY,Fort Johnson,ny/fort-johnson,12070,36.5,364,25.3,approved
+NY,Fultonham,ny/fultonham,12071,36.5,,,approved
+NY,Fultonville,ny/fultonville,12072,36.5,678,25.3,approved
+NY,Galway,ny/galway,12074,36.5,,,approved
+NY,Ghent,ny/ghent,12075,36.5,,,approved
+NY,Gilboa,ny/gilboa,12076,36.5,,,approved
+NY,Glenmont,ny/glenmont,12077,36.5,,,approved
+NY,Gloversville,ny/gloversville,12078,36.5,,,approved
+NY,Greenville,ny/greenville,12083,36.5,,,approved
+NY,Guilderland,ny/guilderland,12084,36.5,,,approved
+NY,Hagaman,ny/hagaman,12086,36.5,1044,25.3,approved
+NY,Hannacroix,ny/hannacroix,12087,36.5,,,approved
+NY,Hoosick Falls,ny/hoosick-falls,12090,36.5,3177,22.99,approved
+NY,Howes Cave,ny/howes-cave,12092,36.5,456,25.3,approved
+NY,Jefferson,ny/jefferson,12093,36.5,177,25.3,approved
+NY,Johnsonville,ny/johnsonville,12094,36.5,,,approved
+NY,Johnstown,ny/johnstown,12095,36.5,,,approved
+NY,Kinderhook,ny/kinderhook,12106,36.5,,,approved
+NY,Latham,ny/latham,12110,36.5,,,approved
+NY,Malden Bridge,ny/malden-bridge,12115,36.5,,,approved
+NY,Maryland,ny/maryland,12116,36.5,101,25.3,approved
+NY,Mayfield,ny/mayfield,12117,36.5,,,approved
+NY,Mechanicville,ny/mechanicville,12118,36.5,5124,18.99,approved
+NY,Medusa,ny/medusa,12120,36.5,,,approved
+NY,Melrose,ny/melrose,12121,36.5,,,approved
+NY,Middleburgh,ny/middleburgh,12122,36.5,,,approved
+NY,Nassau,ny/nassau,12123,36.5,830,25.3,approved
+NY,New Baltimore,ny/new-baltimore,12124,36.5,298,25.3,approved
+NY,New Lebanon,ny/new-lebanon,12125,36.5,,,approved
+NY,Niverville,ny/niverville,12130,36.5,1181,25.3,approved
+NY,North Blenheim,ny/north-blenheim,12131,36.5,79,25.3,approved
+NY,North Chatham,ny/north-chatham,12132,36.5,,,approved
+NY,Northville,ny/northville,12134,36.5,1912,25.3,approved
+NY,Old Chatham,ny/old-chatham,12136,36.5,,,approved
+NY,Pattersonville,ny/pattersonville,12137,36.5,1085,25.3,approved
+NY,Petersburg,ny/petersburg,12138,36.5,,,approved
+NY,Poestenkill,ny/poestenkill,12140,36.5,,,approved
+NY,Ravena,ny/ravena,12143,36.5,3243,22.8,approved
+NY,Rensselaer,ny/rensselaer,12144,36.5,,,approved
+NY,Rensselaerville,ny/rensselaerville,12147,36.5,,,approved
+NY,Rexford,ny/rexford,12148,36.5,,,approved
+NY,Richmondville,ny/richmondville,12149,36.5,,,approved
+NY,Rotterdam Junction,ny/rotterdam-junction,12150,36.5,,,approved
+NY,Round Lake,ny/round-lake,12151,36.5,915,25.3,approved
+NY,Sand Lake,ny/sand-lake,12153,36.5,,,approved
+NY,Schaghticoke,ny/schaghticoke,12154,36.5,,,approved
+NY,Schenevus,ny/schenevus,12155,36.5,390,25.3,approved
+NY,Schodack Landing,ny/schodack-landing,12156,36.5,,,approved
+NY,Schoharie,ny/schoharie,12157,36.5,,,approved
+NY,Selkirk,ny/selkirk,12158,36.5,,,approved
+NY,Slingerlands,ny/slingerlands,12159,36.5,,,approved
+NY,Sloansville,ny/sloansville,12160,36.5,,,approved
+NY,Spencertown,ny/spencertown,12165,36.5,,,approved
+NY,Sprakers,ny/sprakers,12166,36.5,,,approved
+NY,Stamford,ny/stamford,12167,36.5,,,approved
+NY,Stephentown,ny/stephentown,12168|12169,36.5,,,approved
+NY,Stillwater,ny/stillwater,12170,36.5,,,approved
+NY,Stuyvesant,ny/stuyvesant,12173,36.5,,,approved
+NY,Stuyvesant Falls,ny/stuyvesant-falls,12174,36.5,,,approved
+NY,Summit,ny/summit,12175,36.5,,,approved
+NY,Surprise,ny/surprise,12176,36.5,,,approved
+NY,Tribes Hill,ny/tribes-hill,12177,36.5,959,25.3,approved
+NY,Troy,ny/troy,12183|12182|12180,36.5,,,approved
+NY,Valatie,ny/valatie,12184,36.5,1796,25.3,approved
+NY,Valley Falls,ny/valley-falls,12185,36.5,451,25.3,approved
+NY,Voorheesville,ny/voorheesville,12186,36.5,2824,24.1,approved
+NY,Warnerville,ny/warnerville,12187,36.5,,,approved
+NY,Waterford,ny/waterford,12188,36.5,,,approved
+NY,Watervliet,ny/watervliet,12189,36.5,,,approved
+NY,West Coxsackie,ny/west-coxsackie,12192,36.5,298,25.3,approved
+NY,Westerlo,ny/westerlo,12193,36.5,,,approved
+NY,West Fulton,ny/west-fulton,12194,36.5,,,approved
+NY,West Lebanon,ny/west-lebanon,12195,36.5,,,approved
+NY,West Sand Lake,ny/west-sand-lake,12196,36.5,3479,22.17,approved
+NY,Worcester,ny/worcester,12197,36.5,101,25.3,approved
+NY,Wynantskill,ny/wynantskill,12198,36.5,3487,22.15,approved
+NY,Albany,ny/albany,12203|12226|12207|12209|12210|12204|12222|12205|12206|12208|12202|12211,36.5,,,approved
+NY,Schenectady,ny/schenectady,12306|12309|12304|12305|12303|12302|12308|12307,36.5,68847,23.39,approved
+NY,Acra,ny/acra,12405,36.5,,,approved
+NY,Ashland,ny/ashland,12407,36.5,,,approved
+NY,Cairo,ny/cairo,12413,36.5,,,approved
+NY,Cornwallville,ny/cornwallville,12418,36.5,,,approved
+NY,Durham,ny/durham,12422,36.5,,,approved
+NY,East Durham,ny/east-durham,12423,36.5,,,approved
+NY,Freehold,ny/freehold,12431,36.5,,,approved
+NY,Grand Gorge,ny/grand-gorge,12434,36.5,,,approved
+NY,Hensonville,ny/hensonville,12439,36.5,,,approved
+NY,Leeds,ny/leeds,12451,36.5,242,25.3,approved
+NY,Maplecrest,ny/maplecrest,12454,36.5,,,approved
+NY,New Kingston,ny/new-kingston,12459,36.5,,,approved
+NY,Oak Hill,ny/oak-hill,12460,36.5,,,approved
+NY,Prattsville,ny/prattsville,12468,36.5,,,approved
+NY,Preston Hollow,ny/preston-hollow,12469,36.5,400,25.3,approved
+NY,Roxbury,ny/roxbury,12474,36.5,,,approved
+NY,Windham,ny/windham,12496,36.5,,,approved
+NY,Mellenville,ny/mellenville,12544,36.5,,,approved
+NY,Glens Falls,ny/glens-falls,12801,36.5,,,approved
+NY,South Glens Falls,ny/south-glens-falls,12803,36.5,3737,21.54,approved
+NY,Queensbury,ny/queensbury,12804,36.5,,,approved
+NY,Adirondack,ny/adirondack,12808,36.5,,,approved
+NY,Argyle,ny/argyle,12809,36.5,,,approved
+NY,Athol,ny/athol,12810,36.5,,,approved
+NY,Bolton Landing,ny/bolton-landing,12814,36.5,216,25.3,approved
+NY,Brant Lake,ny/brant-lake,12815,36.5,,,approved
+NY,Cambridge,ny/cambridge,12816,36.5,,,approved
+NY,Chestertown,ny/chestertown,12817,36.5,499,25.3,approved
+NY,Clemons,ny/clemons,12819,36.5,,,approved
+NY,Comstock,ny/comstock,12821,36.5,,,approved
+NY,Corinth,ny/corinth,12822,36.5,,,approved
+NY,Cossayuna,ny/cossayuna,12823,36.5,,,approved
+NY,Diamond Point,ny/diamond-point,12824,36.5,,,approved
+NY,Fort Ann,ny/fort-ann,12827,36.5,,,approved
+NY,Fort Edward,ny/fort-edward,12828,36.5,,,approved
+NY,Gansevoort,ny/gansevoort,12831,36.5,,,approved
+NY,Greenfield Center,ny/greenfield-center,12833,36.5,,,approved
+NY,Greenwich,ny/greenwich,12834,36.5,,,approved
+NY,Hadley,ny/hadley,12835,36.5,,,approved
+NY,Hague,ny/hague,12836,36.5,,,approved
+NY,Hampton,ny/hampton,12837,36.5,,,approved
+NY,Hartford,ny/hartford,12838,36.5,,,approved
+NY,Hudson Falls,ny/hudson-falls,12839,36.5,,,approved
+NY,Huletts Landing,ny/huletts-landing,12841,36.5,,,approved
+NY,Johnsburg,ny/johnsburg,12843,36.5,,,approved
+NY,Kattskill Bay,ny/kattskill-bay,12844,36.5,,,approved
+NY,Lake George,ny/lake-george,12845,36.5,,,approved
+NY,Lake Luzerne,ny/lake-luzerne,12846,36.5,,,approved
+NY,Middle Granville,ny/middle-granville,12849,36.5,,,approved
+NY,Middle Grove,ny/middle-grove,12850,36.5,,,approved
+NY,North Creek,ny/north-creek,12853,36.5,414,25.3,approved
+NY,North River,ny/north-river,12856,36.5,,,approved
+NY,Porter Corners,ny/porter-corners,12859,36.5,,,approved
+NY,Pottersville,ny/pottersville,12860,36.5,140,25.3,approved
+NY,Putnam Station,ny/putnam-station,12861,36.5,,,approved
+NY,Riparius,ny/riparius,12862,36.5,,,approved
+NY,Rock City Falls,ny/rock-city-falls,12863,36.5,,,approved
+NY,Salem,ny/salem,12865,36.5,,,approved
+NY,Saratoga Springs,ny/saratoga-springs,12866,36.5,,,approved
+NY,Schuylerville,ny/schuylerville,12871,36.5,1571,25.3,approved
+NY,Shushan,ny/shushan,12873,36.5,,,approved
+NY,Silver Bay,ny/silver-bay,12874,36.5,,,approved
+NY,Stony Creek,ny/stony-creek,12878,36.5,,,approved
+NY,Victory Mills,ny/victory-mills,12884,36.5,,,approved
+NY,Warrensburg,ny/warrensburg,12885,36.5,,,approved
+NY,Wevertown,ny/wevertown,12886,36.5,,,approved
+NY,Whitehall,ny/whitehall,12887,36.5,,,approved
+NY,Canajoharie,ny/canajoharie,13317,36.5,87,25.3,approved
+NY,Cherry Valley,ny/cherry-valley,13320,36.5,,,approved
+NY,Cooperstown,ny/cooperstown,13326,36.5,2220,25.3,approved
+NY,Fly Creek,ny/fly-creek,13337,36.5,114,25.3,approved
+NY,Fort Plain,ny/fort-plain,13339,36.5,2290,25.3,approved
+NY,Hartwick,ny/hartwick,13348,36.5,83,25.3,approved
+NY,Palatine Bridge,ny/palatine-bridge,13428,36.5,727,25.3,approved
+NY,Roseboom,ny/roseboom,13450,36.5,,,approved
+NY,Saint Johnsville,ny/saint-johnsville,13452,36.5,,,approved
+NY,Sharon Springs,ny/sharon-springs,13459,36.5,634,25.3,approved
+NY,Springfield Center,ny/springfield-center,13468,36.5,244,25.3,approved
+NY,Westford,ny/westford,13488,36.5,101,25.3,approved
+NY,Bloomville,ny/bloomville,13739,36.5,289,25.3,approved
+NY,Bovina Center,ny/bovina-center,13740,36.5,,,approved
+NY,Davenport,ny/davenport,13750,36.5,,,approved
+NY,Davenport Center,ny/davenport-center,13751,36.5,414,25.3,approved
+NY,Delhi,ny/delhi,13753,36.5,,,approved
+NY,East Meredith,ny/east-meredith,13757,36.5,414,25.3,approved
+NY,Franklin,ny/franklin,13775,36.5,424,25.3,approved
+NY,Hobart,ny/hobart,13788,36.5,409,25.3,approved
+NY,Laurens,ny/laurens,13796,36.5,,,approved
+NY,Meridale,ny/meridale,13806,36.5,,,approved
+NY,Milford,ny/milford,13807,36.5,338,25.3,approved
+NY,Morris,ny/morris,13808,36.5,,,approved
+NY,Mount Vision,ny/mount-vision,13810,36.5,131,25.3,approved
+NY,Oneonta,ny/oneonta,13820,36.5,,,approved
+NY,Otego,ny/otego,13825,36.5,160,25.3,approved
+NY,South Kortright,ny/south-kortright,13842,36.5,,,approved
+NY,Treadwell,ny/treadwell,13846,36.5,,,approved
+NY,Trout Creek,ny/trout-creek,13847,36.5,,,approved
+NY,West Davenport,ny/west-davenport,13860,36.5,,,approved
+NY,West Oneonta,ny/west-oneonta,13861,36.5,,,approved
+PA,Coopersburg,pa/coopersburg,18036,86.0,2495,59.61,priority
+PA,Doylestown,pa/doylestown,18901|18902,86.0,2592,89.06,priority
+PA,Buckingham,pa/buckingham,18912,86.0,,,approved
+PA,Carversville,pa/carversville,18913,86.0,,,approved
+PA,Chalfont,pa/chalfont,18914,86.0,4346,47.78,priority
+PA,Colmar,pa/colmar,18915,37.5,,,approved
+PA,Dublin,pa/dublin,18917,86.0,2164,59.61,priority
+PA,Erwinna,pa/erwinna,18920,86.0,,,approved
+PA,Ferndale,pa/ferndale,18921,86.0,1517,59.61,priority
+PA,Fountainville,pa/fountainville,18923,86.0,,,approved
+PA,Furlong,pa/furlong,18925,37.5,,,approved
+PA,Hilltown,pa/hilltown,18927,86.0,,,approved
+PA,Jamison,pa/jamison,18929,37.5,,,approved
+PA,Kintnersville,pa/kintnersville,18930,37.5,,,approved
+PA,Line Lexington,pa/line-lexington,18932,86.0,,,approved
+PA,Lumberville,pa/lumberville,18933,86.0,,,approved
+PA,Milford Square,pa/milford-square,18935,86.0,1312,59.61,priority
+PA,Montgomeryville,pa/montgomeryville,18936,37.5,,,approved
+PA,New Hope,pa/new-hope,18938,86.0,2622,58.49,priority
+PA,Newtown,pa/newtown,18940,37.5,2224,25.99,approved
+PA,Ottsville,pa/ottsville,18942,37.5,,,approved
+PA,Perkasie,pa/perkasie,18944,86.0,9216,35.37,priority
+PA,Pineville,pa/pineville,18946,86.0,,,approved
+PA,Pipersville,pa/pipersville,18947,37.5,2592,25.62,approved
+PA,Point Pleasant,pa/point-pleasant,18950,86.0,,,approved
+PA,Quakertown,pa/quakertown,18951,86.0,9319,35.22,priority
+PA,Richboro,pa/richboro,18954,37.5,,,approved
+PA,Richlandtown,pa/richlandtown,18955,86.0,1209,59.61,priority
+PA,Silverdale,pa/silverdale,18962,37.5,1288,25.99,approved
+PA,Souderton,pa/souderton,18964,84.0,7181,38.18,priority
+PA,Southampton,pa/southampton,18966,86.0,6084,41.77,priority
+PA,Telford,pa/telford,18969,84.0,4829,44.74,priority
+PA,Trumbauersville,pa/trumbauersville,18970,86.0,772,59.61,priority
+PA,Upper Black Eddy,pa/upper-black-eddy,18972,37.5,,,approved
+PA,Warminster,pa/warminster,18974,86.0,3940,49.69,priority
+PA,Warrington,pa/warrington,18976,37.5,,,approved
+PA,Washington Crossing,pa/washington-crossing,18977,37.5,,,approved
+PA,Wycombe,pa/wycombe,18980,37.5,,,approved
+PA,Abington,pa/abington,19001,37.5,,,approved
+PA,Ambler,pa/ambler,19002,37.5,,,approved
+PA,Ardmore,pa/ardmore,19003,37.5,,,approved
+PA,Bala Cynwyd,pa/bala-cynwyd,19004,37.5,,,approved
+PA,Huntingdon Valley,pa/huntingdon-valley,19006,37.5,1143,25.99,approved
+PA,Bristol,pa/bristol,19007,86.0,2358,59.61,priority
+PA,Broomall,pa/broomall,19008,36.5,,,approved
+PA,Bryn Athyn,pa/bryn-athyn,19009,37.5,1143,25.99,approved
+PA,Bryn Mawr,pa/bryn-mawr,19010,37.5,5880,18.46,approved
+PA,Bensalem,pa/bensalem,19020,86.0,2251,59.61,priority
+PA,Dresher,pa/dresher,19025,37.5,,,approved
+PA,Elkins Park,pa/elkins-park,19027,37.5,,,approved
+PA,Fairless Hills,pa/fairless-hills,19030,86.0,8827,35.99,priority
+PA,Flourtown,pa/flourtown,19031,37.5,4992,19.71,approved
+PA,Fort Washington,pa/fort-washington,19034,37.5,6271,17.99,approved
+PA,Gladwyne,pa/gladwyne,19035,37.5,,,approved
+PA,Glenside,pa/glenside,19038,37.5,,,approved
+PA,Hatboro,pa/hatboro,19040,37.5,,,approved
+PA,Haverford,pa/haverford,19041,37.5,5880,18.46,approved
+PA,Horsham,pa/horsham,19044,37.5,,,approved
+PA,Jenkintown,pa/jenkintown,19046,37.5,4727,20.15,approved
+PA,Langhorne,pa/langhorne,19047,86.0,1657,115.24,priority
+PA,Feasterville Trevose,pa/feasterville-trevose,19053,37.5,3635,22.38,approved
+PA,Levittown,pa/levittown,19054|19057|19056|19055,86.0,50926,46.89,priority
+PA,Media,pa/media,19063,36.5,5870,17.98,approved
+PA,Springfield,pa/springfield,19064,36.5,,,approved
+PA,Merion Station,pa/merion-station,19066,37.5,5788,18.58,approved
+PA,Morrisville,pa/morrisville,19067,86.0,9752,34.58,priority
+PA,Narberth,pa/narberth,19072,37.5,4511,20.53,approved
+PA,Newtown Square,pa/newtown-square,19073,36.5,,,approved
+PA,Oreland,pa/oreland,19075,37.5,5953,18.37,approved
+PA,Swarthmore,pa/swarthmore,19081,36.5,,,approved
+PA,Havertown,pa/havertown,19083,36.5,,,approved
+PA,Villanova,pa/villanova,19085,37.5,,,approved
+PA,Wallingford,pa/wallingford,19086,36.5,1225,25.3,approved
+PA,Wayne,pa/wayne,19087,37.5,,,approved
+PA,Willow Grove,pa/willow-grove,19090,37.5,,,approved
+PA,Wyncote,pa/wyncote,19095,37.5,3389,23.01,approved
+PA,Wynnewood,pa/wynnewood,19096,37.5,2766,24.96,approved
+PA,Paoli,pa/paoli,19301,37.5,6362,17.89,approved
+PA,Avondale,pa/avondale,19311,36.5,1084,25.3,approved
+PA,Berwyn,pa/berwyn,19312,37.5,3680,33.75,approved
+PA,Brandamore,pa/brandamore,19316,36.5,,,approved
+PA,Chadds Ford,pa/chadds-ford,19317,36.5,1341,25.3,approved
+PA,Cheyney,pa/cheyney,19319,36.5,308,25.3,approved
+PA,Coatesville,pa/coatesville,19320,36.5,,,approved
+PA,Cochranville,pa/cochranville,19330,36.5,590,25.3,approved
+PA,Devon,pa/devon,19333,37.5,1806,25.99,approved
+PA,Downingtown,pa/downingtown,19335,36.5,,,approved
+PA,Exton,pa/exton,19341,36.5,6772,25.74,approved
+PA,Glen Mills,pa/glen-mills,19342,36.5,2948,23.69,approved
+PA,Glenmoore,pa/glenmoore,19343,36.5,910,25.3,approved
+PA,Immaculata,pa/immaculata,19345,37.5,,,approved
+PA,Kennett Square,pa/kennett-square,19348,36.5,,,approved
+PA,Landenberg,pa/landenberg,19350,36.5,,,approved
+PA,Lincoln University,pa/lincoln-university,19352,36.5,2017,25.3,approved
+PA,Malvern,pa/malvern,19355,37.5,3435,22.89,approved
+PA,Modena,pa/modena,19358,36.5,442,25.3,approved
+PA,Pomeroy,pa/pomeroy,19367,36.5,856,25.3,approved
+PA,Sadsburyville,pa/sadsburyville,19369,36.5,967,25.3,approved
+PA,Thorndale,pa/thorndale,19372,36.5,3854,21.28,approved
+PA,Thornton,pa/thornton,19373,36.5,,,approved
+PA,Toughkenamon,pa/toughkenamon,19374,36.5,804,25.3,approved
+PA,Unionville,pa/unionville,19375,36.5,652,25.3,approved
+PA,West Chester,pa/west-chester,19380|19383|19382,36.5,20666,21.01,approved
+PA,West Grove,pa/west-grove,19390,36.5,2798,24.19,approved
+PA,Norristown,pa/norristown,19403|19401,37.5,35893,20.57,approved
+PA,Bridgeport,pa/bridgeport,19405,37.5,5174,19.43,approved
+PA,King Of Prussia,pa/king-of-prussia,19406,37.5,,,approved
+PA,Blue Bell,pa/blue-bell,19422,37.5,6424,27.01,approved
+PA,Chester Springs,pa/chester-springs,19425,36.5,413,25.3,approved
+PA,Collegeville,pa/collegeville,19426,37.5,5247,19.32,approved
+PA,Conshohocken,pa/conshohocken,19428,37.5,9282,23.31,approved
+PA,Gwynedd,pa/gwynedd,19436,37.5,,,approved
+PA,Gwynedd Valley,pa/gwynedd-valley,19437,37.5,,,approved
+PA,Harleysville,pa/harleysville,19438,37.5,9090,23.51,approved
+PA,Hatfield,pa/hatfield,19440,84.0,,,approved
+PA,Kimberton,pa/kimberton,19442,36.5,377,25.3,approved
+PA,Lafayette Hill,pa/lafayette-hill,19444,37.5,,,approved
+PA,Lansdale,pa/lansdale,19446,37.5,,,approved
+PA,Mont Clare,pa/mont-clare,19453,37.5,2313,25.99,approved
+PA,North Wales,pa/north-wales,19454,37.5,3440,34.68,approved
+PA,Oaks,pa/oaks,19456,37.5,943,25.99,approved
+PA,Parker Ford,pa/parker-ford,19457,36.5,,,approved
+PA,Phoenixville,pa/phoenixville,19460,36.5,,,approved
+PA,Plymouth Meeting,pa/plymouth-meeting,19462,37.5,,,approved
+PA,Pottstown,pa/pottstown,19464|19465,37.5,,,approved
+PA,Royersford,pa/royersford,19468,37.5,4945,19.79,approved
+PA,Schwenksville,pa/schwenksville,19473,37.5,1385,25.99,approved
+PA,Skippack,pa/skippack,19474,37.5,,,approved
+PA,Spring City,pa/spring-city,19475,36.5,3657,21.73,approved
+PA,Spring House,pa/spring-house,19477,37.5,5137,19.49,approved
+PA,Worcester,pa/worcester,19490,37.5,,,approved
+PA,Zieglerville,pa/zieglerville,19492,37.5,,,approved
+DC,Washington,dc/washington,20017|20059|20535|20012|20551|20566|20037|20520|20052|20064|20016|20510|20560|20240|20005|20220|20245|20036|20045|20011|20431|20565|20003|20007|20530|20408|20001|20008|20415|20418|20009|20540|20002|20006|20390|20018|20010|20230|20004|20057|20317|20422|20015,37.5,,,approved
+VA,Aldie,va/aldie,20105,38.5,163,26.69,approved
+VA,Manassas,va/manassas,20112|20111|20109|20110,38.5,42976,19.65,approved
+VA,Middleburg,va/middleburg,20117,38.5,774,40.45,approved
+VA,Centreville,va/centreville,20121|20120,38.5,,,approved
+VA,Clifton,va/clifton,20124,38.5,312,26.69,approved
+VA,Paeonian Springs,va/paeonian-springs,20129,38.5,,,approved
+VA,Purcellville,va/purcellville,20132,38.5,,,approved
+VA,Bluemont,va/bluemont,20135,38.5,592,26.69,approved
+VA,Bristow,va/bristow,20136,38.5,,,approved
+VA,Round Hill,va/round-hill,20141,38.5,678,26.69,approved
+VA,Catharpin,va/catharpin,20143,38.5,,,approved
+VA,Ashburn,va/ashburn,20148|20147,38.5,,,approved
+VA,Chantilly,va/chantilly,20152|20151,38.5,,,approved
+VA,Gainesville,va/gainesville,20155,38.5,,,approved
+VA,Hamilton,va/hamilton,20158,38.5,589,26.69,approved
+VA,Sterling,va/sterling,20166|20165|20164,38.5,32411,18.51,approved
+VA,Haymarket,va/haymarket,20169,38.5,1580,26.69,approved
+VA,Herndon,va/herndon,20170|20171,38.5,,,approved
+VA,Leesburg,va/leesburg,20175|20176,38.5,,,approved
+VA,Lovettsville,va/lovettsville,20180,38.5,2719,25.8,approved
+VA,Nokesville,va/nokesville,20181,38.5,1226,26.69,approved
+VA,Upperville,va/upperville,20184,38.5,61,26.69,approved
+VA,Reston,va/reston,20191|20194|20190,38.5,,,approved
+VA,Waterford,va/waterford,20197,38.5,220,26.69,approved
+MD,Accokeek,md/accokeek,20607,37.5,,,approved
+MD,Brandywine,md/brandywine,20613,37.5,,,approved
+MD,Cheltenham,md/cheltenham,20623,37.5,,,approved
+MD,Annapolis Junction,md/annapolis-junction,20701,38.5,,,approved
+MD,Beltsville,md/beltsville,20705,37.5,,,approved
+MD,Lanham,md/lanham,20706,37.5,,,approved
+MD,Laurel,md/laurel,20707|20723|20708|20724,38.5,29798,22.75,approved
+MD,Bladensburg,md/bladensburg,20710,37.5,,,approved
+MD,Mount Rainier,md/mount-rainier,20712,37.5,,,approved
+MD,Bowie,md/bowie,20720|20715|20716|20721,37.5,,,approved
+MD,Brentwood,md/brentwood,20722,37.5,3777,22.04,approved
+MD,Clinton,md/clinton,20735,37.5,,,approved
+MD,Riverdale,md/riverdale,20737,37.5,,,approved
+MD,College Park,md/college-park,20742|20740,37.5,,,approved
+MD,Capitol Heights,md/capitol-heights,20743,37.5,4020,21.5,approved
+MD,Fort Washington,md/fort-washington,20744,37.5,,,approved
+MD,Oxon Hill,md/oxon-hill,20745,37.5,,,approved
+MD,Suitland,md/suitland,20746,37.5,,,approved
+MD,District Heights,md/district-heights,20747,37.5,5891,18.45,approved
+MD,Temple Hills,md/temple-hills,20748,37.5,,,approved
+MD,Fort George G Meade,md/fort-george-g-meade,20755,38.5,,,approved
+MD,Fulton,md/fulton,20759,38.5,5677,19.22,approved
+MD,Andrews Air Force Base,md/andrews-air-force-base,20762,37.5,3130,23.76,approved
+MD,Savage,md/savage,20763,38.5,,,approved
+MD,Galesville,md/galesville,20765,38.5,1062,26.69,approved
+MD,Glenn Dale,md/glenn-dale,20769,37.5,,,approved
+MD,Greenbelt,md/greenbelt,20770|20771,37.5,,,approved
+MD,Upper Marlboro,md/upper-marlboro,20774|20772,37.5,683,39.4,approved
+MD,Harwood,md/harwood,20776,38.5,,,approved
+MD,Highland,md/highland,20777,38.5,972,26.69,approved
+MD,West River,md/west-river,20778,38.5,4727,20.68,approved
+MD,Hyattsville,md/hyattsville,20785|20781|20783|20784|20782,37.5,20966,29.16,approved
+MD,Jessup,md/jessup,20794,38.5,,,approved
+MD,Glen Echo,md/glen-echo,20812,38.5,276,26.69,approved
+MD,Bethesda,md/bethesda,20892|20817|20816|20889|20814,38.5,69397,20.69,approved
+MD,Chevy Chase,md/chevy-chase,20815,38.5,,,approved
+MD,Cabin John,md/cabin-john,20818,38.5,2179,26.69,approved
+MD,Olney,md/olney,20832,38.5,,,approved
+MD,Brookeville,md/brookeville,20833,38.5,161,26.69,approved
+MD,Poolesville,md/poolesville,20837,38.5,5764,19.11,approved
+MD,Barnesville,md/barnesville,20838,38.5,208,26.69,approved
+MD,Beallsville,md/beallsville,20839,38.5,,,approved
+MD,Boyds,md/boyds,20841,38.5,,,approved
+MD,Dickerson,md/dickerson,20842,38.5,,,approved
+MD,Rockville,md/rockville,20853|20851|20852|20850,38.5,,,approved
+MD,Potomac,md/potomac,20854,38.5,,,approved
+MD,Derwood,md/derwood,20855,38.5,1984,26.69,approved
+MD,Sandy Spring,md/sandy-spring,20860,38.5,,,approved
+MD,Ashton,md/ashton,20861,38.5,,,approved
+MD,Brinklow,md/brinklow,20862,38.5,5630,19.29,approved
+MD,Burtonsville,md/burtonsville,20866,38.5,,,approved
+MD,Spencerville,md/spencerville,20868,38.5,1028,26.69,approved
+MD,Clarksburg,md/clarksburg,20871,38.5,,,approved
+MD,Damascus,md/damascus,20872,38.5,,,approved
+MD,Germantown,md/germantown,20874|20876,38.5,,,approved
+MD,Gaithersburg,md/gaithersburg,20882|20899|20879|20878|20877,38.5,69825,18.5,approved
+MD,Washington Grove,md/washington-grove,20880,38.5,577,26.69,approved
+MD,Montgomery Village,md/montgomery-village,20886,38.5,,,approved
+MD,Kensington,md/kensington,20895,38.5,2369,26.69,approved
+MD,Garrett Park,md/garrett-park,20896,38.5,932,26.69,approved
+MD,Silver Spring,md/silver-spring,20903|20901|20906|20904|20905|20910|20902,38.5,81462,21.29,approved
+MD,Takoma Park,md/takoma-park,20912,38.5,,,approved
+MD,Abingdon,md/abingdon,21009,38.5,5019,20.19,approved
+MD,Arnold,md/arnold,21012,38.5,,,approved
+MD,Baldwin,md/baldwin,21013,38.5,,,approved
+MD,Bel Air,md/bel-air,21014|21015,38.5,10585,22.71,approved
+MD,Clarksville,md/clarksville,21029,38.5,,,approved
+MD,Cockeysville,md/cockeysville,21030,38.5,,,approved
+MD,Hunt Valley,md/hunt-valley,21031,38.5,,,approved
+MD,Crownsville,md/crownsville,21032,38.5,1756,26.69,approved
+MD,Davidsonville,md/davidsonville,21035,38.5,4976,20.26,approved
+MD,Dayton,md/dayton,21036,38.5,,,approved
+MD,Edgewater,md/edgewater,21037,38.5,,,approved
+MD,Ellicott City,md/ellicott-city,21042|21043,38.5,,,approved
+MD,Columbia,md/columbia,21046|21044|21045,38.5,,,approved
+MD,Fallston,md/fallston,21047,38.5,,,approved
+MD,Finksburg,md/finksburg,21048,38.5,,,approved
+MD,Forest Hill,md/forest-hill,21050,38.5,,,approved
+MD,Fork,md/fork,21051,38.5,,,approved
+MD,Gambrills,md/gambrills,21054,38.5,2830,25.39,approved
+MD,Gibson Island,md/gibson-island,21056,38.5,,,approved
+MD,Glen Arm,md/glen-arm,21057,38.5,,,approved
+MD,Glen Burnie,md/glen-burnie,21061,38.5,,,approved
+MD,Glyndon,md/glyndon,21071,38.5,,,approved
+MD,Hampstead,md/hampstead,21074,38.5,6251,18.5,approved
+MD,Elkridge,md/elkridge,21075,38.5,,,approved
+MD,Hanover,md/hanover,21076,38.5,,,approved
+MD,Harmans,md/harmans,21077,38.5,,,approved
+MD,Hydes,md/hydes,21082,38.5,,,approved
+MD,Jarrettsville,md/jarrettsville,21084,38.5,2560,26.43,approved
+MD,Joppa,md/joppa,21085,38.5,,,approved
+MD,Kingsville,md/kingsville,21087,38.5,4687,20.75,approved
+MD,Lutherville Timonium,md/lutherville-timonium,21093,38.5,,,approved
+MD,Marriottsville,md/marriottsville,21104,38.5,,,approved
+MD,Millersville,md/millersville,21108,38.5,,,approved
+MD,Monkton,md/monkton,21111,38.5,,,approved
+MD,Odenton,md/odenton,21113,38.5,,,approved
+MD,Crofton,md/crofton,21114,38.5,,,approved
+MD,Owings Mills,md/owings-mills,21117,38.5,,,approved
+MD,Pasadena,md/pasadena,21122,38.5,,,approved
+MD,Perry Hall,md/perry-hall,21128,38.5,,,approved
+MD,Phoenix,md/phoenix,21131,38.5,,,approved
+MD,Randallstown,md/randallstown,21133,38.5,,,approved
+MD,Reisterstown,md/reisterstown,21136,38.5,,,approved
+MD,Riva,md/riva,21140,38.5,4976,20.26,approved
+MD,Severn,md/severn,21144,38.5,,,approved
+MD,Severna Park,md/severna-park,21146,38.5,,,approved
+MD,Sparks Glencoe,md/sparks-glencoe,21152,38.5,,,approved
+MD,Stevenson,md/stevenson,21153,38.5,,,approved
+MD,Upperco,md/upperco,21155,38.5,,,approved
+MD,Upper Falls,md/upper-falls,21156,38.5,4687,20.75,approved
+MD,Westminster,md/westminster,21158|21157,38.5,,,approved
+MD,White Marsh,md/white-marsh,21162,38.5,,,approved
+MD,Woodstock,md/woodstock,21163,38.5,,,approved
+MD,Towson,md/towson,21204|21252|21286,38.5,,,approved
+MD,Baltimore,md/baltimore,21210|21229|21206|21250|21212|21239|21209,38.5,,,approved
+MD,Gwynn Oak,md/gwynn-oak,21207,38.5,,,approved
+MD,Pikesville,md/pikesville,21208,38.5,,,approved
+MD,Halethorpe,md/halethorpe,21227,38.5,,,approved
+MD,Catonsville,md/catonsville,21228,38.5,,,approved
+MD,Parkville,md/parkville,21234,38.5,,,approved
+MD,Nottingham,md/nottingham,21236,38.5,,,approved
+MD,Rosedale,md/rosedale,21237,38.5,,,approved
+MD,Windsor Mill,md/windsor-mill,21244,38.5,,,approved
+MD,Annapolis,md/annapolis,21403|21405|21409|21402|21401,38.5,40720,22.96,approved
+MD,Frederick,md/frederick,21701|21702|21703|21704,38.5,,,approved
+MD,Adamstown,md/adamstown,21710,38.5,2025,26.69,approved
+MD,Braddock Heights,md/braddock-heights,21714,38.5,2892,25.18,approved
+MD,Brunswick,md/brunswick,21716,38.5,,,approved
+MD,Buckeystown,md/buckeystown,21717,38.5,1192,26.69,approved
+MD,Burkittsville,md/burkittsville,21718,38.5,135,26.69,approved
+MD,Cooksville,md/cooksville,21723,38.5,,,approved
+MD,Glenelg,md/glenelg,21737,38.5,,,approved
+MD,Glenwood,md/glenwood,21738,38.5,,,approved
+MD,Ijamsville,md/ijamsville,21754,38.5,,,approved
+MD,Jefferson,md/jefferson,21755,38.5,3314,23.84,approved
+MD,Knoxville,md/knoxville,21758,38.5,,,approved
+MD,Libertytown,md/libertytown,21762,38.5,1346,26.69,approved
+MD,Middletown,md/middletown,21769,38.5,5014,20.2,approved
+MD,Monrovia,md/monrovia,21770,38.5,3568,23.15,approved
+MD,Mount Airy,md/mount-airy,21771,38.5,,,approved
+MD,Myersville,md/myersville,21773,38.5,2358,26.69,approved
+MD,New Market,md/new-market,21774,38.5,1603,26.69,approved
+MD,New Windsor,md/new-windsor,21776,38.5,1400,26.69,approved
+MD,Point Of Rocks,md/point-of-rocks,21777,38.5,2462,26.69,approved
+MD,Sykesville,md/sykesville,21784,38.5,4491,21.11,approved
+MD,Tuscarora,md/tuscarora,21790,38.5,,,approved
+MD,Union Bridge,md/union-bridge,21791,38.5,1055,26.69,approved
+MD,Walkersville,md/walkersville,21793,38.5,6414,18.31,approved
+MD,West Friendship,md/west-friendship,21794,38.5,,,approved
+MD,Woodbine,md/woodbine,21797,38.5,126,26.69,approved
+VA,Annandale,va/annandale,22003,38.5,,,approved
+VA,Burke,va/burke,22015,38.5,,,approved
+VA,Dunn Loring,va/dunn-loring,22027,38.5,,,approved
+VA,Fairfax,va/fairfax,22031|22035|22033|22030|22032,38.5,25026,27.89,approved
+VA,Fairfax Station,va/fairfax-station,22039,38.5,,,approved
+VA,Falls Church,va/falls-church,22044|22043|22042|22041|22046,38.5,14710,34.5,approved
+VA,Fort Belvoir,va/fort-belvoir,22060,38.5,,,approved
+VA,Great Falls,va/great-falls,22066,38.5,,,approved
+VA,Lorton,va/lorton,22079,38.5,,,approved
+VA,McLean,va/mclean,22102|22101,38.5,,,approved
+VA,Oakton,va/oakton,22124,38.5,,,approved
+VA,Occoquan,va/occoquan,22125,38.5,910,26.69,approved
+VA,Springfield,va/springfield,22152|22150|22151|22153,38.5,31154,22.35,approved
+VA,Vienna,va/vienna,22181|22182|22180,38.5,16412,28.88,approved
+VA,Woodbridge,va/woodbridge,22191|22193|22192,38.5,,,approved
+VA,Arlington,va/arlington,22209|22206|22207|22214|22204|22213|22203|22205|22202|22201,38.5,,,approved
+VA,Fort Myer,va/fort-myer,22211,38.5,,,approved
+VA,Alexandria,va/alexandria,22314|22305|22308|22303|22307|22311|22315|22302|22312|22310|22306|22301|22304|22309,38.5,156976,24.82,approved
+VA,Ararat,va/ararat,24053,74.0,,,approved
+VA,Axton,va/axton,24054,74.0,1563,51.29,priority
+VA,Cascade,va/cascade,24069,74.0,,,approved
+VA,Claudville,va/claudville,24076,74.0,,,approved
+VA,Collinsville,va/collinsville,24078,74.0,7139,33.71,priority
+VA,Critz,va/critz,24082,74.0,,,approved
+VA,Fieldale,va/fieldale,24089,74.0,783,51.29,priority
+VA,Martinsville,va/martinsville,24112,74.0,13658,69.03,priority
+VA,Patrick Springs,va/patrick-springs,24133,74.0,2223,51.29,priority
+VA,Ridgeway,va/ridgeway,24148,74.0,1051,51.29,priority
+VA,Spencer,va/spencer,24165,74.0,2236,51.29,priority
+VA,Stanleytown,va/stanleytown,24168,74.0,1386,51.29,priority
+VA,Danville,va/danville,24540|24541,74.0,42214,25.1,priority
+VA,Dry Fork,va/dry-fork,24549,74.0,,,approved
+VA,Ringgold,va/ringgold,24586,74.0,,,approved
+NC,Advance,nc/advance,27006,85.5,1408,59.26,priority
+NC,Ararat,nc/ararat,27007,85.5,,,approved
+NC,Belews Creek,nc/belews-creek,27009,74.0,,,approved
+NC,Clemmons,nc/clemmons,27012,74.0,21871,21.54,priority
+NC,Cooleemee,nc/cooleemee,27014,85.5,988,59.26,priority
+NC,Danbury,nc/danbury,27016,85.5,197,59.26,priority
+NC,East Bend,nc/east-bend,27018,85.5,715,59.26,priority
+NC,Germanton,nc/germanton,27019,85.5,1087,59.26,priority
+NC,King,nc/king,27021,85.5,7408,38.38,priority
+NC,Lawsonville,nc/lawsonville,27022,85.5,,,approved
+NC,Lewisville,nc/lewisville,27023,74.0,13828,25.88,priority
+NC,Madison,nc/madison,27025,85.5,2242,59.26,priority
+NC,Mayodan,nc/mayodan,27027,85.5,2401,59.26,priority
+NC,Mocksville,nc/mocksville,27028,85.5,6068,41.57,priority
+NC,Mount Airy,nc/mount-airy,27030,85.5,10633,33.21,priority
+NC,Pfafftown,nc/pfafftown,27040,74.0,,,approved
+NC,Pilot Mountain,nc/pilot-mountain,27041,85.5,1483,59.26,priority
+NC,Pine Hall,nc/pine-hall,27042,85.5,,,approved
+NC,Pinnacle,nc/pinnacle,27043,85.5,540,59.26,priority
+NC,Rural Hall,nc/rural-hall,27045,74.0,3466,103.4,priority
+NC,Sandy Ridge,nc/sandy-ridge,27046,85.5,,,approved
+NC,Siloam,nc/siloam,27047,85.5,,,approved
+NC,Stoneville,nc/stoneville,27048,85.5,1094,59.26,priority
+NC,Tobaccoville,nc/tobaccoville,27050,74.0,2664,50.01,priority
+NC,Walkertown,nc/walkertown,27051,74.0,5873,36.45,priority
+NC,Walnut Cove,nc/walnut-cove,27052,85.5,2115,59.26,priority
+NC,Westfield,nc/westfield,27053,85.5,,,approved
+NC,Woodleaf,nc/woodleaf,27054,78.0,,,approved
+NC,Yadkinville,nc/yadkinville,27055,85.5,3004,55.07,priority
+NC,Winston Salem,nc/winston-salem,27105|27103|27109|27110|27127|27104|27101|27107|27106,74.0,443598,24.15,priority
+NC,Alamance,nc/alamance,27201,81.5,1267,56.49,priority
+NC,Altamahaw,nc/altamahaw,27202,81.5,491,56.49,priority
+NC,Asheboro,nc/asheboro,27203|27205,74.0,27580,29.76,priority
+NC,Blanch,nc/blanch,27212,85.5,2215,59.26,priority
+NC,Browns Summit,nc/browns-summit,27214,85.5,,,approved
+NC,Burlington,nc/burlington,27217|27215,81.5,,,approved
+NC,Cedar Grove,nc/cedar-grove,27231,74.0,,,approved
+NC,Climax,nc/climax,27233,74.0,,,approved
+NC,Colfax,nc/colfax,27235,85.5,,,approved
+NC,Elon,nc/elon,27244,81.5,11032,31.2,priority
+NC,Franklinville,nc/franklinville,27248,74.0,1131,51.29,priority
+NC,Gibsonville,nc/gibsonville,27249,85.5,9467,34.79,priority
+NC,Haw River,nc/haw-river,27258,81.5,2824,53.8,priority
+NC,High Point,nc/high-point,27268|27262|27260|27263|27265,85.5,175377,34.79,priority
+NC,Jamestown,nc/jamestown,27282,85.5,3708,50.62,priority
+NC,Julian,nc/julian,27283,85.5,,,approved
+NC,Kernersville,nc/kernersville,27284,74.0,27830,29.65,priority
+NC,Eden,nc/eden,27288,85.5,15356,43.46,priority
+NC,Lexington,nc/lexington,27295,85.5,19690,39.34,priority
+NC,Liberty,nc/liberty,27298,74.0,2682,49.87,priority
+NC,McLeansville,nc/mcleansville,27301,85.5,688,59.26,priority
+NC,Mebane,nc/mebane,27302,81.5,19538,24.82,priority
+NC,Oak Ridge,nc/oak-ridge,27310,85.5,7744,37.7,priority
+NC,Pelham,nc/pelham,27311,85.5,,,approved
+NC,Pleasant Garden,nc/pleasant-garden,27313,85.5,5060,44.7,priority
+NC,Prospect Hill,nc/prospect-hill,27314,85.5,,,approved
+NC,Providence,nc/providence,27315,85.5,,,approved
+NC,Randleman,nc/randleman,27317,74.0,4644,40.04,priority
+NC,Reidsville,nc/reidsville,27320,85.5,14585,56.58,priority
+NC,Ruffin,nc/ruffin,27326,85.5,423,59.26,priority
+NC,Sedalia,nc/sedalia,27342,85.5,772,59.26,priority
+NC,Sophia,nc/sophia,27350,74.0,,,approved
+NC,Stokesdale,nc/stokesdale,27357,85.5,6004,41.74,priority
+NC,Summerfield,nc/summerfield,27358,85.5,11116,32.63,priority
+NC,Thomasville,nc/thomasville,27360,85.5,27321,34.51,priority
+NC,Trinity,nc/trinity,27370,74.0,7111,33.76,priority
+NC,Welcome,nc/welcome,27374,85.5,3521,51.68,priority
+NC,Whitsett,nc/whitsett,27377,85.5,569,59.26,priority
+NC,Yanceyville,nc/yanceyville,27379,85.5,2215,59.26,priority
+NC,Greensboro,nc/greensboro,27408|27406|27405|27409|27410|27411|27407|27455|27401|27403|27412,85.5,342060,55.78,priority
+NC,Belmont,nc/belmont,28012,32.5,,,approved
+NC,Concord,nc/concord,28027|28025,32.5,,,approved
+NC,Cornelius,nc/cornelius,28031,32.5,,,approved
+NC,Cramerton,nc/cramerton,28032,32.5,,,approved
+NC,Dallas,nc/dallas,28034,32.5,,,approved
+NC,Davidson,nc/davidson,28036,32.5,,,approved
+NC,Denver,nc/denver,28037,32.5,2497,22.53,approved
+NC,Gastonia,nc/gastonia,28056|28052|28054,32.5,,,approved
+NC,Harrisburg,nc/harrisburg,28075,32.5,,,approved
+NC,Huntersville,nc/huntersville,28078,32.5,,,approved
+NC,Indian Trail,nc/indian-trail,28079,32.5,,,approved
+NC,Kannapolis,nc/kannapolis,28081|28083,32.5,,,approved
+NC,Lowell,nc/lowell,28098,32.5,3768,19.12,approved
+NC,McAdenville,nc/mcadenville,28101,32.5,1010,22.53,approved
+NC,Matthews,nc/matthews,28104|28105,32.5,,,approved
+NC,Midland,nc/midland,28107,32.5,,,approved
+NC,Mineral Springs,nc/mineral-springs,28108,32.5,3314,20.13,approved
+NC,Monroe,nc/monroe,28112|28110,32.5,,,approved
+NC,Mooresville,nc/mooresville,28115|28117,32.5,,,approved
+NC,Mount Holly,nc/mount-holly,28120,32.5,,,approved
+NC,Pineville,nc/pineville,28134,32.5,,,approved
+NC,Stanley,nc/stanley,28164,32.5,4069,18.54,approved
+NC,Waxhaw,nc/waxhaw,28173,32.5,,,approved
+NC,Charlotte,nc/charlotte,28270|28277|28226|28212|28227|28278|28213|28207|28210|28244|28202|28215|28214|28223|28208|28216|28282|28204|28209|28211|28273|28205|28262|28280|28206|28269|28203|28217|28274,32.5,,,approved
+SC,Fort Mill,sc/fort-mill,29715|29707|29708,32.5,,,approved
+SC,Rock Hill,sc/rock-hill,29730|29732|29733,32.5,,,approved
+GA,Avondale Estates,ga/avondale-estates,30002,74.0,3530,44.68,priority
+GA,Alpharetta,ga/alpharetta,30004|30022|30005|30009,74.0,66855,36.19,priority
+GA,Marietta,ga/marietta,30060|30090|30067|30066|30062|30068|30064|30008,78.0,62263,59.48,priority
+GA,Auburn,ga/auburn,30011,74.0,8711,31.13,priority
+GA,Conyers,ga/conyers,30094|30012|30013,74.0,18512,44.52,priority
+GA,Covington,ga/covington,30014|30016,74.0,14584,48.97,priority
+GA,Grayson,ga/grayson,30017,78.0,4858,41.45,priority
+GA,Jersey,ga/jersey,30018,74.0,148,51.29,priority
+GA,Dacula,ga/dacula,30019,78.0,7444,34.94,priority
+GA,Clarkston,ga/clarkston,30021,74.0,14557,25.35,priority
+GA,Suwanee,ga/suwanee,30024,78.0,22349,22.51,priority
+GA,Cumming,ga/cumming,30040|30028|30041,74.0,8469,60.87,priority
+GA,Decatur,ga/decatur,30032|30035|30033|30030|30034,74.0,24518,66.14,priority
+GA,Lithonia,ga/lithonia,30038|30058,74.0,2622,76.28,priority
+GA,Snellville,ga/snellville,30039|30078,78.0,21620,34.58,priority
+GA,Lawrenceville,ga/lawrenceville,30044|30043|30045|30046,78.0,30954,51.9,priority
+GA,Lilburn,ga/lilburn,30047,78.0,15390,39.61,priority
+GA,Loganville,ga/loganville,30052,74.0,15527,24.71,priority
+GA,Oxford,ga/oxford,30054,74.0,1770,51.29,priority
+GA,Porterdale,ga/porterdale,30070,74.0,1466,51.29,priority
+GA,Norcross,ga/norcross,30093|30071,78.0,18007,37.2,priority
+GA,Pine Lake,ga/pine-lake,30072,74.0,882,51.29,priority
+GA,Roswell,ga/roswell,30076|30075,74.0,92621,23.38,priority
+GA,Scottdale,ga/scottdale,30079,74.0,10542,28.84,priority
+GA,Smyrna,ga/smyrna,30080|30082,78.0,56633,30,priority
+GA,Stone Mountain,ga/stone-mountain,30088|30087|30083,74.0,6623,67.16,priority
+GA,Tucker,ga/tucker,30084,74.0,37123,26.42,priority
+GA,Peachtree Corners,ga/peachtree-corners,30092,78.0,42373,26.42,priority
+GA,Duluth,ga/duluth,30097|30096,78.0,32426,37.5,priority
+GA,Acworth,ga/acworth,30102|30101,78.0,22473,34.04,priority
+GA,Adairsville,ga/adairsville,30103,74.0,4999,38.88,priority
+GA,Aragon,ga/aragon,30104,74.0,2536,51,priority
+GA,Austell,ga/austell,30106|30168,78.0,8447,50.35,priority
+GA,Ball Ground,ga/ball-ground,30107,74.0,2856,48.63,priority
+GA,Clarkdale,ga/clarkdale,30111,78.0,8447,33.22,priority
+GA,Canton,ga/canton,30114|30115,74.0,35741,26.83,priority
+GA,Carrollton,ga/carrollton,30116,75.0,27392,19.95,priority
+GA,Cartersville,ga/cartersville,30120|30121,74.0,24074,31.42,priority
+GA,Lithia Springs,ga/lithia-springs,30122,74.0,16875,23.9,priority
+GA,Mableton,ga/mableton,30126,78.0,,,approved
+GA,Powder Springs,ga/powder-springs,30127,78.0,18009,24.54,priority
+GA,Dallas,ga/dallas,30157|30132,74.0,14714,38.26,priority
+GA,Douglasville,ga/douglasville,30134|30135,74.0,37536,39.87,priority
+GA,Emerson,ga/emerson,30137,74.0,1573,51.29,priority
+GA,Fairmount,ga/fairmount,30139,74.0,1279,51.29,priority
+GA,Hiram,ga/hiram,30141,74.0,5231,38.18,priority
+GA,Jasper,ga/jasper,30143,74.0,4630,40.09,priority
+GA,Kennesaw,ga/kennesaw,30144|30152,78.0,34605,28.65,priority
+GA,Kingston,ga/kingston,30145,74.0,993,51.29,priority
+GA,Lindale,ga/lindale,30147,74.0,4289,41.33,priority
+GA,Marble Hill,ga/marble-hill,30148,74.0,,,approved
+GA,Mount Berry,ga/mount-berry,30149,74.0,1647,51.29,priority
+GA,Rockmart,ga/rockmart,30153,74.0,5204,38.26,priority
+GA,Rome,ga/rome,30161,74.0,38189,33.32,priority
+GA,Rydal,ga/rydal,30171,74.0,,,approved
+GA,Silver Creek,ga/silver-creek,30173,74.0,4289,41.33,priority
+GA,Tate,ga/tate,30177,74.0,,,approved
+GA,Taylorsville,ga/taylorsville,30178,74.0,335,51.29,priority
+GA,Temple,ga/temple,30179,75.0,5901,36.87,priority
+GA,Villa Rica,ga/villa-rica,30180,75.0,18551,23.32,priority
+GA,Waleska,ga/waleska,30183,74.0,808,51.29,priority
+GA,White,ga/white,30184,74.0,953,51.29,priority
+GA,Whitesburg,ga/whitesburg,30185,75.0,525,51.99,priority
+GA,Winston,ga/winston,30187,74.0,1881,51.29,priority
+GA,Woodstock,ga/woodstock,30188|30189,74.0,37381,26.35,priority
+GA,Fairburn,ga/fairburn,30213,74.0,16831,23.92,priority
+GA,Fayetteville,ga/fayetteville,30215|30214,74.0,19719,34.03,priority
+GA,Hampton,ga/hampton,30228,74.0,8687,31.17,priority
+GA,Jonesboro,ga/jonesboro,30236|30238,74.0,6143,69.21,priority
+GA,Locust Grove,ga/locust-grove,30248,15.5,,,candidate
+GA,Lovejoy,ga/lovejoy,30250,74.0,11508,27.85,priority
+GA,Mcdonough,ga/mcdonough,30253|30252,74.0,30947,28.42,priority
+GA,Moreland,ga/moreland,30259,15.5,,,candidate
+GA,Morrow,ga/morrow,30260,74.0,6364,35.3,priority
+GA,Newnan,ga/newnan,30263|30265,74.0,44235,37.34,priority
+GA,Palmetto,ga/palmetto,30268,74.0,4797,39.52,priority
+GA,Peachtree City,ga/peachtree-city,30269,74.0,39576,25.76,priority
+GA,Red Oak,ga/red-oak,30272,74.0,,,approved
+GA,Rex,ga/rex,30273,74.0,,,approved
+GA,Riverdale,ga/riverdale,30274|30296,74.0,14792,57.87,priority
+GA,Sargent,ga/sargent,30275,74.0,,,approved
+GA,Senoia,ga/senoia,30276,15.5,,,candidate
+GA,Sharpsburg,ga/sharpsburg,30277,74.0,309,51.29,priority
+GA,Stockbridge,ga/stockbridge,30281,74.0,,,approved
+GA,Conley,ga/conley,30288,74.0,5822,36.58,priority
+GA,Turin,ga/turin,30289,15.5,,,candidate
+GA,Tyrone,ga/tyrone,30290,74.0,7896,32.38,priority
+GA,Union City,ga/union-city,30291,74.0,27728,29.69,priority
+GA,Ellenwood,ga/ellenwood,30294,74.0,19504,22.55,priority
+GA,Forest Park,ga/forest-park,30297,74.0,19504,34.18,priority
+GA,Atlanta,ga/atlanta,30344|30315|30317|30327|30328|30345|30338|30313|30319|30322|30307|30339|30316|30303|30326|30354|30306|30360|30341|30346|30311|30308|30312|30329|30332|30363|30309|30340|30324|30331|30334|30349|30318|30336|30310|30337|30342|30350|30305|30314,74.0,5298788,29.87,priority
+GA,Gainesville,ga/gainesville,30501|30506|30504|30507,74.0,184237,21.1,priority
+GA,Braselton,ga/braselton,30517,74.0,15178,24.93,priority
+GA,Buford,ga/buford,30519|30518,78.0,17997,47.46,priority
+GA,Dawsonville,ga/dawsonville,30534,74.0,4403,40.9,priority
+GA,Flowery Branch,ga/flowery-branch,30542,74.0,10925,43.1,priority
+GA,Hoschton,ga/hoschton,30548,74.0,4534,40.42,priority
+GA,Oakwood,ga/oakwood,30566,74.0,5862,36.48,priority
+GA,Talmo,ga/talmo,30575,74.0,369,51.29,priority
+GA,Bethlehem,ga/bethlehem,30620,74.0,707,51.29,priority
+GA,Monroe,ga/monroe,30655|30656,74.0,15648,37.33,priority
+GA,Statham,ga/statham,30666,74.0,3018,47.57,priority
+GA,Winder,ga/winder,30680,74.0,19437,22.58,priority
+GA,Calhoun,ga/calhoun,30701,74.0,18183,35.15,priority
+GA,Plainville,ga/plainville,30733,74.0,360,51.29,priority
+GA,Ranger,ga/ranger,30734,74.0,134,51.29,priority
+GA,Fortson,ga/fortson,31808,74.0,,,approved
+GA,Columbus,ga/columbus,31903|31906|31901|31907|31904|31909,74.0,256672,23.57,priority
+FL,Dania,fl/dania,33004,14.0,,,candidate
+FL,Hallandale,fl/hallandale,33009,14.0,,,candidate
+FL,Hollywood,fl/hollywood,33026|33021|33029|33023|33020|33024|33025|33027|33019,14.0,,,candidate
+FL,Pembroke Pines,fl/pembroke-pines,33028,14.0,,,candidate
+FL,Pompano Beach,fl/pompano-beach,33064|33060|33062|33069|33068|33076|33067|33066|33073|33063,14.0,,,candidate
+FL,Coral Springs,fl/coral-springs,33071|33065,14.0,,,candidate
+FL,Fort Lauderdale,fl/fort-lauderdale,33322|33313|33327|33328|33326|33308|33351|33315|33311|33331|33306|33316|33305|33330|33309|33334|33323|33332|33324|33319|33317|33314|33301|33325|33312|33304,14.0,,,candidate
+FL,Plantation,fl/plantation,33388,14.0,,,candidate
+FL,Boynton Beach,fl/boynton-beach,33426|33437|33435|33436|33473,14.0,,,candidate
+FL,Boca Raton,fl/boca-raton,33496|33428|33486|33434|33498|33433|33487|33431|33432,14.0,,,candidate
+FL,Deerfield Beach,fl/deerfield-beach,33441|33442,14.0,,,candidate
+FL,Delray Beach,fl/delray-beach,33483|33444|33484|33445|33446,14.0,,,candidate
+FL,Bradenton,fl/bradenton,34203|34208|34205|34202|34201|34211|34210|34212|34207|34209,13.0,,,candidate
+FL,Cortez,fl/cortez,34215,13.0,,,candidate
+FL,Anna Maria,fl/anna-maria,34216,13.0,,,candidate
+FL,Bradenton Beach,fl/bradenton-beach,34217,13.0,,,candidate
+FL,Parrish,fl/parrish,34219,13.0,,,candidate
+FL,Palmetto,fl/palmetto,34221,13.0,,,candidate
+FL,Ellenton,fl/ellenton,34222,13.0,,,candidate
+FL,Englewood,fl/englewood,34223,13.0,,,candidate
+FL,Longboat Key,fl/longboat-key,34228,13.0,,,candidate
+FL,Osprey,fl/osprey,34229,13.0,,,candidate
+FL,Sarasota,fl/sarasota,34236|34235|34241|34242|34234|34243|34240|34237|34233|34239|34232|34238|34231,13.0,,,candidate
+FL,Terra Ceia,fl/terra-ceia,34250,13.0,,,candidate
+FL,Myakka City,fl/myakka-city,34251,13.0,,,candidate
+FL,Nokomis,fl/nokomis,34275,13.0,,,candidate
+FL,Venice,fl/venice,34293|34285|34292,13.0,,,candidate
+FL,North Port,fl/north-port,34291|34286|34287,13.0,,,candidate
+AL,Tuscaloosa,al/tuscaloosa,35487|35401|35405|35406|35404,74.0,170416,33,priority
+AL,Brookwood,al/brookwood,35444,74.0,2706,49.69,priority
+AL,Buhl,al/buhl,35446,74.0,,,approved
+AL,Coker,al/coker,35452,74.0,1058,51.29,priority
+AL,Cottondale,al/cottondale,35453,74.0,2632,50.25,priority
+AL,Duncanville,al/duncanville,35456,74.0,,,approved
+AL,Echola,al/echola,35457,74.0,,,approved
+AL,Elrod,al/elrod,35458,74.0,,,approved
+AL,Fosters,al/fosters,35463,74.0,,,approved
+AL,Knoxville,al/knoxville,35469,74.0,,,approved
+AL,Northport,al/northport,35476|35473|35475,74.0,31218,36.12,priority
+AL,Moundville,al/moundville,35474,74.0,3754,43.59,priority
+AL,Ralph,al/ralph,35480,74.0,,,approved
+AL,Vance,al/vance,35490,74.0,2105,51.29,priority
+AL,Autaugaville,al/autaugaville,36003,74.0,809,51.29,priority
+AL,Billingsley,al/billingsley,36006,74.0,115,51.29,priority
+AL,Booth,al/booth,36008,74.0,,,approved
+AL,Cecil,al/cecil,36013,74.0,10574,28.81,priority
+AL,Coosada,al/coosada,36020,74.0,1105,51.29,priority
+AL,Deatsville,al/deatsville,36022,74.0,2097,51.29,priority
+AL,Eclectic,al/eclectic,36024,74.0,1141,51.29,priority
+AL,Elmore,al/elmore,36025,74.0,1517,51.29,priority
+AL,Equality,al/equality,36026,74.0,93,51.29,priority
+AL,Fitzpatrick,al/fitzpatrick,36029,74.0,,,approved
+AL,Fort Davis,al/fort-davis,36031,74.0,,,approved
+AL,Fort Deposit,al/fort-deposit,36032,74.0,1525,51.29,priority
+AL,Hardaway,al/hardaway,36039,74.0,,,approved
+AL,Hayneville,al/hayneville,36040,74.0,716,51.29,priority
+AL,Hope Hull,al/hope-hull,36043,74.0,,,approved
+AL,Lapine,al/lapine,36046,74.0,,,approved
+AL,Letohatchee,al/letohatchee,36047,74.0,,,approved
+AL,Marbury,al/marbury,36051,74.0,1570,51.29,priority
+AL,Mathews,al/mathews,36052,74.0,,,approved
+AL,Millbrook,al/millbrook,36054,74.0,17189,23.72,priority
+AL,Mount Meigs,al/mount-meigs,36057,74.0,,,approved
+AL,Pike Road,al/pike-road,36064,74.0,10574,28.81,priority
+AL,Prattville,al/prattville,36067|36066,74.0,39482,32.88,priority
+AL,Ramer,al/ramer,36069,74.0,,,approved
+AL,Shorter,al/shorter,36075,74.0,404,51.29,priority
+AL,Tallassee,al/tallassee,36078,74.0,5134,38.46,priority
+AL,Titus,al/titus,36080,74.0,,,approved
+AL,Tuskegee,al/tuskegee,36083,74.0,8938,30.81,priority
+AL,Tuskegee Institute,al/tuskegee-institute,36088,74.0,8938,30.81,priority
+AL,Union Springs,al/union-springs,36089,74.0,3248,46.19,priority
+AL,Wetumpka,al/wetumpka,36092|36093,74.0,7437,50.27,priority
+AL,Montgomery,al/montgomery,36114|36116|36106|36110|36115|36101|36104|36130|36111|36107|36112|36117|36105|36109|36108|36113,74.0,254752,62.1,priority
+AL,Selma,al/selma,36703|36701,74.0,17057,46,priority
+AL,Jones,al/jones,36749,74.0,,,approved
+AL,Lowndesboro,al/lowndesboro,36752,74.0,70,51.29,priority
+AL,Plantersville,al/plantersville,36758,74.0,,,approved
+AL,Sardis,al/sardis,36775,74.0,,,approved
+AL,Tyler,al/tyler,36785,74.0,875,51.29,priority
+AL,Stanton,al/stanton,36790,74.0,,,approved
+AL,Opelika,al/opelika,36804,74.0,32820,18.31,priority
+AL,Auburn,al/auburn,36832|36830,74.0,,,approved
+AL,Auburn University,al/auburn-university,36849,74.0,,,approved
+AL,Cottonton,al/cottonton,36851,74.0,,,approved
+AL,Dadeville,al/dadeville,36853,74.0,2993,47.73,priority
+AL,Fort Mitchell,al/fort-mitchell,36856,74.0,,,approved
+AL,Hatchechubbee,al/hatchechubbee,36858,74.0,,,approved
+AL,Hurtsboro,al/hurtsboro,36860,74.0,421,51.29,priority
+AL,Loachapoka,al/loachapoka,36865,74.0,223,51.29,priority
+AL,Notasulga,al/notasulga,36866,74.0,1050,51.29,priority
+AL,Phenix City,al/phenix-city,36869|36870|36867,74.0,38499,33.21,priority
+AL,Pittsview,al/pittsview,36871,74.0,,,approved
+AL,Salem,al/salem,36874,74.0,,,approved
+AL,Seale,al/seale,36875,74.0,,,approved
+AL,Smiths Station,al/smiths-station,36877,74.0,5496,37.43,priority
+TN,Adams,tn/adams,37010,74.0,888,51.29,priority
+TN,Antioch,tn/antioch,37013,77.5,,,approved
+TN,Arrington,tn/arrington,37014,74.0,,,approved
+TN,Ashland City,tn/ashland-city,37015,75.0,5424,38.14,priority
+TN,Auburntown,tn/auburntown,37016,75.0,318,51.99,priority
+TN,Brentwood,tn/brentwood,37027,74.0,45556,24.35,priority
+TN,Castalian Springs,tn/castalian-springs,37031,74.0,678,51.29,priority
+TN,Cedar Hill,tn/cedar-hill,37032,74.0,395,51.29,priority
+TN,Chapel Hill,tn/chapel-hill,37034,74.0,1712,51.29,priority
+TN,Chapmansboro,tn/chapmansboro,37035,75.0,,,approved
+TN,Charlotte,tn/charlotte,37036,75.0,2164,51.99,priority
+TN,Clarksville,tn/clarksville,37043|37040,74.0,227059,19.41,priority
+TN,College Grove,tn/college-grove,37046,74.0,,,approved
+TN,Cottontown,tn/cottontown,37048,74.0,374,51.29,priority
+TN,Cross Plains,tn/cross-plains,37049,74.0,1922,51.29,priority
+TN,Eagleville,tn/eagleville,37060,74.0,999,51.29,priority
+TN,Fairview,tn/fairview,37062,74.0,10009,29.45,priority
+TN,Franklin,tn/franklin,37069|37067|37064,74.0,87133,32.55,priority
+TN,Gallatin,tn/gallatin,37066,74.0,,,approved
+TN,Goodlettsville,tn/goodlettsville,37072,77.5,17597,37.3,priority
+TN,Greenbrier,tn/greenbrier,37073,74.0,6971,34.03,priority
+TN,Hartsville,tn/hartsville,37074,75.0,11957,27.8,priority
+TN,Hendersonville,tn/hendersonville,37075,74.0,63091,21.37,priority
+TN,Hermitage,tn/hermitage,37076,77.5,,,approved
+TN,Joelton,tn/joelton,37080,77.5,,,approved
+TN,Kingston Springs,tn/kingston-springs,37082,75.0,2791,49.75,priority
+TN,Lascassas,tn/lascassas,37085,74.0,113,51.29,priority
+TN,La Vergne,tn/la-vergne,37086,74.0,40243,25.58,priority
+TN,Lebanon,tn/lebanon,37090|37087,74.0,44788,42.48,priority
+TN,Madison,tn/madison,37115,77.5,,,approved
+TN,Milton,tn/milton,37118,74.0,,,approved
+TN,Mount Juliet,tn/mount-juliet,37122,74.0,42073,25.13,priority
+TN,Murfreesboro,tn/murfreesboro,37129|37127|37128|37132|37130,74.0,194551,28.89,priority
+TN,Nolensville,tn/nolensville,37135,74.0,15074,25,priority
+TN,Old Hickory,tn/old-hickory,37138,77.5,,,approved
+TN,Pegram,tn/pegram,37143,75.0,2089,51.99,priority
+TN,Pleasant View,tn/pleasant-view,37146,75.0,5276,38.56,priority
+TN,Rockvale,tn/rockvale,37153,74.0,1611,51.29,priority
+TN,Smyrna,tn/smyrna,37167,74.0,,,approved
+TN,Southside,tn/southside,37171,74.0,,,approved
+TN,Springfield,tn/springfield,37172,74.0,19255,22.67,priority
+TN,Spring Hill,tn/spring-hill,37174,75.0,,,approved
+TN,Thompsons Station,tn/thompsons-station,37179,74.0,,,approved
+TN,Watertown,tn/watertown,37184,74.0,1463,51.29,priority
+TN,White Bluff,tn/white-bluff,37187,75.0,4080,42.74,priority
+TN,White House,tn/white-house,37188,74.0,14631,25.3,priority
+TN,Whites Creek,tn/whites-creek,37189,77.5,,,approved
+TN,Nashville,tn/nashville,37238|37232|37228|37206|37218|37207|37221|37205|37201|37208|37209|37204|37213|37216|37219|37210|37215|37203|37211|37212|37217|37214|37220,77.5,1201962,42.17,priority
+KY,Alexandria,ky/alexandria,41001,74.0,10562,28.82,priority
+KY,Burlington,ky/burlington,41005,74.0,18008,23.28,priority
+KY,California,ky/california,41007,74.0,49,51.29,priority
+KY,Covington,ky/covington,41014|41016|41011,74.0,41110,32.35,priority
+KY,Latonia,ky/latonia,41015,74.0,,,approved
+KY,Ft Mitchell,ky/ft-mitchell,41017,74.0,8713,31.13,priority
+KY,Erlanger,ky/erlanger,41018,74.0,19875,22.38,priority
+KY,Florence,ky/florence,41042,74.0,32803,18.32,priority
+KY,Hebron,ky/hebron,41048,74.0,6407,35.2,priority
+KY,Independence,ky/independence,41051,74.0,29392,19.14,priority
+KY,Melbourne,ky/melbourne,41059,74.0,627,51.29,priority
+KY,Newport,ky/newport,41076|41071,74.0,13967,49.83,priority
+KY,Bellevue,ky/bellevue,41073,74.0,5636,37.05,priority
+KY,Dayton,ky/dayton,41074,74.0,5743,36.78,priority
+KY,Fort Thomas,ky/fort-thomas,41075,74.0,17169,23.73,priority
+KY,Petersburg,ky/petersburg,41080,74.0,771,51.29,priority
+KY,Silver Grove,ky/silver-grove,41085,74.0,1008,51.29,priority
+KY,Union,ky/union,41091,74.0,7642,32.81,priority
+KY,Walton,ky/walton,41094,74.0,5730,36.81,priority
+OH,Addyston,oh/addyston,45001,74.0,904,51.29,priority
+OH,Cleves,oh/cleves,45002,74.0,3388,45.42,priority
+OH,Franklin,oh/franklin,45005,74.0,11712,27.66,priority
+OH,Hamilton,oh/hamilton,45011|45013|45015,74.0,63468,27.19,priority
+OH,Fairfield,oh/fairfield,45014,74.0,,,approved
+OH,Harrison,oh/harrison,45030,74.0,13084,26.46,priority
+OH,Hooven,oh/hooven,45033,74.0,403,51.29,priority
+OH,Kings Mills,oh/kings-mills,45034,74.0,1175,51.29,priority
+OH,Lebanon,oh/lebanon,45036,74.0,21501,21.69,priority
+OH,Maineville,oh/maineville,45039,74.0,2070,51.29,priority
+OH,Mason,oh/mason,45040,74.0,,,approved
+OH,Miamitown,oh/miamitown,45041,74.0,1169,51.29,priority
+OH,Middletown,oh/middletown,45044|45042,74.0,97529,17.96,priority
+OH,Monroe,oh/monroe,45050,74.0,15401,24.79,priority
+OH,Mount Saint Joseph,oh/mount-saint-joseph,45051,74.0,,,approved
+OH,North Bend,oh/north-bend,45052,74.0,1148,51.29,priority
+OH,Okeana,oh/okeana,45053,74.0,,,approved
+OH,Oregonia,oh/oregonia,45054,74.0,,,approved
+OH,Oxford,oh/oxford,45056,74.0,21753,21.59,priority
+OH,South Lebanon,oh/south-lebanon,45065,74.0,6712,34.55,priority
+OH,Springboro,oh/springboro,45066,74.0,19980,22.34,priority
+OH,Trenton,oh/trenton,45067,74.0,13583,26.06,priority
+OH,West Chester,oh/west-chester,45069,74.0,9496,30.08,priority
+OH,Amelia,oh/amelia,45102,74.0,12871,26.63,priority
+OH,Batavia,oh/batavia,45103,74.0,2794,49.06,priority
+OH,Bethel,oh/bethel,45106,74.0,2658,50.05,priority
+OH,Blanchester,oh/blanchester,45107,74.0,4538,40.41,priority
+OH,Camp Dennison,oh/camp-dennison,45111,74.0,265,51.29,priority
+OH,Fayetteville,oh/fayetteville,45118,74.0,324,51.29,priority
+OH,Goshen,oh/goshen,45122,74.0,759,51.29,priority
+OH,Hamersville,oh/hamersville,45130,74.0,918,51.29,priority
+OH,Loveland,oh/loveland,45140,74.0,13197,26.37,priority
+OH,Miamiville,oh/miamiville,45147,74.0,97,51.29,priority
+OH,Milford,oh/milford,45150,74.0,6497,35.01,priority
+OH,Morrow,oh/morrow,45152,74.0,2523,51.11,priority
+OH,Moscow,oh/moscow,45153,74.0,147,51.29,priority
+OH,Mount Orab,oh/mount-orab,45154,74.0,4987,38.91,priority
+OH,New Richmond,oh/new-richmond,45157,74.0,2766,49.26,priority
+OH,Newtonsville,oh/newtonsville,45158,74.0,,,approved
+OH,Owensville,oh/owensville,45160,74.0,620,51.29,priority
+OH,Pleasant Plain,oh/pleasant-plain,45162,74.0,190,51.29,priority
+OH,Terrace Park,oh/terrace-park,45174,74.0,2295,51.29,priority
+OH,Williamsburg,oh/williamsburg,45176,74.0,2608,50.43,priority
+OH,Cincinnati,oh/cincinnati,45220|45204|45246|45237|45243|45233|45215|45225|45203|45239|45252|45230|45209|45241|45231|45240|45255|45232|45213|45205|45251|45208|45244|45224|45211|45202|45218|45217|45227|45216|45248|45206|45236|45247|45249|45223|45212|45226|45229|45245|45238|45214|45219|45242|45207,74.0,1726642,38.29,priority
+IN,Arcadia,in/arcadia,46030,74.0,1556,51.29,priority
+IN,Atlanta,in/atlanta,46031,74.0,816,51.29,priority
+IN,Carmel,in/carmel,46033|46032,74.0,101651,22.52,priority
+IN,Cicero,in/cicero,46034,74.0,5509,37.39,priority
+IN,Fishers,in/fishers,46037|46038,74.0,102337,22.46,priority
+IN,Fortville,in/fortville,46040,74.0,4976,38.95,priority
+IN,Lebanon,in/lebanon,46052,74.0,17812,23.39,priority
+IN,Mccordsville,in/mccordsville,46055,74.0,10329,29.08,priority
+IN,Noblesville,in/noblesville,46062|46060,74.0,73362,25.66,priority
+IN,Sheridan,in/sheridan,46069,74.0,3205,46.44,priority
+IN,Thorntown,in/thorntown,46071,74.0,1212,51.29,priority
+IN,Westfield,in/westfield,46074,74.0,,,approved
+IN,Whitestown,in/whitestown,46075,74.0,12466,26.97,priority
+IN,Zionsville,in/zionsville,46077,74.0,32095,18.48,priority
+IN,Advance,in/advance,46102,74.0,390,51.29,priority
+IN,Amo,in/amo,46103,81.5,417,56.49,priority
+IN,Bainbridge,in/bainbridge,46105,74.0,605,51.29,priority
+IN,Bargersville,in/bargersville,46106,74.0,10752,28.62,priority
+IN,Beech Grove,in/beech-grove,46107,74.0,14913,25.11,priority
+IN,Boggstown,in/boggstown,46110,74.0,597,51.29,priority
+IN,Brooklyn,in/brooklyn,46111,74.0,2570,50.73,priority
+IN,Brownsburg,in/brownsburg,46112,81.5,31215,20.58,priority
+IN,Camby,in/camby,46113,74.0,,,approved
+IN,Charlottesville,in/charlottesville,46117,74.0,398,51.29,priority
+IN,Clayton,in/clayton,46118,81.5,818,56.49,priority
+IN,Cloverdale,in/cloverdale,46120,74.0,2195,51.29,priority
+IN,Coatesville,in/coatesville,46121,81.5,566,56.49,priority
+IN,Danville,in/danville,46122,81.5,11714,30.46,priority
+IN,Avon,in/avon,46123,81.5,23437,34.98,priority
+IN,Edinburgh,in/edinburgh,46124,74.0,4381,40.98,priority
+IN,Eminence,in/eminence,46125,74.0,216,51.29,priority
+IN,Fairland,in/fairland,46126,74.0,660,51.29,priority
+IN,Fillmore,in/fillmore,46128,74.0,895,51.29,priority
+IN,Fountaintown,in/fountaintown,46130,74.0,119,51.29,priority
+IN,Franklin,in/franklin,46131,74.0,26168,20.05,priority
+IN,Greencastle,in/greencastle,46135,74.0,9864,29.62,priority
+IN,Greenfield,in/greenfield,46140,74.0,24940,20.44,priority
+IN,Greenwood,in/greenwood,46142|46143,74.0,66029,20.99,priority
+IN,Gwynneville,in/gwynneville,46144,74.0,198,51.29,priority
+IN,Jamestown,in/jamestown,46147,74.0,1107,51.29,priority
+IN,Lizton,in/lizton,46149,81.5,543,56.49,priority
+IN,Martinsville,in/martinsville,46151,74.0,11933,27.45,priority
+IN,Maxwell,in/maxwell,46154,74.0,413,51.29,priority
+IN,Monrovia,in/monrovia,46157,74.0,2055,51.29,priority
+IN,Mooresville,in/mooresville,46158,74.0,9751,29.76,priority
+IN,Morgantown,in/morgantown,46160,74.0,1308,51.29,priority
+IN,Morristown,in/morristown,46161,74.0,1134,51.29,priority
+IN,Needham,in/needham,46162,74.0,,,approved
+IN,New Palestine,in/new-palestine,46163,74.0,3227,46.31,priority
+IN,Nineveh,in/nineveh,46164,74.0,559,51.29,priority
+IN,North Salem,in/north-salem,46165,81.5,741,56.49,priority
+IN,Paragon,in/paragon,46166,74.0,537,51.29,priority
+IN,Pittsboro,in/pittsboro,46167,81.5,4156,46.1,priority
+IN,Plainfield,in/plainfield,46168,81.5,36369,19.36,priority
+IN,Putnamville,in/putnamville,46170,74.0,1959,51.29,priority
+IN,Reelsville,in/reelsville,46171,74.0,,,approved
+IN,Roachdale,in/roachdale,46172,74.0,971,51.29,priority
+IN,Russellville,in/russellville,46175,74.0,308,51.29,priority
+IN,Shelbyville,in/shelbyville,46176,74.0,20296,22.2,priority
+IN,Stilesville,in/stilesville,46180,81.5,296,56.49,priority
+IN,Trafalgar,in/trafalgar,46181,74.0,1469,51.29,priority
+IN,Waldron,in/waldron,46182,74.0,606,51.29,priority
+IN,West Newton,in/west-newton,46183,74.0,,,approved
+IN,Whiteland,in/whiteland,46184,74.0,5173,38.35,priority
+IN,Wilkinson,in/wilkinson,46186,74.0,385,51.29,priority
+IN,Indianapolis,in/indianapolis,46228|46217|46206|46290|46240|46268|46202|46216|46239|46201|46219|46214|46221|46229|46203|46234|46222|46250|46256|46254|46237|46224|46260|46218|46231|46205|46208|46241|46259|46226|46220|46235|46280|46204|46278|46236|46227|46225,74.0,1767321,40.26,priority
+IN,Lawrenceburg,in/lawrenceburg,47025,74.0,5179,38.33,priority
+IN,West Harrison,in/west-harrison,47060,74.0,285,51.29,priority
+IN,Columbus,in/columbus,47201|47203,81.5,51824,32.48,priority
+IN,Clifford,in/clifford,47226,81.5,165,56.49,priority
+IN,Elizabethtown,in/elizabethtown,47232,81.5,372,56.49,priority
+IN,Flat Rock,in/flat-rock,47234,74.0,121,51.29,priority
+IN,Grammer,in/grammer,47236,81.5,336,56.49,priority
+IN,Hartsville,in/hartsville,47244,81.5,277,56.49,priority
+IN,Hope,in/hope,47246,81.5,2029,56.49,priority
+IN,Jonesville,in/jonesville,47247,81.5,129,56.49,priority
+IN,Taylorsville,in/taylorsville,47280,81.5,1248,56.49,priority
+IN,Bloomington,in/bloomington,47401|47404|47408|47406|47403|47405,74.0,107655,36.6,priority
+IN,Avoca,in/avoca,47420,74.0,439,51.29,priority
+IN,Bedford,in/bedford,47421,74.0,13837,25.87,priority
+IN,Bloomfield,in/bloomfield,47424,74.0,2713,49.64,priority
+IN,Coal City,in/coal-city,47427,81.5,161,56.49,priority
+IN,Ellettsville,in/ellettsville,47429,74.0,6698,34.58,priority
+IN,Freedom,in/freedom,47431,81.5,,,approved
+IN,Gosport,in/gosport,47433,81.5,1303,56.49,priority
+IN,Harrodsburg,in/harrodsburg,47434,74.0,298,51.29,priority
+IN,Helmsburg,in/helmsburg,47435,74.0,387,51.29,priority
+IN,Heltonville,in/heltonville,47436,74.0,11,51.29,priority
+IN,Huron,in/huron,47437,74.0,237,51.29,priority
+IN,Jasonville,in/jasonville,47438,74.0,1979,51.29,priority
+IN,Linton,in/linton,47441,74.0,5260,38.09,priority
+IN,Lyons,in/lyons,47443,74.0,920,51.29,priority
+IN,Midland,in/midland,47445,74.0,159,51.29,priority
+IN,Mitchell,in/mitchell,47446,74.0,3937,42.77,priority
+IN,Nashville,in/nashville,47448,74.0,1386,51.29,priority
+IN,Newberry,in/newberry,47449,74.0,121,51.29,priority
+IN,Oolitic,in/oolitic,47451,74.0,1522,51.29,priority
+IN,Owensburg,in/owensburg,47453,74.0,447,51.29,priority
+IN,Patricksburg,in/patricksburg,47455,81.5,356,56.49,priority
+IN,Quincy,in/quincy,47456,81.5,216,56.49,priority
+IN,Scotland,in/scotland,47457,74.0,53,51.29,priority
+IN,Smithville,in/smithville,47458,74.0,3299,45.91,priority
+IN,Solsberry,in/solsberry,47459,74.0,184,51.29,priority
+IN,Spencer,in/spencer,47460,81.5,2481,56.49,priority
+IN,Springville,in/springville,47462,74.0,447,51.29,priority
+IN,Stinesville,in/stinesville,47464,74.0,297,51.29,priority
+IN,Switz City,in/switz-city,47465,74.0,306,51.29,priority
+IN,Tunnelton,in/tunnelton,47467,74.0,64,51.29,priority
+IN,Unionville,in/unionville,47468,74.0,,,approved
+IN,Williams,in/williams,47470,74.0,200,51.29,priority
+IN,Worthington,in/worthington,47471,74.0,1411,51.29,priority
+IN,Poland,in/poland,47868,81.5,81,56.49,priority
+MN,Bethel,mn/bethel,55005,32.0,474,22.18,approved
+MN,Cedar,mn/cedar,55011,32.0,,,approved
+MN,Circle Pines,mn/circle-pines,55014,32.0,,,approved
+MN,Cottage Grove,mn/cottage-grove,55016,32.0,,,approved
+MN,Elko New Market,mn/elko-new-market,55020|55054,32.0,5002,25.47,approved
+MN,Farmington,mn/farmington,55024,32.0,,,approved
+MN,Forest Lake,mn/forest-lake,55025,32.0,,,approved
+MN,Hampton,mn/hampton,55031,32.0,590,22.18,approved
+MN,Hastings,mn/hastings,55033,32.0,,,approved
+MN,Hugo,mn/hugo,55038,32.0,,,approved
+MN,Lake Elmo,mn/lake-elmo,55042,32.0,,,approved
+MN,Lakeville,mn/lakeville,55044,32.0,,,approved
+MN,Newport,mn/newport,55055,32.0,,,approved
+MN,Randolph,mn/randolph,55065,32.0,461,22.18,approved
+MN,Rosemount,mn/rosemount,55068,32.0,,,approved
+MN,Saint Francis,mn/saint-francis,55070,32.0,,,approved
+MN,Saint Paul Park,mn/saint-paul-park,55071,32.0,,,approved
+MN,South Saint Paul,mn/south-saint-paul,55075,32.0,,,approved
+MN,Inver Grove Heights,mn/inver-grove-heights,55077|55076,32.0,,,approved
+MN,Stillwater,mn/stillwater,55082,32.0,,,approved
+MN,Vermillion,mn/vermillion,55085,32.0,399,22.18,approved
+MN,Willernie,mn/willernie,55090,32.0,495,22.18,approved
+MN,Saint Paul,mn/saint-paul,55105|55122|55108|55113|55114|55123|55120|55102|55111|55124|55110|55126|55155|55115|55117|55112|55127|55103|55107|55109|55121|55118|55116|55119|55104|55106|55101|55128|55125|55130|55129,32.0,307284,25.41,approved
+MN,Mendota,mn/mendota,55150,32.0,207,22.18,approved
+MN,Anoka,mn/anoka,55303,32.0,,,approved
+MN,Andover,mn/andover,55304,32.0,,,approved
+MN,Hopkins,mn/hopkins,55343|55305,32.0,,,approved
+MN,Burnsville,mn/burnsville,55306|55337,32.0,,,approved
+MN,Maple Grove,mn/maple-grove,55311,32.0,,,approved
+MN,Carver,mn/carver,55315,32.0,,,approved
+MN,Champlin,mn/champlin,55316,32.0,,,approved
+MN,Chanhassen,mn/chanhassen,55317,32.0,,,approved
+MN,Chaska,mn/chaska,55318,32.0,,,approved
+MN,Cologne,mn/cologne,55322,32.0,2282,22.18,approved
+MN,Dayton,mn/dayton,55327,32.0,,,approved
+MN,Excelsior,mn/excelsior,55331,32.0,2570,21.94,approved
+MN,Hamburg,mn/hamburg,55339,32.0,547,22.18,approved
+MN,Hamel,mn/hamel,55340,32.0,,,approved
+MN,Eden Prairie,mn/eden-prairie,55346|55347|55344,32.0,,,approved
+MN,Minnetonka,mn/minnetonka,55345,32.0,,,approved
+MN,Jordan,mn/jordan,55352,32.0,,,approved
+MN,Long Lake,mn/long-lake,55356,32.0,1728,22.18,approved
+MN,Maple Plain,mn/maple-plain,55359,32.0,1701,22.18,approved
+MN,Mayer,mn/mayer,55360,32.0,2518,22.12,approved
+MN,Mound,mn/mound,55364,32.0,,,approved
+MN,New Germany,mn/new-germany,55367,32.0,595,22.18,approved
+MN,Norwood Young America,mn/norwood-young-america,55368,32.0,3849,18.66,approved
+MN,Osseo,mn/osseo,55369,32.0,2584,21.89,approved
+MN,Prior Lake,mn/prior-lake,55372,32.0,,,approved
+MN,Rogers,mn/rogers,55374,32.0,,,approved
+MN,Saint Bonifacius,mn/saint-bonifacius,55375,32.0,1997,22.18,approved
+MN,Savage,mn/savage,55378,32.0,,,approved
+MN,Shakopee,mn/shakopee,55379,32.0,,,approved
+MN,Spring Park,mn/spring-park,55384,32.0,1896,22.18,approved
+MN,Victoria,mn/victoria,55386,32.0,,,approved
+MN,Waconia,mn/waconia,55387,32.0,,,approved
+MN,Watertown,mn/watertown,55388,32.0,,,approved
+MN,Wayzata,mn/wayzata,55391,32.0,4354,17.77,approved
+MN,Young America,mn/young-america,55397,32.0,3849,18.66,approved
+MN,Minneapolis,mn/minneapolis,55413|55419|55423|55441|55455|55416|55454|55437|55436|55447|55409|55427|55434|55439|55428|55448|55402|55405|55407|55411|55418|55438|55450|55442|55431|55404|55403|55412|55425|55401|55435|55406|55444|55421|55422|55449|55424|55417|55430|55415|55429|55426|55433|55443|55445|55414|55410|55432|55420|55408|55446,32.0,,,approved
+MN,Belle Plaine,mn/belle-plaine,56011,32.0,,,approved
+MN,New Prague,mn/new-prague,56071,32.0,,,approved
+IL,Arlington Heights,il/arlington-heights,60004|60005,37.5,,,approved
+IL,Elk Grove Village,il/elk-grove-village,60007,37.5,,,approved
+IL,Rolling Meadows,il/rolling-meadows,60008,37.5,,,approved
+IL,Barrington,il/barrington,60010,37.5,,,approved
+IL,Deerfield,il/deerfield,60015,41.0,,,approved
+IL,Des Plaines,il/des-plaines,60018|60016,37.5,59156,18.42,approved
+IL,Glencoe,il/glencoe,60022,41.0,,,approved
+IL,Glenview,il/glenview,60026|60025,41.0,,,approved
+IL,Golf,il/golf,60029,41.0,518,28.42,priority
+IL,Highland Park,il/highland-park,60035,41.0,,,approved
+IL,Highwood,il/highwood,60040,41.0,5301,21.04,priority
+IL,Island Lake,il/island-lake,60042,37.5,,,approved
+IL,Kenilworth,il/kenilworth,60043,41.0,2503,28.41,priority
+IL,Lake Bluff,il/lake-bluff,60044,41.0,6041,19.97,priority
+IL,Lake Forest,il/lake-forest,60045,41.0,,,approved
+IL,Lake Zurich,il/lake-zurich,60047,37.5,,,approved
+IL,Libertyville,il/libertyville,60048,41.0,,,approved
+IL,Morton Grove,il/morton-grove,60053,41.0,,,approved
+IL,Mount Prospect,il/mount-prospect,60056,37.5,,,approved
+IL,Mundelein,il/mundelein,60060,37.5,,,approved
+IL,Vernon Hills,il/vernon-hills,60061,41.0,,,approved
+IL,Northbrook,il/northbrook,60062,41.0,,,approved
+IL,Palatine,il/palatine,60067|60074,37.5,,,approved
+IL,Park Ridge,il/park-ridge,60068,37.5,,,approved
+IL,Lincolnshire,il/lincolnshire,60069,41.0,7980,17.86,priority
+IL,Prospect Heights,il/prospect-heights,60070,37.5,,,approved
+IL,Skokie,il/skokie,60077|60076,41.0,,,approved
+IL,Wauconda,il/wauconda,60084,37.5,,,approved
+IL,Buffalo Grove,il/buffalo-grove,60089,37.5,,,approved
+IL,Wheeling,il/wheeling,60090,37.5,,,approved
+IL,Wilmette,il/wilmette,60091,41.0,,,approved
+IL,Winnetka,il/winnetka,60093,41.0,,,approved
+IL,Addison,il/addison,60101,37.5,,,approved
+IL,Algonquin,il/algonquin,60102,37.5,,,approved
+IL,Bartlett,il/bartlett,60103,37.5,,,approved
+IL,Bellwood,il/bellwood,60104,37.5,,,approved
+IL,Bensenville,il/bensenville,60106,37.5,,,approved
+IL,Streamwood,il/streamwood,60107,37.5,,,approved
+IL,Bloomingdale,il/bloomingdale,60108,37.5,,,approved
+IL,Elgin,il/elgin,60120,37.5,,,approved
+IL,Elmhurst,il/elmhurst,60126,37.5,,,approved
+IL,Forest Park,il/forest-park,60130,37.5,,,approved
+IL,Franklin Park,il/franklin-park,60131,37.5,,,approved
+IL,Hanover Park,il/hanover-park,60133,37.5,,,approved
+IL,Geneva,il/geneva,60134,37.5,,,approved
+IL,Glen Ellyn,il/glen-ellyn,60137,37.5,,,approved
+IL,Glendale Heights,il/glendale-heights,60139,37.5,,,approved
+IL,Hines,il/hines,60141,37.5,,,approved
+IL,Itasca,il/itasca,60143,37.5,,,approved
+IL,Lombard,il/lombard,60148,37.5,,,approved
+IL,Maywood,il/maywood,60153,37.5,,,approved
+IL,Westchester,il/westchester,60154,37.5,,,approved
+IL,Broadview,il/broadview,60155,37.5,,,approved
+IL,Medinah,il/medinah,60157,37.5,,,approved
+IL,Melrose Park,il/melrose-park,60164|60160,37.5,,,approved
+IL,Hillside,il/hillside,60162,37.5,,,approved
+IL,Berkeley,il/berkeley,60163,37.5,5199,19.39,approved
+IL,Stone Park,il/stone-park,60165,37.5,4482,20.58,approved
+IL,Hoffman Estates,il/hoffman-estates,60169|60192,37.5,,,approved
+IL,River Grove,il/river-grove,60171,37.5,,,approved
+IL,Roselle,il/roselle,60172,37.5,,,approved
+IL,Schaumburg,il/schaumburg,60195|60173|60193|60194,37.5,,,approved
+IL,Saint Charles,il/saint-charles,60174,37.5,,,approved
+IL,Schiller Park,il/schiller-park,60176,37.5,,,approved
+IL,South Elgin,il/south-elgin,60177,37.5,,,approved
+IL,Villa Park,il/villa-park,60181,37.5,,,approved
+IL,Wayne,il/wayne,60184,37.5,2562,25.74,approved
+IL,West Chicago,il/west-chicago,60185,37.5,,,approved
+IL,Wheaton,il/wheaton,60189|60187,37.5,,,approved
+IL,Carol Stream,il/carol-stream,60188,37.5,,,approved
+IL,Winfield,il/winfield,60190,37.5,,,approved
+IL,Wood Dale,il/wood-dale,60191,37.5,,,approved
+IL,Evanston,il/evanston,60202|60201|60203|60208,41.0,76340,19.01,priority
+IL,Oak Park,il/oak-park,60304|60301|60302,37.5,,,approved
+IL,River Forest,il/river-forest,60305,37.5,,,approved
+IL,Berwyn,il/berwyn,60402,37.5,,,approved
+IL,Lemont,il/lemont,60439,37.5,,,approved
+IL,Bolingbrook,il/bolingbrook,60490|60440,37.5,,,approved
+IL,Lockport,il/lockport,60441,37.5,,,approved
+IL,Romeoville,il/romeoville,60446,37.5,,,approved
+IL,Willow Springs,il/willow-springs,60480,37.5,5868,18.48,approved
+IL,Aurora,il/aurora,60504,37.5,,,approved
+IL,Batavia,il/batavia,60510,37.5,,,approved
+IL,Brookfield,il/brookfield,60513,37.5,,,approved
+IL,Clarendon Hills,il/clarendon-hills,60514,37.5,,,approved
+IL,Downers Grove,il/downers-grove,60516|60515,37.5,,,approved
+IL,Woodridge,il/woodridge,60517,37.5,,,approved
+IL,Hinsdale,il/hinsdale,60521,37.5,,,approved
+IL,Oak Brook,il/oak-brook,60523,37.5,,,approved
+IL,La Grange,il/la-grange,60525,37.5,,,approved
+IL,La Grange Park,il/la-grange-park,60526,37.5,,,approved
+IL,Willowbrook,il/willowbrook,60527,37.5,,,approved
+IL,Lisle,il/lisle,60532,37.5,,,approved
+IL,Lyons,il/lyons,60534,37.5,,,approved
+IL,Naperville,il/naperville,60564|60565|60563|60540,37.5,,,approved
+IL,Plainfield,il/plainfield,60544,37.5,,,approved
+IL,Riverside,il/riverside,60546,37.5,,,approved
+IL,Warrenville,il/warrenville,60555,37.5,,,approved
+IL,Western Springs,il/western-springs,60558,37.5,,,approved
+IL,Westmont,il/westmont,60559,37.5,,,approved
+IL,Darien,il/darien,60561,37.5,,,approved
+IL,Chicago,il/chicago,60640|60645|60626|60610|60614|60618|60657|60613|60660|60630|60646|60611|60659|60631|60625,37.5,,,approved
+IL,Lincolnwood,il/lincolnwood,60712,37.5,,,approved
+IL,Niles,il/niles,60714,41.0,,,approved
+MO,Belton,mo/belton,64012,81.5,25008,22.49,priority
+MO,Blue Springs,mo/blue-springs,64014|64015,78.0,59965,29.32,priority
+MO,Buckner,mo/buckner,64016,78.0,2914,50.85,priority
+MO,Farley,mo/farley,64028,78.0,309,54.07,priority
+MO,Grain Valley,mo/grain-valley,64029,78.0,16271,25.56,priority
+MO,Grandview,mo/grandview,64030,78.0,26527,21.02,priority
+MO,Greenwood,mo/greenwood,64034,78.0,6013,38.06,priority
+MO,Independence,mo/independence,64056|64053|64050|64052|64055|64057|64058|64054,78.0,121740,42.7,priority
+MO,Kingsville,mo/kingsville,64061,74.0,360,51.29,priority
+MO,Lees Summit,mo/lees-summit,64065|64082|64086|64063|64064|64081,78.0,103656,35.71,priority
+MO,Levasy,mo/levasy,64066,78.0,104,54.07,priority
+MO,Lone Jack,mo/lone-jack,64070,78.0,1412,54.07,priority
+MO,Oak Grove,mo/oak-grove,64075,78.0,8538,33.08,priority
+MO,Peculiar,mo/peculiar,64078,81.5,5958,39.91,priority
+MO,Platte City,mo/platte-city,64079,78.0,4824,41.57,priority
+MO,Pleasant Hill,mo/pleasant-hill,64080,81.5,8847,34.08,priority
+MO,Raymore,mo/raymore,64083,81.5,24526,22.66,priority
+MO,Sibley,mo/sibley,64088,78.0,369,54.07,priority
+MO,Strasburg,mo/strasburg,64090,81.5,135,56.49,priority
+MO,Waldron,mo/waldron,64092,78.0,,,approved
+MO,Kansas City,mo/kansas-city,64123|64127|64154|64151|64134|64124|64149|64129|64157|64114|64152|64155|64120|64125|64138|64161|64130|64113|64109|64164|64118|64110|64131|64163|64116|64156|64111|64119|64153|64112|64108|64117|64145|64139|64133|64105|64128|64101|64146|64106|64158|64136|64126|64165|64102|64132|64147|64137,78.0,1714910,48.99,priority
+MO,Riverside,mo/riverside,64150,78.0,4276,66.11,priority
+MO,Harrisonville,mo/harrisonville,64701,81.5,9970,32.48,priority
+MO,Adrian,mo/adrian,64720,74.0,1857,51.29,priority
+MO,Archie,mo/archie,64725,81.5,1322,56.49,priority
+MO,Cleveland,mo/cleveland,64734,81.5,968,56.49,priority
+MO,Creighton,mo/creighton,64739,81.5,302,56.49,priority
+MO,Drexel,mo/drexel,64742,81.5,924,56.49,priority
+MO,East Lynne,mo/east-lynne,64743,81.5,155,56.49,priority
+MO,Freeman,mo/freeman,64746,81.5,690,56.49,priority
+MO,Garden City,mo/garden-city,64747,81.5,1742,56.49,priority
+KS,Baldwin City,ks/baldwin-city,66006,74.0,4911,39.15,priority
+KS,Basehor,ks/basehor,66007,75.0,7491,33.52,priority
+KS,Bonner Springs,ks/bonner-springs,66012,78.5,7839,34.45,priority
+KS,Bucyrus,ks/bucyrus,66013,74.0,168,51.29,priority
+KS,De Soto,ks/de-soto,66018,77.5,6414,36.85,priority
+KS,Easton,ks/easton,66020,75.0,299,51.99,priority
+KS,Edgerton,ks/edgerton,66021,77.5,1924,53.72,priority
+KS,Eudora,ks/eudora,66025,74.0,6119,35.86,priority
+KS,Fontana,ks/fontana,66026,74.0,409,51.29,priority
+KS,Fort Leavenworth,ks/fort-leavenworth,66027,75.0,,,approved
+KS,Gardner,ks/gardner,66030,77.5,24526,21.55,priority
+KS,New Century,ks/new-century,66031,77.5,,,approved
+KS,Lansing,ks/lansing,66043,75.0,11246,28.49,priority
+KS,Lawrence,ks/lawrence,66045|66049|66046|66044|66047,74.0,97387,31.13,priority
+KS,Leavenworth,ks/leavenworth,66048,75.0,,,approved
+KS,Lecompton,ks/lecompton,66050,74.0,736,51.29,priority
+KS,Linwood,ks/linwood,66052,75.0,312,51.99,priority
+KS,Louisburg,ks/louisburg,66053,74.0,5094,38.58,priority
+KS,McLouth,ks/mclouth,66054,74.0,864,51.29,priority
+KS,Olathe,ks/olathe,66061|66062,77.5,145057,24.32,priority
+KS,Osawatomie,ks/osawatomie,66064,74.0,4182,41.75,priority
+KS,Ottawa,ks/ottawa,66067,74.0,12678,26.79,priority
+KS,Paola,ks/paola,66071,74.0,5770,36.71,priority
+KS,Perry,ks/perry,66073,74.0,1069,51.29,priority
+KS,Rantoul,ks/rantoul,66079,74.0,130,51.29,priority
+KS,Spring Hill,ks/spring-hill,66083,77.5,9120,32.01,priority
+KS,Stilwell,ks/stilwell,66085,77.5,,,approved
+KS,Tonganoxie,ks/tonganoxie,66086,75.0,5891,36.9,priority
+KS,Wellsville,ks/wellsville,66092,74.0,2216,51.29,priority
+KS,Kansas City,ks/kansas-city,66160|66103|66112|66101|66106|66118|66111|66115|66109|66102|66104|66105,78.5,155135,53,priority
+KS,Mission,ks/mission,66205|66202,77.5,9915,71.12,priority
+KS,Shawnee,ks/shawnee,66218|66216|66203|66217|66226,77.5,68542,41.86,priority
+KS,Overland Park,ks/overland-park,66213|66212|66221|66251|66207|66204|66214|66224|66210|66223,77.5,200306,47.24,priority
+KS,Leawood,ks/leawood,66209|66211|66206,77.5,33809,36.64,priority
+KS,Prairie Village,ks/prairie-village,66208,77.5,22874,22.16,priority
+KS,Lenexa,ks/lenexa,66215|66227|66219|66220,77.5,58384,40.01,priority
+KS,Overbrook,ks/overbrook,66524,81.5,1113,56.49,priority
+TX,Addison,tx/addison,75001,74.0,17290,35.87,priority
+TX,Allen,tx/allen,75013|75002,81.5,110265,18.83,priority
+TX,Carrollton,tx/carrollton,75007|75006|75010,81.5,133740,26.42,priority
+TX,Celina,tx/celina,75009,81.5,34268,19.82,priority
+TX,Coppell,tx/coppell,75019,74.0,42154,25.11,priority
+TX,Flower Mound,tx/flower-mound,75028|75022,81.5,78389,27.53,priority
+TX,Plano,tx/plano,75093|75023|75074|75094|75075|75024|75025,81.5,290594,31.51,priority
+TX,Frisco,tx/frisco,75033|75035|75034,81.5,219304,18.24,priority
+TX,Irving,tx/irving,75061|75060|75038|75063|75062|75039,74.0,256492,35.74,priority
+TX,Garland,tx/garland,75041|75044|75040|75043|75042,74.0,246844,28.45,priority
+TX,Sachse,tx/sachse,75048,74.0,30491,18.86,priority
+TX,Grand Prairie,tx/grand-prairie,75051|75054|75050|75052,81.5,201883,28.58,priority
+TX,The Colony,tx/the-colony,75056,81.5,,,approved
+TX,Lewisville,tx/lewisville,75057|75077|75067,81.5,131080,26.63,priority
+TX,Lake Dallas,tx/lake-dallas,75065,81.5,7822,35.8,priority
+TX,Little Elm,tx/little-elm,75068,81.5,,,approved
+TX,Mckinney,tx/mckinney,75071|75069|75070,81.5,210600,18.54,priority
+TX,Prosper,tx/prosper,75078,81.5,37869,19.05,priority
+TX,Richardson,tx/richardson,75082|75081|75080,81.5,118731,35.34,priority
+TX,Rowlett,tx/rowlett,75088|75089,74.0,65463,26.86,priority
+TX,Wylie,tx/wylie,75098,74.0,,,approved
+TX,Cedar Hill,tx/cedar-hill,75104,74.0,48879,23.67,priority
+TX,Crandall,tx/crandall,75114,74.0,4763,39.64,priority
+TX,Desoto,tx/desoto,75115,74.0,,,approved
+TX,Duncanville,tx/duncanville,75116|75137,74.0,39683,32.81,priority
+TX,Forney,tx/forney,75126,74.0,31532,18.61,priority
+TX,Lancaster,tx/lancaster,75134|75146,74.0,40820,25.44,priority
+TX,Hutchins,tx/hutchins,75141,74.0,7496,33.06,priority
+TX,Kaufman,tx/kaufman,75142,74.0,8538,31.38,priority
+TX,Mesquite,tx/mesquite,75181|75149|75150,74.0,149299,26.24,priority
+TX,Seagoville,tx/seagoville,75159,74.0,19352,22.62,priority
+TX,Terrell,tx/terrell,75161|75160,74.0,20366,33.6,priority
+TX,Josephine,tx/josephine,75164,81.5,5842,40.23,priority
+TX,Lavon,tx/lavon,75166,81.5,6498,38.55,priority
+TX,Wilmer,tx/wilmer,75172,74.0,6391,35.24,priority
+TX,Nevada,tx/nevada,75173,81.5,1319,56.49,priority
+TX,Balch Springs,tx/balch-springs,75180,74.0,27255,19.73,priority
+TX,Sunnyvale,tx/sunnyvale,75182,74.0,8336,31.68,priority
+TX,Dallas,tx/dallas,75233|75238|75208|75231|75205|75254|75225|75223|75241|75234|75202|75201|75253|75227|75204|75240|75247|75232|75219|75251|75210|75203|75244|75252|75246|75236|75218|75209|75211|75230|75215|75248|75212|75214|75217|75216|75224|75287|75207|75235|75220|75229|75226|75261|75243|75270|75249|75237|75206|75228|75390,81.5,5968322,39.65,priority
+TX,Princeton,tx/princeton,75407,81.5,25229,22.41,priority
+TX,Anna,tx/anna,75409,81.5,24330,22.74,priority
+TX,Blue Ridge,tx/blue-ridge,75424,81.5,1104,56.49,priority
+TX,Farmersville,tx/farmersville,75442,81.5,4018,70.82,priority
+TX,Melissa,tx/melissa,75454,81.5,20136,24.52,priority
+TX,Arlington,tx/arlington,76012|76017|76001|76016|76015|76011|76014|76005|76013|76010|76006|76002|76018,81.5,397742,43.51,priority
+TX,Azle,tx/azle,76020,81.5,14126,28.26,priority
+TX,Bedford,tx/bedford,76022|76021,81.5,49085,33.19,priority
+TX,Colleyville,tx/colleyville,76034,81.5,26012,22.14,priority
+TX,Crowley,tx/crowley,76036,81.5,19532,24.82,priority
+TX,Euless,tx/euless,76039|76040,81.5,60421,23.95,priority
+TX,Grapevine,tx/grapevine,76051,81.5,51139,25.6,priority
+TX,Haslet,tx/haslet,76052,81.5,3280,50.68,priority
+TX,Hurst,tx/hurst,76054|76053,81.5,39861,28.29,priority
+TX,Kennedale,tx/kennedale,76060,81.5,9439,33.2,priority
+TX,Mansfield,tx/mansfield,76063,81.5,,,approved
+TX,Southlake,tx/southlake,76092,81.5,31137,20.6,priority
+TX,Fort Worth,tx/fort-worth,76140|76164|76114|76129|76134|76155|76109|76123|76107|76102|76131|76133|76110|76148|76115|76135|76119|76111|76103|76137|76132|76116|76108|76120|76118|76177|76106|76126|76105|76104|76179|76112,81.5,963194,55.23,priority
+TX,Haltom City,tx/haltom-city,76117,81.5,,,approved
+TX,Naval Air Station Jrb,tx/naval-air-station-jrb,76127,81.5,,,approved
+TX,North Richland Hills,tx/north-richland-hills,76180|76182,81.5,70780,28.67,priority
+TX,Denton,tx/denton,76205|76208|76209|76201|76207|76210|76203,81.5,464461,27.82,priority
+TX,Argyle,tx/argyle,76226,81.5,5371,41.6,priority
+TX,Aubrey,tx/aubrey,76227,81.5,7396,36.61,priority
+TX,Keller,tx/keller,76248|76244,81.5,45976,26.72,priority
+TX,Justin,tx/justin,76247,81.5,5447,41.37,priority
+TX,Krum,tx/krum,76249,81.5,6189,39.31,priority
+TX,Pilot Point,tx/pilot-point,76258,81.5,5332,41.73,priority
+TX,Ponder,tx/ponder,76259,81.5,2626,55.39,priority
+TX,Roanoke,tx/roanoke,76262,81.5,10286,32.08,priority
+TX,Sanger,tx/sanger,76266,81.5,9641,32.92,priority
+TX,Florence,tx/florence,76527,78.0,1061,54.07,priority
+TX,Granger,tx/granger,76530,78.0,1046,54.07,priority
+TX,Jarrell,tx/jarrell,76537,78.0,3295,48.41,priority
+TX,Schwertner,tx/schwertner,76573,78.0,,,approved
+TX,Taylor,tx/taylor,76574,78.0,17136,25.03,priority
+TX,Thrall,tx/thrall,76578,78.0,861,54.07,priority
+TX,Houston,tx/houston,77035|77069|77073|77088|77062|77010|77031|77067|77072|77083|77086|77006|77092|77032|77063|77030|77053|77045|77081|77055|77054|77019|77084|77005|77099|77074|77022|77008|77002|77004|77059|77070|77044|77082|77014|77036|77025|77040|77076|77094|77096|77098|77043|77056|77058|77077|77046|77071|77085|77003|77060|77091|77042|77066|77065|77027|77080|77007|77024|77068|77090|77009|77057|77079|77089|77018|77064|77041|77095|77037|77038,36.5,,,approved
+TX,Conroe,tx/conroe,77304|77385|77301|77384,36.5,,,approved
+TX,Huffman,tx/huffman,77336,29.0,,,approved
+TX,Humble,tx/humble,77396|77338|77346,29.0,16521,18.26,approved
+TX,Kingwood,tx/kingwood,77339|77345,29.0,,,approved
+TX,Magnolia,tx/magnolia,77354|77355,29.0,4068,25.08,approved
+TX,Montgomery,tx/montgomery,77356,29.0,2489,20.1,approved
+TX,Pinehurst,tx/pinehurst,77362,29.0,,,approved
+TX,Porter,tx/porter,77365,29.0,987,20.1,approved
+TX,Spring,tx/spring,77381|77373|77382|77386|77379|77389|77380|77388,36.5,68580,23.42,approved
+TX,Tomball,tx/tomball,77377|77375,36.5,13655,19.44,approved
+TX,Bellaire,tx/bellaire,77401,36.5,,,approved
+TX,Richmond,tx/richmond,77469|77406|77407,36.5,12582,25.63,approved
+TX,Beasley,tx/beasley,77417,29.0,999,20.1,approved
+TX,Cypress,tx/cypress,77429|77433,36.5,,,approved
+TX,Fulshear,tx/fulshear,77441,29.0,,,approved
+TX,Guy,tx/guy,77444,29.0,,,approved
+TX,Hockley,tx/hockley,77447,29.0,,,approved
+TX,Katy,tx/katy,77493|77450|77449|77494,36.5,25184,23.07,approved
+TX,Missouri City,tx/missouri-city,77459|77489,36.5,,,approved
+TX,Needville,tx/needville,77461,29.0,3094,18.46,approved
+TX,Rosenberg,tx/rosenberg,77471,29.0,,,approved
+TX,Stafford,tx/stafford,77477,36.5,,,approved
+TX,Sugar Land,tx/sugar-land,77498|77478|77479,36.5,,,approved
+TX,Pasadena,tx/pasadena,77505|77504,29.0,,,approved
+TX,Baytown,tx/baytown,77520|77521,29.0,,,approved
+TX,Deer Park,tx/deer-park,77536,29.0,,,approved
+TX,Fresno,tx/fresno,77545,29.0,,,approved
+TX,La Porte,tx/la-porte,77571,29.0,,,approved
+TX,Seabrook,tx/seabrook,77586,29.0,,,approved
+TX,Buda,tx/buda,78610,74.0,15859,24.5,priority
+TX,Cedar Park,tx/cedar-park,78613,78.0,78301,20.66,priority
+TX,Coupland,tx/coupland,78615,78.0,491,54.07,priority
+TX,Del Valle,tx/del-valle,78617,85.5,,,approved
+TX,Driftwood,tx/driftwood,78619,74.0,28,51.29,priority
+TX,Dripping Springs,tx/dripping-springs,78620,74.0,7405,33.22,priority
+TX,Georgetown,tx/georgetown,78633|78628|78626,78.0,85999,30.17,priority
+TX,Hutto,tx/hutto,78634,78.0,35483,18.71,priority
+TX,Kyle,tx/kyle,78640,74.0,,,approved
+TX,Leander,tx/leander,78641|78645,85.5,74067,29.54,priority
+TX,Liberty Hill,tx/liberty-hill,78642,78.0,8371,33.34,priority
+TX,Manchaca,tx/manchaca,78652,85.5,2171,59.26,priority
+TX,Manor,tx/manor,78653,85.5,18603,26.55,priority
+TX,Pflugerville,tx/pflugerville,78660,85.5,65971,24.26,priority
+TX,Round Rock,tx/round-rock,78664|78681|78665,78.0,127786,29.44,priority
+TX,San Marcos,tx/san-marcos,78666,74.0,72811,20.18,priority
+TX,Spicewood,tx/spicewood,78669,85.5,2735,57.17,priority
+TX,Weir,tx/weir,78674,78.0,434,54.07,priority
+TX,Wimberley,tx/wimberley,78676,74.0,2891,48.4,priority
+TX,Austin,tx/austin,78741|78746|78758|78739|78737|78728|78717|78742|78733|78702|78735|78726|78759|78745|78703|78754|78727|78734|78752|78753|78736|78744|78732|78712|78757|78749|78705|78719|78751|78756|78748|78722|78724|78729|78731|78721|78730|78747|78725|78738|78750|78704|78701|78723,85.5,1940039,53.86,priority
+CO,Arvada,co/arvada,80002|80005|80004|80003|80007,31.0,,,approved
+CO,Aurora,co/aurora,80015|80018|80014|80016|80017|80019|80010|80045|80013|80012|80011,31.0,,,approved
+CO,Broomfield,co/broomfield,80021|80023|80020,31.0,,,approved
+CO,Commerce City,co/commerce-city,80022,31.0,,,approved
+CO,Dupont,co/dupont,80024,31.0,,,approved
+CO,Eldorado Springs,co/eldorado-springs,80025,31.0,320,21.49,approved
+CO,Lafayette,co/lafayette,80026,31.0,,,approved
+CO,Louisville,co/louisville,80027,31.0,,,approved
+CO,Westminster,co/westminster,80031|80030,31.0,,,approved
+CO,Wheat Ridge,co/wheat-ridge,80033,31.0,,,approved
+CO,Castle Rock,co/castle-rock,80108|80104|80109,35.0,,,approved
+CO,Elbert,co/elbert,80106,35.0,164,24.26,approved
+CO,Englewood,co/englewood,80113|80110|80111|80112,31.0,,,approved
+CO,Franktown,co/franktown,80116,35.0,472,24.26,approved
+CO,Larkspur,co/larkspur,80118,35.0,131,24.26,approved
+CO,Littleton,co/littleton,80126|80125|80121|80130|80120|80127|80129|80123|80128|80122,35.0,44710,30.47,approved
+CO,Lone Tree,co/lone-tree,80124,35.0,,,approved
+CO,Louviers,co/louviers,80131,35.0,294,24.26,approved
+CO,Monument,co/monument,80132,35.0,,,approved
+CO,Palmer Lake,co/palmer-lake,80133,35.0,2623,23.8,approved
+CO,Parker,co/parker,80134|80138,35.0,,,approved
+CO,Sedalia,co/sedalia,80135,35.0,37,24.26,approved
+CO,Denver,co/denver,80235|80260|80228|80214|80247|80233|80215|80227|80221|80229|80226|80231|80234|80232,31.0,,,approved
+CO,Thornton,co/thornton,80241,31.0,,,approved
+CO,Boulder,co/boulder,80305|80302|80301|80303|80304,31.0,,,approved
+CO,Golden,co/golden,80403|80419|80401,31.0,20417,17.93,approved
+CO,Buffalo Creek,co/buffalo-creek,80425,31.0,,,approved
+CO,Conifer,co/conifer,80433,31.0,742,21.49,approved
+CO,Evergreen,co/evergreen,80439,31.0,,,approved
+CO,Idledale,co/idledale,80453,31.0,297,21.49,approved
+CO,Indian Hills,co/indian-hills,80454,31.0,986,21.49,approved
+CO,Jamestown,co/jamestown,80455,31.0,324,21.49,approved
+CO,Kittredge,co/kittredge,80457,31.0,812,21.49,approved
+CO,Morrison,co/morrison,80465,31.0,412,21.49,approved
+CO,Nederland,co/nederland,80466,31.0,1655,21.49,approved
+CO,Pine,co/pine,80470,31.0,,,approved
+CO,Pinecliffe,co/pinecliffe,80471,31.0,,,approved
+CO,Ward,co/ward,80481,31.0,103,21.49,approved
+CO,Longmont,co/longmont,80504|80503|80501,31.0,,,approved
+CO,Bellvue,co/bellvue,80512,31.0,,,approved
+CO,Berthoud,co/berthoud,80513,31.0,,,approved
+CO,Dacono,co/dacono,80514,31.0,,,approved
+CO,Drake,co/drake,80515,31.0,,,approved
+CO,Erie,co/erie,80516,31.0,,,approved
+CO,Estes Park,co/estes-park,80517,31.0,,,approved
+CO,Firestone,co/firestone,80520,31.0,,,approved
+CO,Fort Collins,co/fort-collins,80526|80525|80521|80528|80524,31.0,,,approved
+CO,Frederick,co/frederick,80530,31.0,,,approved
+CO,Johnstown,co/johnstown,80534,31.0,,,approved
+CO,Laporte,co/laporte,80535,31.0,1771,21.49,approved
+CO,Livermore,co/livermore,80536,31.0,,,approved
+CO,Loveland,co/loveland,80537|80538,31.0,,,approved
+CO,Lyons,co/lyons,80540,31.0,1838,21.49,approved
+CO,Mead,co/mead,80542,31.0,,,approved
+CO,Milliken,co/milliken,80543,31.0,,,approved
+CO,Red Feather Lakes,co/red-feather-lakes,80545,31.0,365,21.49,approved
+CO,Severance,co/severance,80546,31.0,,,approved
+CO,Timnath,co/timnath,80547,31.0,,,approved
+CO,Wellington,co/wellington,80549,31.0,,,approved
+CO,Windsor,co/windsor,80550,31.0,,,approved
+CO,Brighton,co/brighton,80603|80601|80602,31.0,,,approved
+CO,Ault,co/ault,80610,31.0,2425,21.49,approved
+CO,Carr,co/carr,80612,31.0,,,approved
+CO,Eaton,co/eaton,80615,31.0,,,approved
+CO,Evans,co/evans,80620,31.0,,,approved
+CO,Fort Lupton,co/fort-lupton,80621,31.0,,,approved
+CO,Galeton,co/galeton,80622,31.0,,,approved
+CO,Gill,co/gill,80624,31.0,,,approved
+CO,Greeley,co/greeley,80634|80631,31.0,,,approved
+CO,Henderson,co/henderson,80640,31.0,,,approved
+CO,Hudson,co/hudson,80642,31.0,2006,21.49,approved
+CO,Keenesburg,co/keenesburg,80643,31.0,2347,21.49,approved
+CO,Kersey,co/kersey,80644,31.0,1064,21.49,approved
+CO,La Salle,co/la-salle,80645,31.0,3061,19.82,approved
+CO,Nunn,co/nunn,80648,31.0,358,21.49,approved
+CO,Pierce,co/pierce,80650,31.0,1201,21.49,approved
+CO,Platteville,co/platteville,80651,31.0,2928,20.17,approved
+CO,Calhan,co/calhan,80808,35.0,620,24.26,approved
+CO,Cascade,co/cascade,80809,35.0,1412,24.26,approved
+CO,Fountain,co/fountain,80817,35.0,,,approved
+CO,Green Mountain Falls,co/green-mountain-falls,80819,35.0,459,24.26,approved
+CO,Manitou Springs,co/manitou-springs,80829,35.0,4735,18.79,approved
+CO,Peyton,co/peyton,80831,35.0,139,24.26,approved
+CO,Usaf Academy,co/usaf-academy,80840,35.0,,,approved
+CO,Colorado Springs,co/colorado-springs,80909|80914|80951|80910|80919|80904|80922|80921|80907|80911|80927|80918|80925|80920|80938|80923|80903|80906|80939|80905|80908|80924|80915|80929|80916|80917,35.0,643336,19.03,approved
+AZ,Phoenix,az/phoenix,85085|85042|85051|85032|85043|85009|85031|85054|85027|85086|85021|85024|85022|85006|85029|85034|85023|85018|85050|85083|85037|85004|85045|85014|85015|85003|85044|85008|85007|85013|85016|85040|85053|85048|85041|85012|85019|85028|85035|85033|85020|85017,32.5,,,approved
+AZ,Queen Creek,az/queen-creek,85142,32.5,,,approved
+AZ,Mesa,az/mesa,85210|85202|85212|85213|85203|85206|85209|85208|85207|85201|85204|85205|85215,32.5,,,approved
+AZ,Chandler,az/chandler,85224|85226|85249|85225|85286|85248,32.5,,,approved
+AZ,Gilbert,az/gilbert,85298|85234|85295|85233|85296|85297,32.5,,,approved
+AZ,Scottsdale,az/scottsdale,85254|85260|85256|85257|85266|85250|85259|85255|85258|85251,32.5,,,approved
+AZ,Paradise Valley,az/paradise-valley,85253,32.5,,,approved
+AZ,Fountain Hills,az/fountain-hills,85268,32.5,,,approved
+AZ,Tempe,az/tempe,85282|85283|85284|85281,32.5,,,approved
+AZ,Glendale,az/glendale,85305|85308|85303|85307|85304|85310|85306|85302|85301,32.5,,,approved
+AZ,Luke Air Force Base,az/luke-air-force-base,85309,32.5,,,approved
+AZ,Avondale,az/avondale,85392|85323,32.5,,,approved
+AZ,Cave Creek,az/cave-creek,85331,32.5,,,approved
+AZ,El Mirage,az/el-mirage,85335,32.5,,,approved
+AZ,Goodyear,az/goodyear,85395|85338,32.5,,,approved
+AZ,Laveen,az/laveen,85339,32.5,836,22.53,approved
+AZ,Litchfield Park,az/litchfield-park,85340,32.5,,,approved
+AZ,Peoria,az/peoria,85382|85345|85383|85381,32.5,,,approved
+AZ,Sun City,az/sun-city,85351|85373,32.5,,,approved
+AZ,Tolleson,az/tolleson,85353,32.5,,,approved
+AZ,Waddell,az/waddell,85355,32.5,,,approved
+AZ,Youngtown,az/youngtown,85363,32.5,,,approved
+AZ,Surprise,az/surprise,85378|85379|85388|85374,32.5,,,approved
+AZ,Carefree,az/carefree,85377,32.5,3683,19.29,approved
+CA,Chula Vista,ca/chula-vista,91913|91915|91910,86.0,,,approved
+CA,Carlsbad,ca/carlsbad,92008|92009,86.0,114373,19.58,priority
+CA,Del Mar,ca/del-mar,92014,86.0,3903,49.88,priority
+CA,Encinitas,ca/encinitas,92024,86.0,,,approved
+CA,Escondido,ca/escondido,92026,86.0,,,approved
+CA,La Jolla,ca/la-jolla,92037,86.0,,,approved
+CA,Oceanside,ca/oceanside,92056,86.0,,,approved
+CA,Santee,ca/santee,92071,86.0,,,approved
+CA,Solana Beach,ca/solana-beach,92075,86.0,12823,31,priority
+CA,San Marcos,ca/san-marcos,92078,86.0,,,approved
+CA,Vista,ca/vista,92084,86.0,,,approved
+CA,Rancho Santa Fe,ca/rancho-santa-fe,92091,86.0,2260,59.61,priority
+CA,San Diego,ca/san-diego,92115|92127|92130|92107|92128|92103|92111|92110|92122|92109|92117|92129|92154|92114|92131|92101,86.0,3064435,18.3,priority
+CA,Coronado,ca/coronado,92118,86.0,19015,26.48,priority
+CA,Indio,ca/indio,92201|92203,78.0,,,approved
+CA,Indian Wells,ca/indian-wells,92210,78.0,4871,41.4,priority
+CA,Palm Desert,ca/palm-desert,92211|92260,78.0,51990,24.34,priority
+CA,La Quinta,ca/la-quinta,92253,78.0,38707,18.07,priority
+CA,Rancho Mirage,ca/rancho-mirage,92270,78.0,17563,24.79,priority
+CA,Riverside,ca/riverside,92503|92501,78.0,,,approved
+CA,Murrieta,ca/murrieta,92562|92563,78.0,112064,17.9,priority
+CA,Temecula,ca/temecula,92591|92592|92590,78.0,111167,22.91,priority
+CA,Irvine,ca/irvine,92603,86.0,,,approved
+CA,Laguna Beach,ca/laguna-beach,92651,86.0,22710,24.66,priority
+CA,Newport Beach,ca/newport-beach,92660,86.0,,,approved
+CA,Trabuco Canyon,ca/trabuco-canyon,92679,86.0,1326,59.61,priority
+CA,Mission Viejo,ca/mission-viejo,92692,86.0,,,approved
+CA,Ladera Ranch,ca/ladera-ranch,92694,86.0,23793,24.21,priority
+OR,Beaverton,or/beaverton,97005|97078|97003|97006|97008|97007,36.5,,,approved
+OR,Clackamas,or/clackamas,97015,36.5,,,approved
+OR,Fairview,or/fairview,97024,36.5,,,approved
+OR,Gladstone,or/gladstone,97027,36.5,,,approved
+OR,Gresham,or/gresham,97080|97030,36.5,,,approved
+OR,Lake Oswego,or/lake-oswego,97035|97034,36.5,,,approved
+OR,Oregon City,or/oregon-city,97045,36.5,,,approved
+OR,Troutdale,or/troutdale,97060,36.5,,,approved
+OR,Tualatin,or/tualatin,97062,36.5,,,approved
+OR,West Linn,or/west-linn,97068,36.5,,,approved
+OR,Wilsonville,or/wilsonville,97070,36.5,,,approved
+OR,Happy Valley,or/happy-valley,97086,36.5,,,approved
+OR,Damascus,or/damascus,97089,36.5,,,approved
+OR,Hillsboro,or/hillsboro,97123|97124,36.5,,,approved
+OR,Newberg,or/newberg,97132,36.5,,,approved
+OR,Sherwood,or/sherwood,97140,36.5,,,approved
+OR,Portland,or/portland,97222|97203|97217|97233|97204|97210|97212|97239|97220|97229|97206|97224|97201|97236|97215|97211|97209|97216|97208|97205|97214|97218|97225|97230|97267|97227|97221|97219|97202|97232|97266|97213|97223,36.5,,,approved
+WA,Battle Ground,wa/battle-ground,98604,36.5,,,approved
+WA,Brush Prairie,wa/brush-prairie,98606,36.5,2526,25.2,approved
+WA,Camas,wa/camas,98607,36.5,,,approved
+WA,La Center,wa/la-center,98629,36.5,3883,21.21,approved
+WA,Ridgefield,wa/ridgefield,98642,36.5,,,approved
+WA,Vancouver,wa/vancouver,98660|98661|98663|98686|98665|98664|98685|98682|98662|98684|98683,36.5,195300,18.66,approved
+WA,Washougal,wa/washougal,98671,36.5,,,approved
+WA,Yacolt,wa/yacolt,98675,36.5,1684,25.3,approved

@@ -1,0 +1,105 @@
+---
+import { generateSEO } from '../../utils/seo';
+import Eyebrow from '../ui/Eyebrow.astro';
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  faqs: FAQ[];
+  city?: string;
+  state?: string;
+}
+
+const { eyebrow, faqs, city, state } = Astro.props;
+
+// We do NOT output FAQPage schema here directly to keep head manipulation clean.
+// We'll pass the processed FAQs up, or let the main layout handle the JSON-LD.
+---
+
+{faqs && faqs.length > 0 && (
+  <section class="bg-white py-16 md:py-24 border-b border-gray-100 faq-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto flex flex-col items-center">
+        {eyebrow && <Eyebrow text={eyebrow} centered={true} />}
+        <h2 class="text-3xl md:text-4xl font-heading font-bold uppercase text-brand-charcoal mb-10 text-center tracking-tight w-full">Frequently Asked Questions</h2>
+        <div class="space-y-4 w-full">
+          {faqs.map((faq, index) => {
+            const q = generateSEO(faq.question, { city: city || '', state: state || '' });
+            const a = generateSEO(faq.answer, { city: city || '', state: state || '' });
+            return (
+              <div class="border border-gray-200 rounded-sm overflow-hidden bg-white">
+                <button 
+                  type="button" 
+                  class="faq-button w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-inset hover:bg-brand-alabaster transition-colors"
+                  aria-expanded="false"
+                  aria-controls={`faq-answer-${index}`}
+                  id={`faq-question-${index}`}
+                >
+                  <span class="text-lg font-bold font-sans text-brand-charcoal pr-4">{q}</span>
+                  <span class="faq-icon flex-shrink-0 w-6 h-6 text-brand-accent transition-transform duration-200">
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-6-6h12" />
+                    </svg>
+                  </span>
+                </button>
+                <div 
+                  id={`faq-answer-${index}`} 
+                  role="region" 
+                  aria-labelledby={`faq-question-${index}`} 
+                  class="faq-content hidden px-6 pt-4 pb-6 text-gray-700 font-sans leading-relaxed border-t border-gray-100"
+                >
+                  {a}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+<script>
+  function initFAQs() {
+    const sections = document.querySelectorAll('.faq-section');
+    sections.forEach(section => {
+      const buttons = section.querySelectorAll('.faq-button');
+      buttons.forEach(button => {
+        // Remove existing listeners to prevent duplicates on view transitions
+        button.replaceWith(button.cloneNode(true));
+      });
+      
+      const newButtons = section.querySelectorAll('.faq-button');
+      newButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+          const contentId = button.getAttribute('aria-controls');
+          const content = document.getElementById(contentId);
+          const iconPath = button.querySelector('path');
+          
+          if (!content || !iconPath) return;
+
+          if (expanded) {
+            button.setAttribute('aria-expanded', 'false');
+            content.classList.add('hidden');
+            iconPath.setAttribute('d', 'M12 6v12m-6-6h12'); // Plus
+            button.classList.remove('bg-brand-alabaster');
+          } else {
+            button.setAttribute('aria-expanded', 'true');
+            content.classList.remove('hidden');
+            iconPath.setAttribute('d', 'M20 12H4'); // Minus
+            button.classList.add('bg-brand-alabaster');
+          }
+        });
+      });
+    });
+  }
+
+  // Initialize on load and on Astro view transitions
+  initFAQs();
+  document.addEventListener('astro:page-load', initFAQs);
+</script>

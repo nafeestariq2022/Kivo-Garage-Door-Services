@@ -1,0 +1,123 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LocalizedHero from '../../components/modules/LocalizedHero.astro';
+import SplitContent from '../../components/modules/SplitContent.astro';
+import CommonProblems from '../../components/modules/CommonProblems.astro';
+import ProcessSteps from '../../components/modules/ProcessSteps.astro';
+import WhyItMatters from '../../components/modules/WhyItMatters.astro';
+import RepairVsReplace from '../../components/modules/RepairVsReplace.astro';
+import ServiceGrid from '../../components/modules/ServiceGrid.astro';
+import ServiceAreaContext from '../../components/modules/ServiceAreaContext.astro';
+import FAQSection from '../../components/modules/FAQSection.astro';
+
+export async function getStaticPaths() {
+  const locations = await getCollection('locations');
+  const services = await getCollection('services');
+
+  let activeLocations = locations.filter(loc => loc.data.status === 'priority' || loc.data.status === 'indexable');
+
+  const paths = [];
+
+  for (const location of activeLocations) {
+    for (const service of services) {
+      const citySlug = location.data.slug.split('/')[1];
+      const state = location.data.state.toLowerCase();
+      // Service slug + city slug = URL (e.g., garage-door-repair-doylestown)
+      const slug = `${service.id}-${citySlug}`;
+
+      paths.push({
+        params: { state, slug },
+        props: {
+          location: location.data,
+          service: service.data,
+          serviceId: service.id
+        }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { location, service, serviceId } = Astro.props;
+
+// Process templates
+const pageTitle = service.seo.titleTemplate
+  .replace('{City}', location.city)
+  .replace('{State}', location.state.toUpperCase());
+
+const metaDesc = service.seo.metaDescriptionTemplate
+  .replace('{City}', location.city)
+  .replace('{State}', location.state.toUpperCase());
+
+const h1 = service.seo.h1Template
+  .replace('{City}', location.city)
+  .replace('{State}', location.state.toUpperCase());
+
+const heroSubtitle = service.hero.subtitleTemplate
+  .replace('{City}', location.city)
+  .replace('{State}', location.state.toUpperCase());
+
+// Load the markdown body
+const serviceEntry = await getEntry('services', serviceId);
+const { Content } = await render(serviceEntry);
+
+// Show repair vs replace only if the service is a general repair or replacement
+const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].includes(serviceId);
+---
+
+<BaseLayout title={pageTitle} description={metaDesc}>
+  
+  <LocalizedHero 
+    eyebrow="Local Service Expert"
+    h1Template={service.seo.h1Template}
+    subtitleTemplate={service.hero.subtitleTemplate}
+    imageSrc={service.hero.imageSrc}
+    imageAlt={service.hero.imageAlt}
+    city={location.city}
+    state={location.state}
+  />
+
+  <SplitContent 
+    eyebrow="Local Overview"
+    headline={`Professional ${service.title} in ${location.city}`}
+    imageSrc={service.hero.imageSrc}
+    imageAlt={service.hero.imageAlt}
+    imageRight={false}
+  >
+    <div class="prose prose-lg text-gray-700 font-sans">
+      <Content />
+    </div>
+  </SplitContent>
+
+  {service.commonProblems && service.commonProblems.length > 0 && (
+    <CommonProblems eyebrow="Warning Signs" problems={service.commonProblems} city={location.city} state={location.state.toUpperCase()} />
+  )}
+
+  {service.process && service.process.length > 0 && (
+    <ProcessSteps eyebrow="How It Works" steps={service.process} bg="alabaster" headline={`The ${service.title} Process`} />
+  )}
+
+  {service.benefits && service.benefits.length > 0 && (
+    <WhyItMatters eyebrow="Why It Matters" benefits={service.benefits} bg="white" headline={`Benefits of Professional ${service.title}`} />
+  )}
+
+  {showRepairVsReplace && (
+    <RepairVsReplace eyebrow="Decision Guide" bg="alabaster" />
+  )}
+
+  <ServiceAreaContext 
+    city={location.city}
+    state={location.state.toUpperCase()}
+    zips={location.zips}
+    serviceTitle={service.title}
+  />
+
+  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" subheadline="Comprehensive solutions for every component of your garage door system." />
+
+  {service.faqs && service.faqs.length > 0 && (
+    <FAQSection eyebrow="Service FAQs" faqs={service.faqs} city={location.city} state={location.state.toUpperCase()} />
+  )}
+
+</BaseLayout>

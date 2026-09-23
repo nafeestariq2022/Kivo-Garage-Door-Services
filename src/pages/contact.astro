@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ProcessSteps from '../components/modules/ProcessSteps.astro';
+import CoverageList from '../components/modules/CoverageList.astro';
+import FAQSection from '../components/modules/FAQSection.astro';
+import PhoneCTA from '../components/ui/PhoneCTA.astro';
+
+const genericProcess = [
+  { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
+  { title: "2. Thorough Diagnostic", description: "The technician inspects the door's hardware, balance, and motor to identify the root cause." },
+  { title: "3. Clear Options", description: "You receive a straightforward explanation of the problem and professional recommendations." },
+  { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing." }
+];
+
+const contactFaqs = [
+  { question: "What information should I have ready when I call?", answer: "It is helpful to know if the door is completely stuck, if a spring looks broken, or if the opener motor is making noise. If you know the brand of your opener or door, mention that as well." },
+  { question: "Do you provide emergency service?", answer: "Yes, we dispatch technicians for emergency repairs when your door is stuck open, off-track, or otherwise posing a security risk." },
+  { question: "Can I schedule a new door installation estimate?", answer: "Absolutely. Call our service line and we will arrange a consultation to discuss materials, styles, and measurements for your new garage door." }
+];
+---
+
+<BaseLayout 
+  title="Contact Kivo Garage Door Services | Get Help Now"
+  description="Contact Kivo Garage Door Services for professional repair, emergency service, or new installation. Call now for immediate assistance."
+>
+  <Hero 
+    eyebrow="Get In Touch"
+    headline="CONTACT US."
+    subheadline="Fast, professional garage door repair and installation is just a phone call away."
+    imageSrc="/images/hero_emergency_repair.jpg"
+    imageAlt="Technician servicing a garage door"
+  />
+
+  <section class="py-16 md:py-24 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+        
+        <!-- Phone CTA Column -->
+        <div>
+          <div class="flex items-center gap-4 text-sm font-sans font-medium text-gray-600 uppercase tracking-widest mb-4">
+            <span>Fastest Response</span>
+            <span class="w-2 h-[2px] bg-brand-accent"></span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-charcoal mb-6 uppercase tracking-tight leading-tight">Need Immediate Service?</h2>
+          <p class="text-lg text-gray-700 font-sans leading-relaxed mb-10">The fastest way to get your garage door fixed is to call our dispatch line. We will connect you with a professional technician in your area immediately.</p>
+          <div class="p-8 bg-brand-alabaster rounded-sm border border-gray-200 text-center shadow-sm">
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal mb-6">Call Our Service Line</h3>
+            <PhoneCTA label="Call Now" />
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div>
+          <div class="flex items-center gap-4 text-sm font-sans font-medium text-gray-600 uppercase tracking-widest mb-4">
+            <span>General Inquiries</span>
+            <span class="w-2 h-[2px] bg-brand-accent"></span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-charcoal mb-6 uppercase tracking-tight leading-tight">Send a Message</h2>
+          <p class="text-lg text-gray-700 font-sans leading-relaxed mb-8">For non-urgent inquiries, please fill out the form below and a representative will get back to you.</p>
+          
+          <form class="space-y-6" onsubmit="event.preventDefault(); alert('Form submission is currently disabled. Please call us directly for service.');">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="firstName" class="block text-sm font-bold text-gray-700 font-sans mb-2">First Name</label>
+                <input type="text" id="firstName" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-brand-accent focus:ring-brand-accent p-3 border" required>
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm font-bold text-gray-700 font-sans mb-2">Last Name</label>
+                <input type="text" id="lastName" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-brand-accent focus:ring-brand-accent p-3 border" required>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label for="email" class="block text-sm font-bold text-gray-700 font-sans mb-2">Email Address</label>
+                <input type="email" id="email" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-brand-accent focus:ring-brand-accent p-3 border" required>
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-bold text-gray-700 font-sans mb-2">Phone Number</label>
+                <input type="tel" id="phone" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-brand-accent focus:ring-brand-accent p-3 border" required>
+              </div>
+            </div>
+
+            <div>
+              <label for="serviceType" class="block text-sm font-bold text-gray-700 font-sans mb-2">How can we help?</label>
+              <select id="serviceType" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-brand-accent focus:ring-brand-accent p-3 border">
+                <option>Garage Door Repair</option>
+                <option>Garage Door Replacement</option>
+                <option>New Installation</option>
+                <option>Opener Repair</option>
+                <option>Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="message" class="block text-sm font-bold text-gray-700 font-sans mb-2">Message</label>
+              <textarea id="message" rows="4" class="w-full border-gray-300 rounded-sm shadow-sm focus:border-brand-accent focus:ring-brand-accent p-3 border" required></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-brand-charcoal text-white font-bold font-sans uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-brand-accent transition-colors">
+              Submit Request
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <ProcessSteps eyebrow="The Process" steps={genericProcess} bg="alabaster" headline="What Happens After You Contact Us" />
+
+  <CoverageList eyebrow="Service Areas" />
+
+  <FAQSection eyebrow="Contact FAQs" faqs={contactFaqs} />
+
+</BaseLayout>

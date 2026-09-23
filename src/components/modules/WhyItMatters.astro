@@ -1,0 +1,39 @@
+---
+import Eyebrow from '../ui/Eyebrow.astro';
+
+interface Benefit {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  eyebrow?: string;
+  headline?: string;
+  benefits: Benefit[];
+  bg?: 'white' | 'alabaster';
+}
+
+const { eyebrow, headline = "Why Professional Service Matters", benefits, bg = 'white' } = Astro.props;
+
+const bgClass = bg === 'white' ? 'bg-white' : 'bg-brand-alabaster';
+---
+
+<section class={`py-16 md:py-24 border-b border-gray-100 ${bgClass}`}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-12 max-w-3xl">
+      {eyebrow && <Eyebrow text={eyebrow} />}
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-charcoal uppercase tracking-tight mb-4">{headline}</h2>
+      <p class="text-lg text-gray-600 font-sans leading-relaxed">Addressing garage door issues promptly protects your home, your family, and your schedule.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {benefits.map(benefit => (
+        <div class="flex flex-col">
+          <div class="w-12 h-1 bg-brand-accent mb-4"></div>
+          <h3 class="text-xl font-heading font-bold text-brand-charcoal mb-3">{benefit.title}</h3>
+          <p class="text-gray-700 font-sans leading-relaxed">{benefit.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SplitContent from '../components/modules/SplitContent.astro';
+import WhyItMatters from '../components/modules/WhyItMatters.astro';
+import ProcessSteps from '../components/modules/ProcessSteps.astro';
+import CoverageList from '../components/modules/CoverageList.astro';
+import PhoneCTA from '../components/ui/PhoneCTA.astro';
+
+const genericProcess = [
+  { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
+  { title: "2. Thorough Diagnostic", description: "The technician inspects the door's hardware, balance, and motor to identify the root cause." },
+  { title: "3. Clear Options", description: "You receive a straightforward explanation of the problem and professional recommendations." },
+  { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing." }
+];
+
+const genericBenefits = [
+  { title: "Unwavering Reliability", description: "We partner with professionals who understand that a garage door must work every time you press the button." },
+  { title: "Honest Diagnostics", description: "You get clear explanations of what is broken and why, without unnecessary upselling." },
+  { title: "Safety First", description: "Garage door systems operate under extreme tension. Safety is the priority in every repair." }
+];
+---
+
+<BaseLayout 
+  title="About Kivo Garage Door Services | Our Mission"
+  description="Learn about Kivo Garage Door Services. We connect homeowners with reliable, professional garage door repair and installation experts."
+>
+  <Hero 
+    eyebrow="Who We Are"
+    headline="ABOUT KIVO."
+    subheadline="Connecting homeowners with reliable, professional garage door service when they need it most."
+    imageSrc="/images/hero_installation.jpg"
+    imageAlt="Modern garage door installation"
+  />
+
+  <SplitContent 
+    eyebrow="Our Mission"
+    headline="OUR SERVICE PHILOSOPHY"
+    imageSrc="/images/hero_repair.jpg"
+    imageAlt="Technician inspecting a garage door"
+    imageRight={false}
+  >
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">At Kivo Garage Door Services, we know that a broken garage door is more than just an inconvenience—it disrupts your schedule, traps your vehicles, and compromises the security of your home.</p>
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">Our mission is simple: to connect homeowners with highly trained, professional technicians who diagnose the root cause of the problem and fix it right the first time. We believe in transparent communication, high-quality replacement parts, and rigorous safety testing.</p>
+    <p class="text-gray-700 font-sans leading-relaxed">Whether you need an emergency spring replacement in the middle of the night or a complete aesthetic upgrade for your home's exterior, our network is built to deliver lasting, reliable solutions.</p>
+  </SplitContent>
+
+  <WhyItMatters eyebrow="The Standard" benefits={genericBenefits} bg="alabaster" headline="What You Can Expect" />
+
+  <ProcessSteps eyebrow="How We Work" steps={genericProcess} bg="white" headline="Our Approach" />
+
+  <CoverageList eyebrow="Service Areas" headline="Our Growing Network" />
+
+  <section class="py-24 bg-brand-charcoal text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 flex flex-col items-center">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold uppercase tracking-tight mb-8">Ready to Restore Your Door?</h2>
+      <PhoneCTA label="Call Now for Service" />
+    </div>
+  </section>
+
+</BaseLayout>

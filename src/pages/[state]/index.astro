@@ -1,0 +1,72 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import ServiceGrid from '../../components/modules/ServiceGrid.astro';
+import WhyItMatters from '../../components/modules/WhyItMatters.astro';
+import ProcessSteps from '../../components/modules/ProcessSteps.astro';
+import CoverageList from '../../components/modules/CoverageList.astro';
+import FAQSection from '../../components/modules/FAQSection.astro';
+import PhoneCTA from '../../components/ui/PhoneCTA.astro';
+
+export async function getStaticPaths() {
+  const locations = await getCollection('locations');
+  let activeLocations = locations.filter(loc => loc.data.status === 'priority' || loc.data.status === 'indexable');
+  
+  const states = [...new Set(activeLocations.map(loc => loc.data.state.toLowerCase()))];
+  
+  return states.map(state => {
+    const stateName = state.toUpperCase();
+    return {
+      params: { state },
+      props: { stateName }
+    };
+  });
+}
+
+const { stateName } = Astro.props;
+const { state } = Astro.params;
+
+const stateFaqs = [
+  { question: `Do you provide emergency repair in ${stateName}?`, answer: "Yes, our network covers emergency issues like snapped cables, broken springs, and off-track doors to quickly restore security to your home." },
+  { question: "How quickly can someone look at my door?", answer: "When you call, a professional technician is dispatched as soon as possible based on your specific location and the severity of the issue." },
+  { question: "Are the technicians experienced?", answer: "We connect you with highly trained, professional garage door technicians equipped to handle complex mechanical and electrical failures safely." }
+];
+
+const genericProcess = [
+  { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
+  { title: "2. Thorough Diagnostic", description: "The technician inspects the door's hardware, balance, and motor to identify the root cause." },
+  { title: "3. Clear Options", description: "You receive a straightforward explanation of the problem and professional recommendations." },
+  { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing." }
+];
+
+const genericBenefits = [
+  { title: "Home Security", description: "A broken door is an entry point. Professional service restores your home's defensive perimeter." },
+  { title: "Reliable Access", description: "Stop worrying about your car getting trapped. Get your schedule back on track." },
+  { title: "Property Value", description: "A beautiful, fully functional garage door is one of the highest ROI improvements for your home." }
+];
+---
+
+<BaseLayout 
+  title={`Garage Door Repair & Installation in ${stateName} | Kivo`}
+  description={`Reliable garage door services across ${stateName}. We fix broken springs, off-track doors, and faulty openers. Professional installation and repair.`}
+>
+  <Hero 
+    eyebrow="Local Coverage"
+    headline={`GARAGE DOOR SERVICES IN ${stateName}`}
+    subheadline={`Expert residential garage door repair, replacement, and installation services across ${stateName}. When your door fails, our professional network is ready to help.`}
+    imageSrc="/images/hero_repair.jpg"
+    imageAlt={`Professional garage door technician performing maintenance in ${stateName}`}
+  />
+
+  <ServiceGrid eyebrow="What We Handle" headline="Available Services" subheadline="Comprehensive solutions for every component of your garage door system." />
+
+  <WhyItMatters eyebrow="Why It Matters" benefits={genericBenefits} bg="white" />
+
+  <CoverageList eyebrow={`Service Coverage in ${stateName}`} stateFilter={state} headline={`Areas We Serve`} />
+
+  <ProcessSteps eyebrow="How It Works" steps={genericProcess} bg="white" />
+
+  <FAQSection eyebrow={`FAQ: ${stateName}`} faqs={stateFaqs} />
+
+</BaseLayout>

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-charcoal: #1A1C1E;
+  --color-brand-alabaster: #F9F9F8;
+  --color-brand-accent: #C25934;
+  --color-brand-accent-alt: #D69E2E;
+  --color-brand-surface: #E5E7EB;
+  
+  --font-heading: "Clash Display", "Archivo", sans-serif;
+  --font-sans: "Inter", "DM Sans", sans-serif;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
+  --radius-xl: 0.5rem;
+  --radius-2xl: 0.75rem;
+  --radius-3xl: 1rem;
+  --radius-full: 0.125rem;
+}
+
+body {
+  background-color: var(--color-brand-alabaster);
+  color: var(--color-brand-charcoal);
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,122 @@
+---
+import PhoneCTA from './ui/PhoneCTA.astro';
+
+const navLinks = [
+  { name: 'Services', href: '/services' },
+  { name: 'Locations', href: '/pa' },
+  { name: 'About', href: '/about' }
+];
+---
+<header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm transition-all duration-300" id="site-header">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    
+    <!-- Brand -->
+    <div class="flex-shrink-0 flex items-center">
+      <a href="/" class="text-3xl font-heading font-bold text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm flex items-baseline">
+        KIVO<span class="text-brand-accent">.</span>
+      </a>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center space-x-8 lg:space-x-12" aria-label="Main Navigation">
+      {navLinks.map(link => (
+        <a 
+          href={link.href} 
+          class="text-brand-charcoal font-sans font-medium uppercase tracking-wide text-sm hover:text-brand-accent focus:outline-none focus:text-brand-accent transition-colors py-2"
+        >
+          {link.name}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Desktop CTA -->
+    <div class="hidden md:flex items-center space-x-6">
+      <a href="/contact" class="text-brand-charcoal font-sans font-medium uppercase tracking-wide text-sm hover:text-brand-accent focus:outline-none focus:text-brand-accent transition-colors">
+        Contact
+      </a>
+      <PhoneCTA label="Call for Service" />
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden flex items-center">
+      <button 
+        type="button" 
+        id="mobile-menu-btn"
+        class="text-brand-charcoal p-2 focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm"
+        aria-expanded="false"
+        aria-label="Toggle navigation menu"
+      >
+        <!-- Hamburger Icon -->
+        <svg class="w-7 h-7" id="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <!-- Close Icon (hidden initially) -->
+        <svg class="w-7 h-7 hidden" id="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Panel -->
+  <div class="md:hidden hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-xl z-40" id="mobile-menu">
+    <div class="px-4 pt-4 pb-8 space-y-1">
+      {navLinks.map(link => (
+        <a 
+          href={link.href} 
+          class="block px-3 py-4 text-base font-sans font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster focus:text-brand-accent rounded-sm transition-colors border-b border-gray-100"
+        >
+          {link.name}
+        </a>
+      ))}
+      <a 
+        href="/contact" 
+        class="block px-3 py-4 text-base font-sans font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster focus:text-brand-accent rounded-sm transition-colors border-b border-gray-100 mb-6"
+      >
+        Contact
+      </a>
+      
+      <div class="px-3 pt-4">
+        <PhoneCTA label="Call for Immediate Service" class="w-full justify-center" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  function initNav() {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconMenu = document.getElementById('icon-menu');
+    const iconClose = document.getElementById('icon-close');
+
+    if (!btn || !menu || !iconMenu || !iconClose) return;
+
+    // Clone to remove old event listeners across Astro view transitions
+    const newBtn = btn.cloneNode(true) as HTMLElement;
+    btn.replaceWith(newBtn);
+
+    newBtn.addEventListener('click', () => {
+      const expanded = newBtn.getAttribute('aria-expanded') === 'true';
+      
+      newBtn.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('hidden');
+      iconMenu.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+        newBtn.setAttribute('aria-expanded', 'false');
+        menu.classList.add('hidden');
+        iconMenu.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        newBtn.focus();
+      }
+    });
+  }
+
+  initNav();
+  document.addEventListener('astro:page-load', initNav);
+</script>

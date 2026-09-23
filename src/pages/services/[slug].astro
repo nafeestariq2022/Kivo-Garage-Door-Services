@@ -1,0 +1,80 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import SplitContent from '../../components/modules/SplitContent.astro';
+import CommonProblems from '../../components/modules/CommonProblems.astro';
+import ProcessSteps from '../../components/modules/ProcessSteps.astro';
+import WhyItMatters from '../../components/modules/WhyItMatters.astro';
+import RepairVsReplace from '../../components/modules/RepairVsReplace.astro';
+import ServiceGrid from '../../components/modules/ServiceGrid.astro';
+import CoverageList from '../../components/modules/CoverageList.astro';
+import FAQSection from '../../components/modules/FAQSection.astro';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map(service => ({
+    params: { slug: service.id },
+    props: { service }
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await render(service);
+
+// For national pages, we remove the city/state placeholders
+const pageTitle = service.data.seo.titleTemplate.replace(' in {City}, {State}', '');
+const metaDesc = service.data.seo.metaDescriptionTemplate.replace(' in {City}, {State}', '');
+const h1 = service.data.seo.h1Template.replace(' in {City}, {State}', '');
+const heroSubtitle = service.data.hero.subtitleTemplate.replace(' for homeowners in {City}, {State},', '');
+
+const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].includes(service.id);
+---
+
+<BaseLayout title={pageTitle} description={metaDesc}>
+  
+  <Hero 
+    eyebrow="Specialized Service"
+    headline={h1}
+    subheadline={heroSubtitle}
+    imageSrc={service.data.hero.imageSrc}
+    imageAlt={service.data.hero.imageAlt}
+  />
+
+  <SplitContent 
+    eyebrow="Service Overview"
+    headline={`Professional ${service.data.title}`}
+    imageSrc={service.data.hero.imageSrc}
+    imageAlt={service.data.hero.imageAlt}
+    imageRight={false}
+  >
+    <div class="prose prose-lg text-gray-700 font-sans">
+      <Content />
+    </div>
+  </SplitContent>
+
+  {service.data.commonProblems && service.data.commonProblems.length > 0 && (
+    <CommonProblems eyebrow="Warning Signs" problems={service.data.commonProblems} />
+  )}
+
+  {service.data.process && service.data.process.length > 0 && (
+    <ProcessSteps eyebrow="How It Works" steps={service.data.process} bg="alabaster" headline={`The ${service.data.title} Process`} />
+  )}
+
+  {service.data.benefits && service.data.benefits.length > 0 && (
+    <WhyItMatters eyebrow="Why It Matters" benefits={service.data.benefits} bg="white" headline={`Benefits of Professional ${service.data.title}`} />
+  )}
+
+  {showRepairVsReplace && (
+    <RepairVsReplace eyebrow="Decision Guide" bg="alabaster" />
+  )}
+
+  <CoverageList eyebrow="Service Areas" headline="National Coverage Areas" />
+
+  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" />
+
+  {service.data.faqs && service.data.faqs.length > 0 && (
+    <FAQSection eyebrow="Service FAQs" faqs={service.data.faqs} />
+  )}
+
+</BaseLayout>

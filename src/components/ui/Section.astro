@@ -1,0 +1,12 @@
+---
+interface Props {
+  class?: string;
+  id?: string;
+  bg?: 'alabaster' | 'surface' | 'charcoal';
+}
+const { class: className = '', id, bg = 'alabaster' } = Astro.props;
+const bgClass = bg === 'charcoal' ? 'bg-brand-charcoal text-brand-alabaster' : bg === 'surface' ? 'bg-brand-surface' : 'bg-brand-alabaster';
+---
+<section id={id} class={`py-20 md:py-32 ${bgClass} ${className}`}>
+  <slot />
+</section>

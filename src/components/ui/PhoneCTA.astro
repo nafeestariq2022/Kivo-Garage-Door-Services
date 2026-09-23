@@ -1,0 +1,21 @@
+---
+import Button from './Button.astro';
+import { SITE_CONFIG } from '../../config/site';
+
+interface Props {
+  label?: string;
+  class?: string;
+}
+const { label = "Call for Garage Door Service", class: className = '' } = Astro.props;
+const phone = SITE_CONFIG.phoneNumber;
+const cleanPhone = phone ? phone.replace(/[^\d+]/g, '') : '';
+---
+{phone ? (
+  <Button href={`tel:${cleanPhone}`} variant="secondary" class={className}>
+    {label}: {phone}
+  </Button>
+) : (
+  <Button href="/contact" variant="secondary" class={className}>
+    Request Garage Door Service
+  </Button>
+)}

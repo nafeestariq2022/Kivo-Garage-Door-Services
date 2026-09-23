@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import Eyebrow from '../ui/Eyebrow.astro';
+
+interface Props {
+  eyebrow?: string;
+  headline?: string;
+  subheadline?: string;
+}
+
+const { 
+  eyebrow,
+  headline = "Comprehensive Garage Door Solutions",
+  subheadline = "From emergency repairs to pristine new installations, we provide full-service solutions to protect and enhance your home."
+} = Astro.props;
+
+const services = await getCollection('services');
+---
+
+<section class="py-16 md:py-24 bg-brand-alabaster border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-16">
+      {eyebrow && <Eyebrow text={eyebrow} />}
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-charcoal uppercase tracking-tight mb-4">{headline}</h2>
+      <p class="text-lg text-gray-700 font-sans leading-relaxed">{subheadline}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map(service => (
+        <a href={`/services/#${service.id}`} class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col h-full">
+          <div class="aspect-w-16 aspect-h-9 w-full bg-gray-200 overflow-hidden">
+             <img src={service.data.hero.imageSrc} alt={service.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          </div>
+          <div class="p-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-heading font-bold text-brand-charcoal mb-3 group-hover:text-brand-accent transition-colors">{service.data.title}</h3>
+            <p class="text-gray-600 font-sans leading-relaxed flex-grow">{service.data.shortDescription}</p>
+            <span class="mt-4 inline-flex items-center text-brand-accent font-semibold text-sm uppercase tracking-wide">
+              Learn More <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
