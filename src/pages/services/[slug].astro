@@ -30,6 +30,17 @@ const h1 = service.data.seo.h1Template.replace(' in {City}, {State}', '');
 const heroSubtitle = service.data.hero.subtitleTemplate.replace(' for homeowners in {City}, {State},', '');
 
 const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].includes(service.id);
+
+const overviewImages = {
+  'emergency-garage-door-repair': '/images/split_emergency.jpg',
+  'garage-door-installation': '/images/split_install.jpg',
+  'garage-door-opener-installation': '/images/split_opener_install.jpg',
+  'garage-door-opener-repair': '/images/split_opener_repair.jpg',
+  'garage-door-repair': '/images/hero_homepage.jpg',
+  'garage-door-replacement': '/images/hero_installation.jpg',
+  'garage-door-spring-repair': '/images/hero_emergency_repair.jpg'
+};
+const overviewImage = overviewImages[service.id] || '/images/hero_homepage.jpg';
 ---
 
 <BaseLayout title={pageTitle} description={metaDesc}>
@@ -45,7 +56,7 @@ const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].in
   <SplitContent 
     eyebrow="Service Overview"
     headline={`Professional ${service.data.title}`}
-    imageSrc="/images/hero_homepage.jpg"
+    imageSrc={overviewImage}
     imageAlt={`Beautiful residential garage door`}
     imageRight={false}
   >

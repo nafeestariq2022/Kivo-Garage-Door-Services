@@ -68,6 +68,17 @@ const { Content } = await render(serviceEntry);
 
 // Show repair vs replace only if the service is a general repair or replacement
 const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].includes(serviceId);
+
+const overviewImages = {
+  'emergency-garage-door-repair': '/images/split_emergency.jpg',
+  'garage-door-installation': '/images/split_install.jpg',
+  'garage-door-opener-installation': '/images/split_opener_install.jpg',
+  'garage-door-opener-repair': '/images/split_opener_repair.jpg',
+  'garage-door-repair': '/images/hero_homepage.jpg',
+  'garage-door-replacement': '/images/hero_installation.jpg',
+  'garage-door-spring-repair': '/images/hero_emergency_repair.jpg'
+};
+const overviewImage = overviewImages[serviceId] || '/images/hero_homepage.jpg';
 ---
 
 <BaseLayout title={pageTitle} description={metaDesc}>
@@ -85,7 +96,7 @@ const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].in
   <SplitContent 
     eyebrow="Local Overview"
     headline={`Professional ${service.title} in ${location.city}`}
-    imageSrc="/images/hero_homepage.jpg"
+    imageSrc={overviewImage}
     imageAlt={`Beautiful residential garage door in ${location.city}, ${location.state.toUpperCase()}`}
     imageRight={false}
   >
