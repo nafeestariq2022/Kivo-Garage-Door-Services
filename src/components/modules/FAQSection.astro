@@ -31,16 +31,16 @@ const { eyebrow, faqs, city, state } = Astro.props;
             const q = generateSEO(faq.question, { city: city || '', state: state || '' });
             const a = generateSEO(faq.answer, { city: city || '', state: state || '' });
             return (
-              <div class="bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+              <div class="bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden focus-within:ring-2 focus-within:ring-brand-accent focus-within:ring-offset-2">
                 <button 
                   type="button" 
-                  class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-inset group transition-colors"
+                  class="faq-button w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none group transition-colors"
                   aria-expanded="false"
                   aria-controls={`faq-answer-${index}`}
                   id={`faq-question-${index}`}
                 >
                   <span class="text-xl font-bold font-sans text-brand-charcoal pr-4 group-hover:text-brand-accent transition-colors">{q}</span>
-                  <span class="faq-icon flex-shrink-0 w-10 h-10 bg-brand-alabaster rounded-full flex items-center justify-center text-brand-accent transition-transform duration-300 group-hover:bg-brand-accent/10">
+                  <span class="faq-icon flex-shrink-0 w-10 h-10 bg-brand-alabaster rounded-full flex items-center justify-center text-brand-accent transition-transform duration-300 group-hover:bg-brand-accent/10 group-expanded:rotate-180">
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-6-6h12" />
                     </svg>
@@ -69,7 +69,6 @@ const { eyebrow, faqs, city, state } = Astro.props;
     sections.forEach(section => {
       const buttons = section.querySelectorAll('.faq-button');
       buttons.forEach(button => {
-        // Remove existing listeners to prevent duplicates on view transitions
         button.replaceWith(button.cloneNode(true));
       });
       
@@ -87,12 +86,10 @@ const { eyebrow, faqs, city, state } = Astro.props;
             button.setAttribute('aria-expanded', 'false');
             content.classList.add('hidden');
             iconPath.setAttribute('d', 'M12 6v12m-6-6h12'); // Plus
-            button.classList.remove('bg-brand-alabaster');
           } else {
             button.setAttribute('aria-expanded', 'true');
             content.classList.remove('hidden');
             iconPath.setAttribute('d', 'M20 12H4'); // Minus
-            button.classList.add('bg-brand-alabaster');
           }
         });
       });
