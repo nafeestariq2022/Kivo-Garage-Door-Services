@@ -19,29 +19,60 @@ const { eyebrow, problems, city, state } = Astro.props;
 ---
 
 {problems && problems.length > 0 && (
-  <div class="bg-brand-alabaster py-16 md:py-24 border-t border-gray-200">
-    <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col items-center text-center mb-12">
+  <section class="bg-brand-alabaster py-24 relative overflow-hidden">
+    <!-- Abstract Background Pattern -->
+    <div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(circle at center, #cbd5e1 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="flex flex-col items-center text-center mb-16">
         {eyebrow && <Eyebrow text={eyebrow} centered={true} />}
-        <h2 class="text-3xl md:text-4xl font-heading font-bold uppercase tracking-tight text-brand-charcoal">Common Issues We Address</h2>
+        <h2 class="text-4xl md:text-5xl font-heading font-black uppercase tracking-tight text-brand-charcoal">Common Issues We Address</h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         {problems.map((problem) => (
-          <div class="bg-white p-6 rounded-sm shadow-sm border border-gray-100">
-            <h3 class="text-xl font-bold font-heading text-brand-charcoal mb-3">
-              {generateSEO(problem.title, { city, state })}
-            </h3>
-            <p class="text-gray-700 font-sans leading-relaxed">
-              {generateSEO(problem.description, { city, state })}
-            </p>
+          <div class="bg-white p-10 rounded-[2rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+            <!-- Decorative Accent -->
+            <div class="absolute top-0 left-0 w-2 h-full bg-gray-100 group-hover:bg-brand-accent transition-colors duration-300"></div>
+            
+            <div class="flex items-start gap-5">
+              <div class="flex-shrink-0 mt-1">
+                <div class="w-12 h-12 rounded-full bg-brand-alabaster flex items-center justify-center group-hover:bg-brand-accent/10 transition-colors">
+                  <span class="w-3 h-3 rounded-full bg-brand-accent animate-pulse shadow-[0_0_8px_rgba(239,118,57,0.6)]"></span>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold font-heading text-brand-charcoal mb-4 group-hover:text-brand-accent transition-colors">
+                  {generateSEO(problem.title, { city, state })}
+                </h3>
+                <p class="text-lg text-gray-600 font-sans leading-relaxed">
+                  {generateSEO(problem.description, { city, state })}
+                </p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
-      <div class="mt-12 text-center bg-white p-8 border border-gray-200 shadow-sm rounded-sm max-w-3xl mx-auto">
-        <h3 class="text-2xl font-bold font-heading text-brand-charcoal mb-4">Dealing with one of these issues?</h3>
-        <p class="text-gray-700 font-sans mb-6">Don't risk further damage or compromise your home's security.</p>
-        <PhoneCTA label="Call for Professional Service" class="w-full sm:w-auto justify-center" />
+
+      <!-- Prominent Inline CTA Banner -->
+      <div class="bg-gradient-to-br from-brand-charcoal to-black p-10 md:p-14 rounded-[3rem] shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10 border border-white/10">
+        <!-- Glowing orb -->
+        <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-80 h-80 bg-brand-accent rounded-full filter blur-[100px] opacity-20 pointer-events-none mix-blend-screen animate-pulse"></div>
+        <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-white rounded-full filter blur-[100px] opacity-10 pointer-events-none"></div>
+        
+        <div class="relative z-10 max-w-3xl text-center lg:text-left">
+          <h3 class="text-3xl md:text-4xl font-heading font-black text-white mb-4 uppercase tracking-tight">Dealing with one of these issues?</h3>
+          <p class="text-xl text-gray-400 font-sans">Don't risk further damage or compromise your home's security. Get an expert on-site immediately.</p>
+        </div>
+        
+        <div class="relative z-10 shrink-0 w-full sm:w-auto">
+          <div class="p-2 rounded-full bg-white/10 backdrop-blur-md inline-block w-full sm:w-auto text-center border border-white/10 shadow-2xl hover:bg-white/20 transition-colors">
+            <PhoneCTA label="Call for Professional Service" class="!px-8 !py-4 !shadow-none w-full sm:w-auto justify-center" />
+          </div>
+        </div>
       </div>
+      
     </div>
-  </div>
+  </section>
 )}
