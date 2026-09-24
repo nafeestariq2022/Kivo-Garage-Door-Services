@@ -6,15 +6,21 @@ interface Props {
   eyebrow?: string;
   headline?: string;
   subheadline?: string;
+  currentServiceId?: string;
 }
 
 const { 
   eyebrow,
   headline = "Comprehensive Garage Door Solutions",
-  subheadline = "From emergency repairs to pristine new installations, we provide full-service solutions to protect and enhance your home."
+  subheadline = "From emergency repairs to pristine new installations, we provide full-service solutions to protect and enhance your home.",
+  currentServiceId
 } = Astro.props;
 
-const services = await getCollection('services');
+let services = await getCollection('services');
+
+if (currentServiceId) {
+  services = services.filter(service => service.id !== currentServiceId);
+}
 ---
 
 <section class="py-20 md:py-32 bg-white relative">

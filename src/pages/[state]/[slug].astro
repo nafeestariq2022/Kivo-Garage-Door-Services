@@ -115,7 +115,7 @@ const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].in
     serviceTitle={service.title}
   />
 
-  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" subheadline="Comprehensive solutions for every component of your garage door system." />
+  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" subheadline="Comprehensive solutions for every component of your garage door system." currentServiceId={serviceId} />
 
   {service.faqs && service.faqs.length > 0 && (
     <FAQSection eyebrow="Service FAQs" faqs={service.faqs} city={location.city} state={location.state.toUpperCase()} />

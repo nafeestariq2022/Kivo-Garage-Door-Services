@@ -74,7 +74,7 @@ const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].in
 
   <CoverageList eyebrow="Service Areas" headline="National Coverage Areas" />
 
-  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" />
+  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" currentServiceId={service.id} />
 
   {service.data.faqs && service.data.faqs.length > 0 && (
     <FAQSection eyebrow="Service FAQs" faqs={service.data.faqs} />
