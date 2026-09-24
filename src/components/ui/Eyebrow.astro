@@ -9,7 +9,7 @@ const { text, className = "", centered = false } = Astro.props;
 ---
 
 <div class={`flex items-center gap-4 text-sm font-sans font-medium text-brand-accent uppercase tracking-widest mb-4 ${centered ? 'justify-center' : ''} ${className}`}>
-  {centered && <span class="w-2 h-[2px] bg-brand-accent hidden sm:block"></span>}
+  <span class="w-8 h-[2px] bg-brand-accent"></span>
   <span>{text}</span>
-  <span class="w-2 h-[2px] bg-brand-accent"></span>
+  {centered && <span class="w-8 h-[2px] bg-brand-accent hidden sm:block"></span>}
 </div>

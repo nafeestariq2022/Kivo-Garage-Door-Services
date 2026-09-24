@@ -7,11 +7,11 @@ interface Props {
 }
 const { href, variant = 'primary', class: className = '', type = 'button' } = Astro.props;
 
-const baseStyles = "inline-flex items-center justify-center px-8 py-4 font-sans font-semibold tracking-wide transition-colors duration-200 border-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-charcoal";
+const baseStyles = "inline-flex items-center justify-center px-8 py-4 font-sans font-bold tracking-wide transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 shadow-lg hover:shadow-xl hover:-translate-y-1";
 const variants = {
-  primary: "bg-brand-charcoal text-brand-alabaster border-brand-charcoal hover:bg-brand-accent hover:border-brand-accent",
-  secondary: "bg-brand-accent text-white border-brand-accent hover:bg-brand-charcoal hover:border-brand-charcoal",
-  outline: "bg-transparent text-brand-charcoal border-brand-charcoal hover:bg-brand-charcoal hover:text-brand-alabaster",
+  primary: "bg-brand-charcoal text-white border-2 border-brand-charcoal hover:bg-brand-accent hover:border-brand-accent focus:ring-brand-charcoal",
+  secondary: "bg-brand-accent text-white border-2 border-brand-accent hover:bg-brand-charcoal hover:border-brand-charcoal focus:ring-brand-accent",
+  outline: "bg-white text-brand-charcoal border-2 border-gray-200 hover:border-brand-charcoal hover:bg-brand-charcoal hover:text-white focus:ring-brand-charcoal",
 };
 
 const classes = `${baseStyles} ${variants[variant]} ${className}`;
