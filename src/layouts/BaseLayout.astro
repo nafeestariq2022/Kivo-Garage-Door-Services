@@ -33,7 +33,7 @@ const { title, description, canonical, type, image, noindex } = Astro.props;
       noindex={noindex} 
     />
   </head>
-  <body class="font-sans flex flex-col min-h-screen">
+  <body class="font-sans flex flex-col min-h-screen overflow-x-hidden bg-brand-alabaster">
     <Header />
     <main class="flex-grow">
       <slot />
