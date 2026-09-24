@@ -32,7 +32,9 @@ export async function getStaticPaths() {
         props: {
           location: location.data,
           service: service.data,
-          serviceId: service.id
+          serviceId: service.id,
+          citySlug,
+          stateSlug: state
         }
       });
     }
@@ -41,7 +43,7 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { location, service, serviceId } = Astro.props;
+const { location, service, serviceId, citySlug, stateSlug } = Astro.props;
 
 // Process templates
 const pageTitle = service.seo.titleTemplate
@@ -115,7 +117,7 @@ const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].in
     serviceTitle={service.title}
   />
 
-  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" subheadline="Comprehensive solutions for every component of your garage door system." currentServiceId={serviceId} />
+  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" subheadline="Comprehensive solutions for every component of your garage door system." currentServiceId={serviceId} stateSlug={stateSlug} citySlug={citySlug} />
 
   {service.faqs && service.faqs.length > 0 && (
     <FAQSection eyebrow="Service FAQs" faqs={service.faqs} city={location.city} state={location.state.toUpperCase()} />
