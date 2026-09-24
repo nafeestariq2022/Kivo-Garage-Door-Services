@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { getStateSlug } from '../../utils/stateMap';
 import Eyebrow from '../ui/Eyebrow.astro';
 
 interface Props {
@@ -71,7 +72,7 @@ if (ksIndex !== -1 && txIndex !== -1) {
           <ul class={`grid gap-3 max-h-[28rem] overflow-y-auto pr-2 custom-scrollbar ${states.length === 1 ? 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4' : (isAloneOnDesktop ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1')}`}>
             {grouped[state].map(loc => (
               <li>
-                <a href={`/${loc.data.state.toLowerCase()}/garage-door-repair-${loc.data.slug.split('/')[1]}/`} class="group flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 hover:shadow-md transition-all duration-300 text-gray-300 hover:text-white font-sans font-medium">
+                <a href={`/${getStateSlug(loc.data.state)}/garage-door-repair-${loc.data.slug.split('/')[1]}/`} class="group flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 hover:shadow-md transition-all duration-300 text-gray-300 hover:text-white font-sans font-medium">
                   <span class="flex items-center gap-3">
                     <span class="w-1.5 h-1.5 bg-brand-accent/50 group-hover:bg-brand-accent rounded-full transition-colors"></span>
                     {loc.data.city}

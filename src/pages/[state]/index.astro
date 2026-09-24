@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { getStateSlug } from '../../utils/stateMap';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
 import ServiceGrid from '../../components/modules/ServiceGrid.astro';
@@ -13,18 +14,18 @@ export async function getStaticPaths() {
   const locations = await getCollection('locations');
   let activeLocations = locations.filter(loc => loc.data.status === 'priority' || loc.data.status === 'indexable');
   
-  const states = [...new Set(activeLocations.map(loc => loc.data.state.toLowerCase()))];
+  const states = [...new Set(activeLocations.map(loc => loc.data.state))];
   
-  return states.map(state => {
-    const stateName = state.toUpperCase();
+  return states.map(stateAbbr => {
+    const stateName = stateAbbr.toUpperCase();
     return {
-      params: { state },
-      props: { stateName }
+      params: { state: getStateSlug(stateAbbr) },
+      props: { stateName, stateAbbr }
     };
   });
 }
 
-const { stateName } = Astro.props;
+const { stateName, stateAbbr } = Astro.props;
 const { state } = Astro.params;
 
 const stateFaqs = [
@@ -63,7 +64,7 @@ const genericBenefits = [
 
   <WhyItMatters eyebrow="Why It Matters" benefits={genericBenefits} bg="white" />
 
-  <CoverageList eyebrow={`Service Coverage in ${stateName}`} stateFilter={state} headline={`Areas We Serve`} />
+  <CoverageList eyebrow={`Service Coverage in ${stateName}`} stateFilter={stateAbbr} headline={`Areas We Serve`} />
 
   <ProcessSteps eyebrow="How It Works" steps={genericProcess} bg="white" />
 

@@ -1,5 +1,6 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
+import { getStateSlug } from '../../utils/stateMap';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LocalizedHero from '../../components/modules/LocalizedHero.astro';
 import SplitContent from '../../components/modules/SplitContent.astro';
@@ -22,7 +23,7 @@ export async function getStaticPaths() {
   for (const location of activeLocations) {
     for (const service of services) {
       const citySlug = location.data.slug.split('/')[1];
-      const state = location.data.state.toLowerCase();
+      const state = getStateSlug(location.data.state);
       // Service slug + city slug = URL (e.g., garage-door-repair-doylestown)
       const slug = `${service.id}-${citySlug}`;
 
