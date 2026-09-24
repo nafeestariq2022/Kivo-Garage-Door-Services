@@ -17,26 +17,31 @@ const {
 const services = await getCollection('services');
 ---
 
-<section class="py-16 md:py-24 bg-brand-alabaster border-b border-gray-200">
-  <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl mb-16">
-      {eyebrow && <Eyebrow text={eyebrow} />}
-      <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-charcoal uppercase tracking-tight mb-4">{headline}</h2>
-      <p class="text-lg text-gray-700 font-sans leading-relaxed">{subheadline}</p>
+<section class="py-20 md:py-32 bg-white relative">
+  <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-3xl mx-auto text-center mb-20 flex flex-col items-center">
+      {eyebrow && <Eyebrow text={eyebrow} centered={true} />}
+      <h2 class="text-4xl md:text-5xl font-heading font-black text-brand-charcoal uppercase tracking-tight mb-6">{headline}</h2>
+      <p class="text-lg md:text-xl text-gray-600 font-sans leading-relaxed">{subheadline}</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       {services.map(service => (
-        <a href={`/services/#${service.id}`} class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col h-full">
-          <div class="aspect-video relative w-full bg-gray-200 overflow-hidden">
-             <img src={service.data.hero.imageSrc} alt={service.data.title} class="absolute inset-0 object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        <a href={`/services/#${service.id}`} class="group bg-brand-alabaster rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 flex flex-col h-full">
+          <div class="aspect-[4/3] relative w-full bg-gray-200 overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/60 to-transparent z-10"></div>
+             <img src={service.data.hero.imageSrc} alt={service.data.title} class="absolute inset-0 object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 ease-out" loading="lazy" />
+             <div class="absolute bottom-4 left-6 z-20">
+                <span class="px-3 py-1 bg-brand-accent text-white text-xs font-bold uppercase tracking-wider rounded-full">Service</span>
+             </div>
           </div>
-          <div class="p-6 flex-grow flex flex-col">
-            <h3 class="text-xl font-heading font-bold text-brand-charcoal mb-3 group-hover:text-brand-accent transition-colors">{service.data.title}</h3>
+          <div class="p-8 flex-grow flex flex-col bg-white">
+            <h3 class="text-2xl font-heading font-bold text-brand-charcoal mb-4 group-hover:text-brand-accent transition-colors">{service.data.title}</h3>
             <p class="text-gray-600 font-sans leading-relaxed flex-grow">{service.data.shortDescription}</p>
-            <span class="mt-4 inline-flex items-center text-brand-accent font-semibold text-sm uppercase tracking-wide">
-              Learn More <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </span>
+            <div class="mt-8 flex items-center text-brand-charcoal font-bold text-sm uppercase tracking-wide group-hover:text-brand-accent transition-colors">
+              Explore Details 
+              <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </div>
           </div>
         </a>
       ))}

@@ -14,28 +14,38 @@ interface Props {
 const { eyebrow, headline, subheadline, imageSrc, imageAlt, imageRight = false } = Astro.props;
 ---
 
-<section class="py-16 md:py-24 bg-white border-b border-gray-100">
-  <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-    <div class={`grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start`}>
+<section class="py-20 md:py-32 bg-brand-alabaster relative overflow-hidden">
+  <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class={`grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center`}>
       
-      <div class={`relative rounded-sm overflow-hidden shadow-xl lg:col-span-5 ${imageRight ? 'lg:order-2' : 'lg:order-1'}`}>
-        <div class="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[600px] xl:h-[700px]">
-          <img src={imageSrc} alt={imageAlt} class="absolute lg:static inset-0 object-cover w-full h-full" loading="lazy" />
+      <!-- Image Side -->
+      <div class={`relative lg:col-span-6 ${imageRight ? 'lg:order-2' : 'lg:order-1'}`}>
+        <!-- Decorative blob -->
+        <div class="absolute -top-10 -left-10 w-48 h-48 bg-brand-accent/10 rounded-full blur-3xl z-0"></div>
+        <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-brand-charcoal/10 rounded-full blur-3xl z-0"></div>
+        
+        <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white">
+          <div class="relative w-full aspect-[4/3] lg:aspect-square">
+            <img src={imageSrc} alt={imageAlt} class="absolute inset-0 object-cover w-full h-full hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" />
+          </div>
         </div>
       </div>
 
-      <div class={`flex flex-col justify-start lg:col-span-7 ${imageRight ? 'lg:order-1' : 'lg:order-2'}`}>
+      <!-- Text Side -->
+      <div class={`flex flex-col justify-start lg:col-span-6 ${imageRight ? 'lg:order-1' : 'lg:order-2'}`}>
         {eyebrow && <Eyebrow text={eyebrow} />}
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-charcoal mb-6 uppercase tracking-tight leading-tight">
+        <h2 class="text-4xl md:text-5xl font-heading font-black text-brand-charcoal mb-8 uppercase tracking-tight leading-[1.1]">
           {headline}
         </h2>
         {subheadline && (
-          <p class="text-lg text-gray-700 font-sans leading-relaxed mb-6">
+          <p class="text-lg md:text-xl text-gray-600 font-sans leading-relaxed mb-6">
             {subheadline}
           </p>
         )}
-        <slot />
-        <div class="mt-8">
+        <div class="prose prose-lg prose-p:text-gray-600 prose-p:leading-relaxed max-w-none">
+          <slot />
+        </div>
+        <div class="mt-10">
           <PhoneCTA label="Call for Professional Service" />
         </div>
       </div>
