@@ -1,37 +1,97 @@
 ---
 import PhoneCTA from './ui/PhoneCTA.astro';
 
-const navLinks = [
-  { name: 'Services', href: '/services' },
-  { name: 'Locations', href: '/pa' },
-  { name: 'About', href: '/about' }
+const services = [
+  { name: 'Emergency Garage Door Repair', href: '/services/#emergency-garage-door-repair' },
+  { name: 'General Garage Door Repair', href: '/services/#garage-door-repair' },
+  { name: 'Garage Door Installation', href: '/services/#garage-door-installation' },
+  { name: 'Garage Door Replacement', href: '/services/#garage-door-replacement' },
+  { name: 'Opener Repair', href: '/services/#garage-door-opener-repair' },
+  { name: 'Opener Installation', href: '/services/#garage-door-opener-installation' },
+  { name: 'Spring Repair', href: '/services/#garage-door-spring-repair' },
+];
+
+const locations = [
+  { name: 'Pennsylvania (PA)', href: '/pa/' },
+  { name: 'North Carolina (NC)', href: '/nc/' },
+  { name: 'Indiana (IN)', href: '/in/' },
+  { name: 'California (CA)', href: '/ca/' },
+  { name: 'Texas (TX)', href: '/tx/' },
+  { name: 'Kansas (KS)', href: '/ks/' },
 ];
 ---
-<header class="w-full sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-gray-100/50 shadow-[0_4px_30px_rgba(0,0,0,0.03)] transition-all duration-300" id="site-header">
+
+<header class="w-full sticky top-0 z-[100] bg-white/85 backdrop-blur-xl border-b border-gray-100/50 shadow-[0_4px_30px_rgba(0,0,0,0.03)] transition-all duration-300" id="site-header">
   <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
     
     <!-- Brand -->
-    <div class="flex-shrink-0 flex items-center">
+    <div class="flex-shrink-0 flex items-center z-[101] relative">
       <a href="/" class="text-4xl font-heading font-black text-brand-charcoal focus:outline-none rounded-sm flex items-baseline tracking-tight">
         KIVO<span class="text-brand-accent">.</span>
       </a>
     </div>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center space-x-10 lg:space-x-14" aria-label="Main Navigation">
-      {navLinks.map(link => (
-        <a 
-          href={link.href} 
-          class="group relative text-brand-charcoal font-sans font-bold text-[15px] uppercase tracking-widest hover:text-brand-accent focus:outline-none transition-colors py-2"
-        >
-          {link.name}
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
-        </a>
-      ))}
+    <nav class="hidden lg:flex items-center space-x-10 h-full" aria-label="Main Navigation">
+      
+      <!-- Services Mega Menu -->
+      <div class="group relative h-full flex items-center">
+        <button class="flex items-center gap-1.5 text-brand-charcoal font-sans font-bold text-[15px] uppercase tracking-widest hover:text-brand-accent focus:outline-none transition-colors">
+          Services
+          <svg class="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <!-- Mega Menu Panel -->
+        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white rounded-3xl shadow-2xl border border-gray-100 opacity-0 translate-y-4 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out p-8 grid grid-cols-2 gap-x-12 gap-y-4 pointer-events-none group-hover:pointer-events-auto">
+          <!-- Invisible bridge for hovering -->
+          <div class="absolute -top-6 left-0 w-full h-6"></div>
+          
+          <div class="col-span-2 mb-2 pb-2 border-b border-gray-100">
+            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest">Our Services</h3>
+          </div>
+          {services.map(service => (
+            <a href={service.href} class="text-gray-600 hover:text-brand-accent font-sans font-bold text-sm hover:translate-x-1 transition-transform flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-brand-accent/50 rounded-full flex-shrink-0"></span>
+              {service.name}
+            </a>
+          ))}
+          <div class="col-span-2 mt-4 pt-4 border-t border-gray-100">
+             <a href="/services" class="inline-flex items-center text-brand-accent font-bold text-sm uppercase tracking-wider hover:text-brand-charcoal transition-colors">
+               View All Services <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+             </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Locations Dropdown -->
+      <div class="group relative h-full flex items-center">
+        <button class="flex items-center gap-1.5 text-brand-charcoal font-sans font-bold text-[15px] uppercase tracking-widest hover:text-brand-accent focus:outline-none transition-colors">
+          Locations
+          <svg class="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" /></svg>
+        </button>
+        <!-- Dropdown Panel -->
+        <div class="absolute top-full left-1/2 -translate-x-1/2 w-64 bg-white rounded-3xl shadow-2xl border border-gray-100 opacity-0 translate-y-4 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out p-6 flex flex-col gap-4 pointer-events-none group-hover:pointer-events-auto">
+          <div class="absolute -top-6 left-0 w-full h-6"></div>
+          <div class="mb-2 pb-2 border-b border-gray-100">
+            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest">Service Areas</h3>
+          </div>
+          {locations.map(loc => (
+            <a href={loc.href} class="text-gray-600 hover:text-brand-accent font-sans font-bold text-sm hover:translate-x-1 transition-transform flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-brand-accent/50 rounded-full flex-shrink-0"></span>
+              {loc.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <a href="/about" class="group relative text-brand-charcoal font-sans font-bold text-[15px] uppercase tracking-widest hover:text-brand-accent focus:outline-none transition-colors py-2 flex items-center h-full">
+        About
+        <span class="absolute bottom-[35%] left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
     </nav>
 
     <!-- Desktop CTA -->
-    <div class="hidden md:flex items-center space-x-8">
+    <div class="hidden lg:flex items-center space-x-8 z-[101]">
       <a href="/contact" class="group relative text-gray-500 font-sans font-bold text-[15px] uppercase tracking-widest hover:text-brand-charcoal focus:outline-none transition-colors">
         Contact
         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-charcoal transition-all duration-300 group-hover:w-full"></span>
@@ -40,80 +100,123 @@ const navLinks = [
     </div>
 
     <!-- Mobile Menu Button -->
-    <div class="md:hidden flex items-center">
+    <div class="lg:hidden flex items-center z-[101] relative">
       <button 
         type="button" 
         id="mobile-menu-btn"
-        class="text-brand-charcoal bg-gray-50 hover:bg-gray-100 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2"
+        class="text-brand-charcoal bg-gray-50 hover:bg-gray-100 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2 relative z-50"
         aria-expanded="false"
         aria-label="Toggle navigation menu"
       >
-        <!-- Hamburger Icon -->
-        <svg class="w-6 h-6" id="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 transition-transform duration-300" id="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
-        <!-- Close Icon (hidden initially) -->
-        <svg class="w-6 h-6 hidden" id="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 hidden transition-transform duration-300 rotate-90" id="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     </div>
   </div>
 
-  <!-- Mobile Menu Panel -->
-  <div class="md:hidden hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl z-40" id="mobile-menu">
-    <div class="px-6 pt-4 pb-10 space-y-2">
-      {navLinks.map(link => (
-        <a 
-          href={link.href} 
-          class="block px-4 py-4 text-lg font-heading font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster rounded-2xl transition-all"
-        >
-          {link.name}
-        </a>
-      ))}
-      <a 
-        href="/contact" 
-        class="block px-4 py-4 text-lg font-heading font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster rounded-2xl transition-all mb-8"
-      >
-        Contact
-      </a>
-      
-      <div class="px-4 pt-2 border-t border-gray-100 mt-4">
-        <PhoneCTA label="Call for Immediate Service" class="w-full justify-center !py-4 mt-6" />
-      </div>
+  <!-- Mobile Overlay Backdrop -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-brand-charcoal/40 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-500"></div>
+
+  <!-- Mobile Slide-out Drawer -->
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-[90%] max-w-sm h-[100dvh] bg-white shadow-2xl z-[95] transform translate-x-full transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col overflow-y-auto pt-28 pb-8 px-6 border-l border-gray-100">
+    
+    <div class="flex-grow flex flex-col gap-2">
+      <!-- Services Accordion -->
+      <details class="group bg-gray-50 rounded-2xl overflow-hidden mb-2">
+        <summary class="flex items-center justify-between p-5 text-lg font-heading font-black uppercase tracking-wider text-brand-charcoal cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:text-brand-accent transition-colors">
+          Services
+          <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform duration-300 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </summary>
+        <div class="px-5 pb-5 pt-2 flex flex-col gap-4 border-t border-gray-100">
+          {services.map(service => (
+             <a href={service.href} class="text-sm font-bold font-sans text-gray-600 hover:text-brand-accent transition-colors flex items-center gap-2">
+               <span class="w-1.5 h-1.5 bg-brand-accent/50 rounded-full flex-shrink-0"></span>
+               {service.name}
+             </a>
+          ))}
+          <a href="/services" class="text-sm font-bold font-sans text-brand-accent mt-2 pt-2 border-t border-gray-200">View All Services &rarr;</a>
+        </div>
+      </details>
+
+      <!-- Locations Accordion -->
+      <details class="group bg-gray-50 rounded-2xl overflow-hidden mb-2">
+        <summary class="flex items-center justify-between p-5 text-lg font-heading font-black uppercase tracking-wider text-brand-charcoal cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:text-brand-accent transition-colors">
+          Locations
+          <svg class="w-5 h-5 transform group-open:rotate-180 transition-transform duration-300 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </summary>
+        <div class="px-5 pb-5 pt-2 flex flex-col gap-4 border-t border-gray-100">
+          {locations.map(loc => (
+             <a href={loc.href} class="text-sm font-bold font-sans text-gray-600 hover:text-brand-accent transition-colors flex items-center gap-2">
+               <span class="w-1.5 h-1.5 bg-brand-accent/50 rounded-full flex-shrink-0"></span>
+               {loc.name}
+             </a>
+          ))}
+        </div>
+      </details>
+
+      <a href="/about" class="block p-5 text-lg font-heading font-black uppercase tracking-wider text-brand-charcoal hover:bg-gray-50 rounded-2xl transition-all">About</a>
+      <a href="/contact" class="block p-5 text-lg font-heading font-black uppercase tracking-wider text-brand-charcoal hover:bg-gray-50 rounded-2xl transition-all">Contact</a>
     </div>
+
+    <div class="mt-8 border-t border-gray-100 pt-8">
+       <PhoneCTA label="Call for Immediate Service" class="w-full justify-center !py-4" />
+    </div>
+
   </div>
 </header>
 
 <script>
   function initNav() {
     const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+    const drawer = document.getElementById('mobile-drawer');
     const iconMenu = document.getElementById('icon-menu');
     const iconClose = document.getElementById('icon-close');
 
-    if (!btn || !menu || !iconMenu || !iconClose) return;
+    if (!btn || !overlay || !drawer || !iconMenu || !iconClose) return;
 
     // Clone to remove old event listeners across Astro view transitions
     const newBtn = btn.cloneNode(true) as HTMLElement;
     btn.replaceWith(newBtn);
+    const newOverlay = overlay.cloneNode(true) as HTMLElement;
+    overlay.replaceWith(newOverlay);
 
-    newBtn.addEventListener('click', () => {
+    function toggleMenu() {
       const expanded = newBtn.getAttribute('aria-expanded') === 'true';
+      const isOpening = !expanded;
       
-      newBtn.setAttribute('aria-expanded', String(!expanded));
-      menu.classList.toggle('hidden');
-      iconMenu.classList.toggle('hidden');
-      iconClose.classList.toggle('hidden');
+      newBtn.setAttribute('aria-expanded', String(isOpening));
+      
+      if (isOpening) {
+        // Open
+        newOverlay.classList.remove('opacity-0', 'pointer-events-none');
+        drawer.classList.remove('translate-x-full');
+        iconMenu.classList.add('hidden', '-rotate-90');
+        iconClose.classList.remove('hidden', 'rotate-90');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      } else {
+        // Close
+        newOverlay.classList.add('opacity-0', 'pointer-events-none');
+        drawer.classList.add('translate-x-full');
+        iconMenu.classList.remove('hidden', '-rotate-90');
+        iconClose.classList.add('hidden', 'rotate-90');
+        document.body.style.overflow = '';
+      }
+    }
+
+    newBtn.addEventListener('click', toggleMenu);
+    newOverlay.addEventListener('click', () => {
+       if(newBtn.getAttribute('aria-expanded') === 'true') toggleMenu();
     });
 
     // Close on escape
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
-        newBtn.setAttribute('aria-expanded', 'false');
-        menu.classList.add('hidden');
-        iconMenu.classList.remove('hidden');
-        iconClose.classList.add('hidden');
+      if (e.key === 'Escape' && newBtn.getAttribute('aria-expanded') === 'true') {
+        toggleMenu();
         newBtn.focus();
       }
     });
