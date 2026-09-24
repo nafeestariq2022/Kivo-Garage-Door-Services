@@ -40,26 +40,32 @@ const subtitleText = generateSEO(subtitleTemplate, { city, state });
         <PhoneCTA label="Call for Local Service" />
       </div>
       
-      <!-- Modern Pill Badges -->
-      <div class="mt-12 flex items-center gap-3 text-sm font-sans font-bold text-brand-charcoal flex-wrap">
-        <span class="group flex items-center gap-2.5 px-5 py-2.5 bg-white/60 backdrop-blur-md rounded-full shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 hover:-translate-y-1 hover:bg-white transition-all duration-300">
-          <span class="flex items-center justify-center w-5 h-5 rounded-full bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+      <!-- Unified Trust Bar -->
+      <div class="mt-10 sm:mt-12 inline-flex flex-wrap items-center gap-3 sm:gap-6 px-6 sm:px-8 py-3.5 bg-white rounded-2xl sm:rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100">
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
-          </span>
-          Local Expert
-        </span>
-        <span class="group flex items-center gap-2.5 px-5 py-2.5 bg-white/60 backdrop-blur-md rounded-full shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 hover:-translate-y-1 hover:bg-white transition-all duration-300">
-          <span class="flex items-center justify-center w-5 h-5 rounded-full bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+          </div>
+          <span class="text-sm font-bold text-brand-charcoal tracking-wide">Local Expert</span>
+        </div>
+        
+        <div class="hidden sm:block w-1.5 h-1.5 rounded-full bg-gray-200"></div>
+        
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
-          </span>
-          Same-Day Service
-        </span>
-        <span class="group flex items-center gap-2.5 px-5 py-2.5 bg-white/60 backdrop-blur-md rounded-full shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-white/60 hover:-translate-y-1 hover:bg-white transition-all duration-300">
-          <span class="flex items-center justify-center w-5 h-5 rounded-full bg-brand-accent/10 text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+          </div>
+          <span class="text-sm font-bold text-brand-charcoal tracking-wide">Same-Day Service</span>
+        </div>
+        
+        <div class="hidden sm:block w-1.5 h-1.5 rounded-full bg-gray-200"></div>
+        
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>
-          </span>
-          Guaranteed
-        </span>
+          </div>
+          <span class="text-sm font-bold text-brand-charcoal tracking-wide">Guaranteed</span>
+        </div>
       </div>
     </div>
     
