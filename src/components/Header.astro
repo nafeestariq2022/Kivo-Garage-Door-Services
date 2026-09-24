@@ -7,34 +7,36 @@ const navLinks = [
   { name: 'About', href: '/about' }
 ];
 ---
-<header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm transition-all duration-300" id="site-header">
-  <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<header class="w-full sticky top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-gray-100/50 shadow-[0_4px_30px_rgba(0,0,0,0.03)] transition-all duration-300" id="site-header">
+  <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
     
     <!-- Brand -->
     <div class="flex-shrink-0 flex items-center">
-      <a href="/" class="text-3xl font-heading font-bold text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm flex items-baseline">
+      <a href="/" class="text-4xl font-heading font-black text-brand-charcoal focus:outline-none rounded-sm flex items-baseline tracking-tight">
         KIVO<span class="text-brand-accent">.</span>
       </a>
     </div>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center space-x-8 lg:space-x-12" aria-label="Main Navigation">
+    <nav class="hidden md:flex items-center space-x-10 lg:space-x-14" aria-label="Main Navigation">
       {navLinks.map(link => (
         <a 
           href={link.href} 
-          class="text-brand-charcoal font-sans font-medium uppercase tracking-wide text-sm hover:text-brand-accent focus:outline-none focus:text-brand-accent transition-colors py-2"
+          class="group relative text-brand-charcoal font-sans font-bold text-[15px] uppercase tracking-widest hover:text-brand-accent focus:outline-none transition-colors py-2"
         >
           {link.name}
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
         </a>
       ))}
     </nav>
 
     <!-- Desktop CTA -->
-    <div class="hidden md:flex items-center space-x-6">
-      <a href="/contact" class="text-brand-charcoal font-sans font-medium uppercase tracking-wide text-sm hover:text-brand-accent focus:outline-none focus:text-brand-accent transition-colors">
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="/contact" class="group relative text-gray-500 font-sans font-bold text-[15px] uppercase tracking-widest hover:text-brand-charcoal focus:outline-none transition-colors">
         Contact
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-charcoal transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <PhoneCTA label="Call for Service" />
+      <PhoneCTA label="Call Now" class="!px-6 !py-3 !text-sm !shadow-md hover:!shadow-lg" />
     </div>
 
     <!-- Mobile Menu Button -->
@@ -42,42 +44,42 @@ const navLinks = [
       <button 
         type="button" 
         id="mobile-menu-btn"
-        class="text-brand-charcoal p-2 focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm"
+        class="text-brand-charcoal bg-gray-50 hover:bg-gray-100 p-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2"
         aria-expanded="false"
         aria-label="Toggle navigation menu"
       >
         <!-- Hamburger Icon -->
-        <svg class="w-7 h-7" id="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        <svg class="w-6 h-6" id="icon-menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
         <!-- Close Icon (hidden initially) -->
-        <svg class="w-7 h-7 hidden" id="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        <svg class="w-6 h-6 hidden" id="icon-close" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     </div>
   </div>
 
   <!-- Mobile Menu Panel -->
-  <div class="md:hidden hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-xl z-40" id="mobile-menu">
-    <div class="px-4 pt-4 pb-8 space-y-1">
+  <div class="md:hidden hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl z-40" id="mobile-menu">
+    <div class="px-6 pt-4 pb-10 space-y-2">
       {navLinks.map(link => (
         <a 
           href={link.href} 
-          class="block px-3 py-4 text-base font-sans font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster focus:text-brand-accent rounded-sm transition-colors border-b border-gray-100"
+          class="block px-4 py-4 text-lg font-heading font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster rounded-2xl transition-all"
         >
           {link.name}
         </a>
       ))}
       <a 
         href="/contact" 
-        class="block px-3 py-4 text-base font-sans font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster focus:text-brand-accent rounded-sm transition-colors border-b border-gray-100 mb-6"
+        class="block px-4 py-4 text-lg font-heading font-bold uppercase tracking-wider text-brand-charcoal hover:bg-brand-alabaster hover:text-brand-accent focus:outline-none focus:bg-brand-alabaster rounded-2xl transition-all mb-8"
       >
         Contact
       </a>
       
-      <div class="px-3 pt-4">
-        <PhoneCTA label="Call for Immediate Service" class="w-full justify-center" />
+      <div class="px-4 pt-2 border-t border-gray-100 mt-4">
+        <PhoneCTA label="Call for Immediate Service" class="w-full justify-center !py-4 mt-6" />
       </div>
     </div>
   </div>

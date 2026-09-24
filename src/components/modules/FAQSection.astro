@@ -40,7 +40,7 @@ const { eyebrow, faqs, city, state } = Astro.props;
                   id={`faq-question-${index}`}
                 >
                   <span class="text-xl font-bold font-sans text-brand-charcoal pr-4 group-hover:text-brand-accent transition-colors">{q}</span>
-                  <span class="faq-icon flex-shrink-0 w-10 h-10 bg-brand-alabaster rounded-full flex items-center justify-center text-brand-accent transition-transform duration-300 group-hover:bg-brand-accent/10 group-expanded:rotate-180">
+                  <span class="faq-icon flex-shrink-0 w-10 h-10 bg-brand-alabaster rounded-full flex items-center justify-center text-brand-accent transition-transform duration-300 group-hover:bg-brand-accent/10">
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-6-6h12" />
                     </svg>
@@ -50,9 +50,14 @@ const { eyebrow, faqs, city, state } = Astro.props;
                   id={`faq-answer-${index}`} 
                   role="region" 
                   aria-labelledby={`faq-question-${index}`} 
-                  class="faq-content hidden px-8 pb-8 pt-2 text-gray-600 font-sans leading-relaxed text-lg"
+                  class="faq-content grid transition-[grid-template-rows] duration-300 ease-in-out"
+                  style="grid-template-rows: 0fr;"
                 >
-                  {a}
+                  <div class="overflow-hidden">
+                    <div class="px-8 pb-8 pt-2 text-gray-600 font-sans leading-relaxed text-lg">
+                      {a}
+                    </div>
+                  </div>
                 </div>
               </div>
             );
@@ -78,18 +83,21 @@ const { eyebrow, faqs, city, state } = Astro.props;
           const expanded = button.getAttribute('aria-expanded') === 'true';
           const contentId = button.getAttribute('aria-controls');
           const content = document.getElementById(contentId);
+          const iconContainer = button.querySelector('.faq-icon');
           const iconPath = button.querySelector('path');
           
           if (!content || !iconPath) return;
 
           if (expanded) {
             button.setAttribute('aria-expanded', 'false');
-            content.classList.add('hidden');
+            content.style.gridTemplateRows = '0fr';
             iconPath.setAttribute('d', 'M12 6v12m-6-6h12'); // Plus
+            if(iconContainer) iconContainer.classList.remove('rotate-180');
           } else {
             button.setAttribute('aria-expanded', 'true');
-            content.classList.remove('hidden');
+            content.style.gridTemplateRows = '1fr';
             iconPath.setAttribute('d', 'M20 12H4'); // Minus
+            if(iconContainer) iconContainer.classList.add('rotate-180');
           }
         });
       });
