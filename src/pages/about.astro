@@ -5,7 +5,7 @@ import SplitContent from '../components/modules/SplitContent.astro';
 import WhyItMatters from '../components/modules/WhyItMatters.astro';
 import ProcessSteps from '../components/modules/ProcessSteps.astro';
 import CoverageList from '../components/modules/CoverageList.astro';
-import PhoneCTA from '../components/ui/PhoneCTA.astro';
+import CTASection from '../components/modules/CTASection.astro';
 
 const genericProcess = [
   { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
@@ -45,17 +45,12 @@ const genericBenefits = [
     <p class="text-gray-700 font-sans leading-relaxed">Whether you need an emergency spring replacement in the middle of the night or a complete aesthetic upgrade for your home's exterior, our network is built to deliver lasting, reliable solutions.</p>
   </SplitContent>
 
+  <CTASection headline="Ready to Restore Your Door?" subheadline="Join thousands of homeowners who trust Kivo for their garage door needs." />
+
   <WhyItMatters eyebrow="The Standard" benefits={genericBenefits} bg="alabaster" headline="What You Can Expect" />
 
   <ProcessSteps eyebrow="How We Work" steps={genericProcess} bg="white" headline="Our Approach" />
 
   <CoverageList eyebrow="Service Areas" headline="Our Growing Network" />
-
-  <section class="py-24 bg-brand-charcoal text-white text-center">
-    <div class="max-w-3xl mx-auto px-4 flex flex-col items-center">
-      <h2 class="text-3xl md:text-4xl font-heading font-bold uppercase tracking-tight mb-8">Ready to Restore Your Door?</h2>
-      <PhoneCTA label="Call Now for Service" />
-    </div>
-  </section>
 
 </BaseLayout>

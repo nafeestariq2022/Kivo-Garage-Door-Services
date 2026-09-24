@@ -9,6 +9,7 @@ import RepairVsReplace from '../components/modules/RepairVsReplace.astro';
 import CoverageList from '../components/modules/CoverageList.astro';
 import FAQSection from '../components/modules/FAQSection.astro';
 import PhoneCTA from '../components/ui/PhoneCTA.astro';
+import CTASection from '../components/modules/CTASection.astro';
 
 const genericProcess = [
   { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
@@ -64,6 +65,8 @@ const homeFaqs = [
   <ProcessSteps eyebrow="The Process" steps={genericProcess} bg="white" />
 
   <RepairVsReplace eyebrow="Decision Guide" bg="alabaster" />
+
+  <CTASection headline="Ready to Restore Your Door?" subheadline="Join thousands of homeowners who trust Kivo for their garage door needs." />
 
   <CoverageList eyebrow="Service Coverage" />
 

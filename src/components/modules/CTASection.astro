@@ -1,0 +1,32 @@
+---
+import PhoneCTA from '../ui/PhoneCTA.astro';
+
+interface Props {
+  headline?: string;
+  subheadline?: string;
+}
+
+const { 
+  headline = "Ready to Restore Your Door?", 
+  subheadline = "Our professional technicians are ready to provide fast, reliable service." 
+} = Astro.props;
+---
+
+<section class="py-16 md:py-24 relative px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto z-10">
+  <div class="bg-gradient-to-br from-brand-charcoal to-black rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden shadow-2xl border border-white/10">
+    <!-- Abstract background elements -->
+    <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at center, #ffffff 1px, transparent 1px); background-size: 32px 32px;"></div>
+    <div class="absolute -top-40 -left-40 w-80 h-80 bg-brand-accent rounded-full mix-blend-screen filter blur-[100px] opacity-40 animate-pulse"></div>
+    <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-brand-accent rounded-full mix-blend-screen filter blur-[100px] opacity-20"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-black uppercase tracking-tight text-white mb-6 leading-[1.1]">{headline}</h2>
+      <p class="text-xl text-gray-300 font-sans mb-12 leading-relaxed">{subheadline}</p>
+      
+      <!-- CTA Button Wrapped in a glass ring -->
+      <div class="p-2 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 inline-block shadow-2xl hover:bg-white/10 transition-colors">
+        <PhoneCTA label="Call Now for Service" class="!px-10 !py-5 !text-lg !shadow-none" />
+      </div>
+    </div>
+  </div>
+</section>
