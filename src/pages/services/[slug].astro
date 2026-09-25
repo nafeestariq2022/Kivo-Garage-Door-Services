@@ -81,8 +81,6 @@ const overviewImage = overviewImages[service.id] || '/images/hero_homepage.jpg';
     <RepairVsReplace eyebrow="Decision Guide" bg="alabaster" />
   )}
 
-  <CTASection headline="Ready to Restore Your Door?" subheadline="Join thousands of homeowners who trust Kivo for their garage door needs." />
-
   <CoverageList eyebrow="Service Areas" headline="National Coverage Areas" />
 
   <ServiceGrid eyebrow="More Services" headline="Explore Related Services" currentServiceId={service.id} />
@@ -90,5 +88,7 @@ const overviewImage = overviewImages[service.id] || '/images/hero_homepage.jpg';
   {service.data.faqs && service.data.faqs.length > 0 && (
     <FAQSection eyebrow="Service FAQs" faqs={service.data.faqs} />
   )}
+
+  <CTASection headline="Ready to Restore Your Door?" subheadline="Join thousands of homeowners who trust Kivo for their garage door needs." />
 
 </BaseLayout>

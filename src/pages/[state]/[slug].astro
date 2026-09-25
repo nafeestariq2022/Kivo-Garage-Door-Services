@@ -11,6 +11,7 @@ import RepairVsReplace from '../../components/modules/RepairVsReplace.astro';
 import ServiceGrid from '../../components/modules/ServiceGrid.astro';
 import ServiceAreaContext from '../../components/modules/ServiceAreaContext.astro';
 import FAQSection from '../../components/modules/FAQSection.astro';
+import CTASection from '../../components/modules/CTASection.astro';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
@@ -133,5 +134,7 @@ const overviewImage = overviewImages[serviceId] || '/images/hero_homepage.jpg';
   {service.faqs && service.faqs.length > 0 && (
     <FAQSection eyebrow="Service FAQs" faqs={service.faqs} city={location.city} state={location.state.toUpperCase()} />
   )}
+
+  <CTASection headline={`Ready for Reliable Garage Door Service in ${location.city}?`} subheadline={`Join thousands of homeowners who trust Kivo for their repair and installation needs.`} />
 
 </BaseLayout>

@@ -9,6 +9,7 @@ import ProcessSteps from '../../components/modules/ProcessSteps.astro';
 import CoverageList from '../../components/modules/CoverageList.astro';
 import FAQSection from '../../components/modules/FAQSection.astro';
 import PhoneCTA from '../../components/ui/PhoneCTA.astro';
+import CTASection from '../../components/modules/CTASection.astro';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
@@ -69,5 +70,7 @@ const genericBenefits = [
   <ProcessSteps eyebrow="How It Works" steps={genericProcess} bg="white" />
 
   <FAQSection eyebrow={`FAQ: ${stateName}`} faqs={stateFaqs} />
+
+  <CTASection headline={`Ready for Reliable Garage Door Service in ${stateName}?`} subheadline={`Join thousands of homeowners who trust Kivo for their repair and installation needs.`} />
 
 </BaseLayout>
