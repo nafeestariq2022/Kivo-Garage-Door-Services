@@ -12,15 +12,15 @@ import PhoneCTA from '../components/ui/PhoneCTA.astro';
 import CTASection from '../components/modules/CTASection.astro';
 
 const genericProcess = [
-  { title: "1. Prompt Connection", description: "When you call, you are immediately connected with a verified, local garage door professional in your specific area." },
-  { title: "2. Thorough Diagnostic", description: "Your local technician will inspect your door's hardware, balance, and motor to identify the root mechanical failure." },
-  { title: "3. Clear Solutions", description: "You will receive a straightforward explanation of the problem alongside professional, upfront recommendations for repair." },
+  { title: "1. Prompt Dispatch", description: "When you call, a professional local technician is quickly dispatched to your property to assess the situation." },
+  { title: "2. Thorough Diagnostic", description: "The technician inspects your door's hardware, balance, and motor to identify the root mechanical failure." },
+  { title: "3. Clear Solutions", description: "You receive a straightforward explanation of the problem alongside professional, upfront recommendations for repair." },
   { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing to ensure long-term reliability." }
 ];
 
 const genericBenefits = [
-  { title: "Verified Local Experts", description: "We partner exclusively with experienced, established garage door professionals who understand local building codes and standards." },
-  { title: "Comprehensive Diagnostics", description: "Our network professionals don't just treat symptoms. They identify root mechanical failures to prevent future breakdowns." },
+  { title: "Experienced Professionals", description: "You receive service from established garage door experts who understand local building codes and safety standards." },
+  { title: "Comprehensive Diagnostics", description: "We don't just treat symptoms. Thorough diagnostics identify root mechanical failures to prevent future breakdowns." },
   { title: "Home Security & Value", description: "A broken door is a massive security vulnerability. Prompt professional service restores your home's defensive perimeter and operational value." }
 ];
 
@@ -36,12 +36,12 @@ const homeFaqs = [
 
 <BaseLayout 
   title="Kivo Garage Door Services | Local Repair & Installation Experts"
-  description="Kivo Garage Door Services connects you with trusted local professionals for garage door repair, replacement, and installation. Get reliable help for broken springs and faulty openers today."
+  description="Kivo Garage Door Services provides reliable, professional garage door repair, replacement, and installation. Get expert help for broken springs and faulty openers today."
 >
   <Hero 
-    eyebrow="Your Local Garage Door Network"
+    eyebrow="Your Local Garage Door Experts"
     headline="PROFESSIONAL GARAGE DOOR REPAIR & INSTALLATION"
-    subheadline="A malfunctioning garage door traps your vehicles and compromises your home's security. Kivo Garage Door Services connects you with verified local experts who deliver prompt, permanent solutions to restore your peace of mind."
+    subheadline="A malfunctioning garage door traps your vehicles and compromises your home's security. Kivo Garage Door Services delivers prompt, permanent solutions to restore your peace of mind and get your day back on track."
     imageSrc="/images/hero_homepage.jpg"
     imageAlt="Premium modern dark wood garage door on a luxury suburban home exterior"
   />
@@ -52,27 +52,27 @@ const homeFaqs = [
   />
 
   <SplitContent 
-    eyebrow="The Kivo Network"
-    headline="TRUSTED LOCAL PROFESSIONALS. GUARANTEED EXPERTISE."
-    subheadline="We believe finding a reliable garage door technician shouldn't be a gamble."
+    eyebrow="The Kivo Standard"
+    headline="TRUSTED LOCAL SERVICE. GUARANTEED EXPERTISE."
+    subheadline="We believe your garage door should be the most reliable entry point to your home."
     imageSrc="/images/hero_installation.jpg"
     imageAlt="A pristine modern garage door perfectly installed"
     imageRight={true}
   >
-    <p class="text-gray-700 font-sans leading-relaxed mb-4">When a massive moving wall of metal fails, it is more than a minor inconvenience—it is an immediate safety hazard and a major disruption to your day. Rather than wasting time vetting multiple companies, Kivo simplifies the process by instantly connecting you with established professionals in your area.</p>
-    <p class="text-gray-700 font-sans leading-relaxed mb-4">Our nationwide network focuses on long-term mechanical reliability and structural integrity. Whether you need an emergency torsion spring replacement, a derailed track realigned, or a beautiful new custom door installed, the local technicians we dispatch are equipped to do the job right the first time.</p>
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">When a massive moving wall of metal fails, it is more than a minor inconvenience—it is an immediate safety hazard and a major disruption to your day. We focus on diagnosing the root mechanical failure and providing permanent, reliable solutions so you never have to worry about your door getting stuck again.</p>
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">Our approach prioritizes safety, long-term mechanical reliability, and structural integrity. Whether you need an emergency torsion spring replacement, a derailed track realigned, or a beautiful new custom door installed, you can trust that the job will be done right the first time.</p>
   </SplitContent>
 
   <WhyItMatters 
-    eyebrow="Why Choose Our Network" 
-    headline="The Advantage of Verified Professionals" 
+    eyebrow="Why Choose Kivo" 
+    headline="The Advantage of Professional Service" 
     benefits={genericBenefits} 
     bg="alabaster" 
   />
 
   <ProcessSteps 
     eyebrow="How It Works" 
-    headline="Our Seamless Connection Process" 
+    headline="Our Seamless Service Process" 
     steps={genericProcess} 
     bg="white" 
   />
@@ -84,7 +84,7 @@ const homeFaqs = [
 
   <CTASection 
     headline="Ready for Reliable Garage Door Service?" 
-    subheadline="Join thousands of homeowners who trust the Kivo network for their repair and installation needs." 
+    subheadline="Join thousands of homeowners who trust Kivo for their repair and installation needs." 
   />
 
   <CoverageList eyebrow="Service Areas" />
