@@ -12,16 +12,16 @@ import PhoneCTA from '../components/ui/PhoneCTA.astro';
 import CTASection from '../components/modules/CTASection.astro';
 
 const genericProcess = [
-  { title: "1. Prompt Dispatch", description: "When you call, a professional technician is dispatched to your property to assess the situation." },
-  { title: "2. Thorough Diagnostic", description: "The technician inspects the door's hardware, balance, and motor to identify the root cause." },
-  { title: "3. Clear Options", description: "You receive a straightforward explanation of the problem and professional recommendations." },
-  { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing." }
+  { title: "1. Prompt Connection", description: "When you call, you are immediately connected with a verified, local garage door professional in your specific area." },
+  { title: "2. Thorough Diagnostic", description: "Your local technician will inspect your door's hardware, balance, and motor to identify the root mechanical failure." },
+  { title: "3. Clear Solutions", description: "You will receive a straightforward explanation of the problem alongside professional, upfront recommendations for repair." },
+  { title: "4. Lasting Resolution", description: "The repair or installation is completed using high-quality parts, followed by rigorous safety testing to ensure long-term reliability." }
 ];
 
 const genericBenefits = [
-  { title: "Home Security", description: "A broken door is an entry point. Professional service restores your home's defensive perimeter." },
-  { title: "Reliable Access", description: "Stop worrying about your car getting trapped. Get your schedule back on track." },
-  { title: "Property Value", description: "A beautiful, fully functional garage door is one of the highest ROI improvements for your home." }
+  { title: "Verified Local Experts", description: "We partner exclusively with experienced, established garage door professionals who understand local building codes and standards." },
+  { title: "Comprehensive Diagnostics", description: "Our network professionals don't just treat symptoms. They identify root mechanical failures to prevent future breakdowns." },
+  { title: "Home Security & Value", description: "A broken door is a massive security vulnerability. Prompt professional service restores your home's defensive perimeter and operational value." }
 ];
 
 const homeFaqs = [
@@ -29,47 +29,66 @@ const homeFaqs = [
   { question: "How long do garage door springs last?", answer: "Standard torsion springs are rated for approximately 10,000 cycles (opening and closing). For most households, this translates to about 7 to 10 years of typical use before they inevitably snap." },
   { question: "Can a damaged panel be replaced without buying a new door?", answer: "Yes. If a single panel is dented or damaged, it can often be ordered and swapped out, provided the door model is still being manufactured and the rest of the structure is sound." },
   { question: "Is it dangerous to fix a garage door myself?", answer: "Yes. The springs and cables hold an immense amount of stored kinetic energy. Attempting repairs without the proper tools and training can result in severe injury or property damage." },
-  { question: "How often should I have my garage door serviced?", answer: "We recommend an annual preventative maintenance check. This includes lubricating moving parts, checking the balance, and inspecting cables and springs for wear." },
-  { question: "What should I do if my garage door is off its tracks?", answer: "Stop using the door immediately and disconnect the opener. Attempting to force the door can cause severe damage or injury. Call a professional to safely realign and repair the track system." }
+  { question: "How often should a residential garage door be serviced?", answer: "It is highly recommended to have an annual preventative maintenance check. This includes lubricating moving parts, checking the balance, and inspecting cables and springs for wear." },
+  { question: "What should I do if my garage door comes off its tracks?", answer: "Stop using the door immediately and disconnect the automatic opener. Attempting to force the door can cause severe structural damage. Call for professional service to safely realign the track system." }
 ];
 ---
 
 <BaseLayout 
-  title="Kivo Garage Door Services | Professional Repair & Installation"
-  description="Kivo Garage Door Services provides reliable, professional garage door repair, replacement, and installation. We fix broken springs, off-track doors, and faulty openers."
+  title="Kivo Garage Door Services | Local Repair & Installation Experts"
+  description="Kivo Garage Door Services connects you with trusted local professionals for garage door repair, replacement, and installation. Get reliable help for broken springs and faulty openers today."
 >
   <Hero 
-    eyebrow="Garage Door Experts"
-    headline="RELIABLE REPAIRS. PREMIUM INSTALLATIONS."
-    subheadline="A broken garage door disrupts your day, traps your vehicles, and compromises your home's security. Kivo Garage Door Services delivers comprehensive, professional solutions that restore your peace of mind and elevate your property's exterior."
+    eyebrow="Your Local Garage Door Network"
+    headline="PROFESSIONAL GARAGE DOOR REPAIR & INSTALLATION"
+    subheadline="A malfunctioning garage door traps your vehicles and compromises your home's security. Kivo Garage Door Services connects you with verified local experts who deliver prompt, permanent solutions to restore your peace of mind."
     imageSrc="/images/hero_homepage.jpg"
     imageAlt="Premium modern dark wood garage door on a luxury suburban home exterior"
   />
 
-  <ServiceGrid eyebrow="What We Handle" />
+  <ServiceGrid 
+    eyebrow="Our Service Coverage" 
+    headline="Comprehensive Garage Door Solutions"
+  />
 
   <SplitContent 
-    eyebrow="The Kivo Standard"
-    headline="THE KIVO STANDARD OF EXCELLENCE"
-    subheadline="We believe your garage door should be the most reliable entry point to your home."
+    eyebrow="The Kivo Network"
+    headline="TRUSTED LOCAL PROFESSIONALS. GUARANTEED EXPERTISE."
+    subheadline="We believe finding a reliable garage door technician shouldn't be a gamble."
     imageSrc="/images/hero_installation.jpg"
     imageAlt="A pristine modern garage door perfectly installed"
     imageRight={true}
   >
-    <p class="text-gray-700 font-sans leading-relaxed mb-4">When a massive moving wall of metal fails, it is more than an inconvenience—it is a hazard. We focus on diagnosing the root cause of the failure, not just putting a bandage on the symptom.</p>
-    <p class="text-gray-700 font-sans leading-relaxed mb-4">Our approach prioritizes safety, long-term mechanical reliability, and structural integrity. Whether we are replacing a snapped torsion spring, realigning a derailed track, or installing a beautiful modern door, the work is done right the first time.</p>
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">When a massive moving wall of metal fails, it is more than a minor inconvenience—it is an immediate safety hazard and a major disruption to your day. Rather than wasting time vetting multiple companies, Kivo simplifies the process by instantly connecting you with established professionals in your area.</p>
+    <p class="text-gray-700 font-sans leading-relaxed mb-4">Our nationwide network focuses on long-term mechanical reliability and structural integrity. Whether you need an emergency torsion spring replacement, a derailed track realigned, or a beautiful new custom door installed, the local technicians we dispatch are equipped to do the job right the first time.</p>
   </SplitContent>
 
-  <WhyItMatters eyebrow="Why It Matters" benefits={genericBenefits} bg="alabaster" />
+  <WhyItMatters 
+    eyebrow="Why Choose Our Network" 
+    headline="The Advantage of Verified Professionals" 
+    benefits={genericBenefits} 
+    bg="alabaster" 
+  />
 
-  <ProcessSteps eyebrow="The Process" steps={genericProcess} bg="white" />
+  <ProcessSteps 
+    eyebrow="How It Works" 
+    headline="Our Seamless Connection Process" 
+    steps={genericProcess} 
+    bg="white" 
+  />
 
-  <RepairVsReplace eyebrow="Decision Guide" bg="alabaster" />
+  <RepairVsReplace 
+    eyebrow="Decision Guide" 
+    bg="alabaster" 
+  />
 
-  <CTASection headline="Ready to Restore Your Door?" subheadline="Join thousands of homeowners who trust Kivo for their garage door needs." />
+  <CTASection 
+    headline="Ready for Reliable Garage Door Service?" 
+    subheadline="Join thousands of homeowners who trust the Kivo network for their repair and installation needs." 
+  />
 
-  <CoverageList eyebrow="Service Coverage" />
+  <CoverageList eyebrow="Service Areas" />
 
-  <FAQSection eyebrow="Common Questions" faqs={homeFaqs} />
+  <FAQSection eyebrow="Homeowner Questions" faqs={homeFaqs} />
 
 </BaseLayout>
