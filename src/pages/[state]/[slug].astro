@@ -1,6 +1,8 @@
 ---
-import { getCollection, getEntry, render } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import { getStateSlug } from '../../utils/stateMap';
+import { parseSpintax, applySpintaxToObj, createRNG } from '../../utils/spintax';
+import { marked } from 'marked';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LocalizedHero from '../../components/modules/LocalizedHero.astro';
 import SplitContent from '../../components/modules/SplitContent.astro';
@@ -32,7 +34,7 @@ export async function getStaticPaths() {
         params: { state, slug },
         props: {
           location: location.data,
-          service: service.data,
+          rawService: service.data,
           serviceId: service.id,
           citySlug,
           stateSlug: state
@@ -44,7 +46,12 @@ export async function getStaticPaths() {
   return paths;
 }
 
-const { location, service, serviceId, citySlug, stateSlug } = Astro.props;
+const { location, rawService, serviceId, citySlug, stateSlug } = Astro.props;
+
+// Use the city+state+service as a deterministic seed
+const seed = `${location.city}-${location.state}-${serviceId}`;
+const rng = createRNG(seed);
+const service = applySpintaxToObj(rawService, rng);
 
 // Process templates
 const pageTitle = service.seo.titleTemplate
@@ -63,9 +70,10 @@ const heroSubtitle = service.hero.subtitleTemplate
   .replace('{City}', location.city)
   .replace('{State}', location.state.toUpperCase());
 
-// Load the markdown body
+// Load and parse the markdown body dynamically with spintax
 const serviceEntry = await getEntry('services', serviceId);
-const { Content } = await render(serviceEntry);
+const spunBody = parseSpintax(serviceEntry.body, rng);
+const spunHtml = marked.parse(spunBody);
 
 // Show repair vs replace only if the service is a general repair or replacement
 const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].includes(serviceId);
@@ -101,9 +109,7 @@ const overviewImage = overviewImages[serviceId] || '/images/hero_homepage.jpg';
     imageAlt={`Beautiful residential garage door in ${location.city}, ${location.state.toUpperCase()}`}
     imageRight={false}
   >
-    <div class="prose prose-lg text-gray-700 font-sans">
-      <Content />
-    </div>
+    <div class="prose prose-lg text-gray-700 font-sans" set:html={spunHtml}></div>
   </SplitContent>
 
   {service.commonProblems && service.commonProblems.length > 0 && (

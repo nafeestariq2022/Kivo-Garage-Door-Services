@@ -19,7 +19,13 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.6.2",
     "astro": "^7.3.4",
+    "marked": "^18.0.14",
+    "seedrandom": "^3.0.5",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.2",
+    "@types/seedrandom": "^3.0.8"
   }
 }
