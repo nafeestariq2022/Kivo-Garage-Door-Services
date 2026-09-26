@@ -14,7 +14,8 @@ export function parseSpintax(text: string, rng: any): string {
   let result = text;
   
   // Regex to match innermost spintax blocks that contain at least one pipe: {opt1|opt2}
-  const regex = /\{([^{}]+\|[^{}]+)\}/g;
+  // We use * instead of + to support empty options like {|B} or {A|}
+  const regex = /\{([^{}]*\|[^{}]*)\}/g;
   
   // Iterate until no more spintax blocks are found (handles nesting)
   while (regex.test(result)) {
@@ -41,6 +42,10 @@ export function applySpintaxToObj<T>(obj: T, rng: any): T {
   }
   
   if (obj !== null && typeof obj === 'object') {
+    // Preserve non-plain objects (like Date)
+    if (obj instanceof Date) return obj as any;
+    if (obj.constructor !== Object) return obj;
+
     const newObj: any = {};
     // Sort keys to guarantee deterministic order of RNG stream consumption
     const keys = Object.keys(obj).sort();

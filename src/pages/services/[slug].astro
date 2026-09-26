@@ -1,5 +1,7 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
+import { parseSpintax, applySpintaxToObj, createRNG } from '../../utils/spintax';
+import { marked } from 'marked';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
 import SplitContent from '../../components/modules/SplitContent.astro';
@@ -16,20 +18,26 @@ export async function getStaticPaths() {
   const services = await getCollection('services');
   return services.map(service => ({
     params: { slug: service.id },
-    props: { service }
+    props: { serviceEntry: service }
   }));
 }
 
-const { service } = Astro.props;
-const { Content } = await render(service);
+const { serviceEntry } = Astro.props;
+
+// Use the service ID as a deterministic seed for national pages
+const rng = createRNG(`national-${serviceEntry.id}`);
+const service = applySpintaxToObj(serviceEntry.data, rng);
+
+const spunBody = parseSpintax(serviceEntry.body, rng);
+const spunHtml = marked.parse(spunBody);
 
 // For national pages, we remove the city/state placeholders
-const pageTitle = service.data.seo.titleTemplate.replace(' in {City}, {State}', '');
-const metaDesc = service.data.seo.metaDescriptionTemplate.replace(' in {City}, {State}', '');
-const h1 = service.data.seo.h1Template.replace(' in {City}, {State}', '');
-const heroSubtitle = service.data.hero.subtitleTemplate.replace(' for homeowners in {City}, {State},', '');
+const pageTitle = service.seo.titleTemplate.replace(' in {City}, {State}', '');
+const metaDesc = service.seo.metaDescriptionTemplate.replace(' in {City}, {State}', '');
+const h1 = service.seo.h1Template.replace(' in {City}, {State}', '');
+const heroSubtitle = service.hero.subtitleTemplate.replace(' for homeowners in {City}, {State},', '');
 
-const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].includes(service.id);
+const showRepairVsReplace = ['garage-door-repair', 'garage-door-replacement'].includes(serviceEntry.id);
 
 const overviewImages = {
   'emergency-garage-door-repair': '/images/split_emergency.jpg',
@@ -40,7 +48,7 @@ const overviewImages = {
   'garage-door-replacement': '/images/hero_installation.jpg',
   'garage-door-spring-repair': '/images/hero_emergency_repair.jpg'
 };
-const overviewImage = overviewImages[service.id] || '/images/hero_homepage.jpg';
+const overviewImage = overviewImages[serviceEntry.id] || '/images/hero_homepage.jpg';
 ---
 
 <BaseLayout title={pageTitle} description={metaDesc}>
@@ -49,32 +57,30 @@ const overviewImage = overviewImages[service.id] || '/images/hero_homepage.jpg';
     eyebrow="Specialized Service"
     headline={h1}
     subheadline={heroSubtitle}
-    imageSrc={service.data.hero.imageSrc}
-    imageAlt={service.data.hero.imageAlt}
+    imageSrc={service.hero.imageSrc}
+    imageAlt={service.hero.imageAlt}
   />
 
   <SplitContent 
     eyebrow="Service Overview"
-    headline={`Professional ${service.data.title}`}
+    headline={`Professional ${service.title}`}
     imageSrc={overviewImage}
     imageAlt={`Beautiful residential garage door`}
     imageRight={false}
   >
-    <div class="prose prose-lg text-gray-700 font-sans">
-      <Content />
-    </div>
+    <div class="prose prose-lg text-gray-700 font-sans" set:html={spunHtml}></div>
   </SplitContent>
 
-  {service.data.commonProblems && service.data.commonProblems.length > 0 && (
-    <CommonProblems eyebrow="Warning Signs" problems={service.data.commonProblems} />
+  {service.commonProblems && service.commonProblems.length > 0 && (
+    <CommonProblems eyebrow="Warning Signs" problems={service.commonProblems} />
   )}
 
-  {service.data.process && service.data.process.length > 0 && (
-    <ProcessSteps eyebrow="How It Works" steps={service.data.process} bg="alabaster" headline={`The ${service.data.title} Process`} />
+  {service.process && service.process.length > 0 && (
+    <ProcessSteps eyebrow="How It Works" steps={service.process} bg="alabaster" headline={`The ${service.title} Process`} />
   )}
 
-  {service.data.benefits && service.data.benefits.length > 0 && (
-    <WhyItMatters eyebrow="Why It Matters" benefits={service.data.benefits} bg="white" headline={`Benefits of Professional ${service.data.title}`} />
+  {service.benefits && service.benefits.length > 0 && (
+    <WhyItMatters eyebrow="Why It Matters" benefits={service.benefits} bg="white" headline={`Benefits of Professional ${service.title}`} />
   )}
 
   {showRepairVsReplace && (
@@ -83,10 +89,10 @@ const overviewImage = overviewImages[service.id] || '/images/hero_homepage.jpg';
 
   <CoverageList eyebrow="Service Areas" headline="National Coverage Areas" />
 
-  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" currentServiceId={service.id} />
+  <ServiceGrid eyebrow="More Services" headline="Explore Related Services" currentServiceId={serviceEntry.id} />
 
-  {service.data.faqs && service.data.faqs.length > 0 && (
-    <FAQSection eyebrow="Service FAQs" faqs={service.data.faqs} />
+  {service.faqs && service.faqs.length > 0 && (
+    <FAQSection eyebrow="Service FAQs" faqs={service.faqs} />
   )}
 
   <CTASection headline="Ready to Restore Your Door?" subheadline="Join thousands of homeowners who trust Kivo for their garage door needs." />
