@@ -15,11 +15,9 @@ const categories = [...new Set(sortedPosts.map(post => post.data.category))];
   title="Garage Door Repair Guides & Resources | Kivo"
   description="Read expert garage door repair guides, troubleshooting tips, and maintenance advice from the professionals at Kivo Garage Door Services."
 >
-  <div class="bg-gray-900 border-b border-gray-800">
-    <Breadcrumbs crumbs={[
-      { label: 'Blog' }
-    ]} />
-  </div>
+  <Breadcrumbs crumbs={[
+    { label: 'Blog' }
+  ]} />
 
   <section class="bg-gray-900 pt-16 pb-20 border-b-8 border-kivo-green">
     <div class="container mx-auto px-4 text-center">
