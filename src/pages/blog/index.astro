@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Hero from '../../components/Hero.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import CTASection from '../../components/modules/CTASection.astro';
 
 const posts = await getCollection('blog');
@@ -15,7 +15,13 @@ const categories = [...new Set(sortedPosts.map(post => post.data.category))];
   title="Garage Door Repair Guides & Resources | Kivo"
   description="Read expert garage door repair guides, troubleshooting tips, and maintenance advice from the professionals at Kivo Garage Door Services."
 >
-  <section class="bg-gray-900 pt-32 pb-20 border-b-8 border-kivo-green">
+  <div class="bg-gray-900 border-b border-gray-800">
+    <Breadcrumbs crumbs={[
+      { label: 'Blog' }
+    ]} />
+  </div>
+
+  <section class="bg-gray-900 pt-16 pb-20 border-b-8 border-kivo-green">
     <div class="container mx-auto px-4 text-center">
       <div class="max-w-3xl mx-auto">
         <p class="text-kivo-green text-sm font-bold font-sans uppercase tracking-widest mb-4">Resource Center</p>
