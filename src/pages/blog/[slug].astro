@@ -1,0 +1,232 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTASection from '../../components/modules/CTASection.astro';
+import PhoneCTA from '../../components/ui/PhoneCTA.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+
+// Fetch author data for E-E-A-T
+const author = await getEntry('authors', post.data.author);
+
+// Build BreadcrumbList schema
+const siteUrl = 'https://kivogaragedoorservices.com';
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteUrl
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": `${siteUrl}/blog`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": post.data.title,
+      "item": `${siteUrl}/blog/${post.id}`
+    }
+  ]
+};
+
+// Build Article Schema
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "image": post.data.image ? `${siteUrl}${post.data.image}` : `${siteUrl}/images/hero_homepage.jpg`,
+  "author": author ? {
+    "@type": "Person",
+    "name": author.data.name,
+    "url": `${siteUrl}/authors/${author.id}`
+  } : {
+    "@type": "Organization",
+    "name": "Kivo Garage Door Services"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kivo Garage Door Services",
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${siteUrl}/images/logo.png`
+    }
+  },
+  "datePublished": post.data.pubDate.toISOString(),
+  "dateModified": post.data.pubDate.toISOString()
+};
+
+// Open Graph / Twitter Meta
+const ogMeta = [
+  { property: "og:type", content: "article" },
+  { property: "og:title", content: post.data.title },
+  { property: "og:description", content: post.data.description },
+  { property: "og:url", content: `${siteUrl}/blog/${post.id}` },
+  { property: "og:image", content: post.data.image ? `${siteUrl}${post.data.image}` : `${siteUrl}/images/hero_homepage.jpg` },
+  { name: "twitter:card", content: "summary_large_image" },
+  { name: "twitter:title", content: post.data.title },
+  { name: "twitter:description", content: post.data.description },
+  { name: "twitter:image", content: post.data.image ? `${siteUrl}${post.data.image}` : `${siteUrl}/images/hero_homepage.jpg` }
+];
+---
+
+<BaseLayout 
+  title={`${post.data.title} | Kivo`}
+  description={post.data.description}
+  extraMeta={ogMeta}
+>
+  <!-- Inject Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
+
+  <!-- Hero Area -->
+  <section class="bg-gray-900 text-white pt-32 pb-20 border-b-8 border-kivo-green">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <!-- Breadcrumbs -->
+        <nav class="flex text-sm text-gray-400 mb-8 font-sans font-bold uppercase tracking-wider" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-2 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="/" class="hover:text-white transition-colors">Home</a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <span class="mx-2 text-kivo-green">/</span>
+                <a href="/blog" class="hover:text-white transition-colors">Blog</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <span class="mx-2 text-kivo-green">/</span>
+                <span class="text-gray-200">{post.data.category}</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-black uppercase tracking-tight mb-8 leading-tight">
+          {post.data.title}
+        </h1>
+
+        <div class="flex items-center space-x-4">
+          {author && (
+            <a href={`/authors/${author.id}`} class="flex items-center group">
+              <img src={author.data.image} alt={author.data.name} class="w-12 h-12 rounded-full object-cover border-2 border-kivo-green group-hover:scale-105 transition-transform" />
+              <div class="ml-4">
+                <p class="text-white font-bold font-sans group-hover:text-kivo-green transition-colors">{author.data.name}</p>
+                <p class="text-gray-400 text-sm font-sans">{author.data.role}</p>
+              </div>
+            </a>
+          )}
+          {!author && (
+            <div class="flex items-center">
+              <div class="ml-4">
+                <p class="text-white font-bold font-sans">Kivo Editorial Team</p>
+                <p class="text-gray-400 text-sm font-sans">Garage Door Experts</p>
+              </div>
+            </div>
+          )}
+          <div class="h-8 w-px bg-gray-700 mx-4 hidden sm:block"></div>
+          <p class="text-gray-400 text-sm font-sans font-bold uppercase tracking-wider hidden sm:block">
+            {post.data.pubDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row max-w-7xl mx-auto gap-12 lg:gap-20">
+        
+        <!-- Main Article -->
+        <article class="flex-grow max-w-3xl">
+          <!-- Featured Image -->
+          {post.data.image && (
+            <div class="mb-12 aspect-w-16 aspect-h-9 w-full">
+              <img src={post.data.image} alt={post.data.imageAlt || post.data.title} class="object-cover w-full h-full" />
+            </div>
+          )}
+
+          <!-- Prose Content -->
+          <div class="prose prose-lg prose-headings:font-heading prose-headings:font-black prose-headings:uppercase prose-headings:tracking-tight prose-h2:text-3xl prose-h3:text-2xl prose-a:text-kivo-green prose-a:no-underline hover:prose-a:underline prose-li:marker:text-kivo-green text-gray-700 font-sans max-w-none">
+            <Content />
+          </div>
+
+          <!-- Author Box Bottom -->
+          {author && (
+            <div class="mt-16 p-8 bg-alabaster border-l-4 border-kivo-green flex flex-col sm:flex-row items-center sm:items-start gap-6">
+              <img src={author.data.image} alt={author.data.name} class="w-24 h-24 rounded-full object-cover shadow-md" />
+              <div>
+                <h3 class="text-2xl font-heading font-black text-gray-900 uppercase tracking-tight mb-2">About {author.data.name}</h3>
+                <p class="text-gray-700 mb-4">{author.data.shortBio}</p>
+                <a href={`/authors/${author.id}`} class="text-kivo-green font-bold uppercase tracking-wider hover:underline flex items-center text-sm">
+                  Read Full Bio
+                  <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          )}
+        </article>
+
+        <!-- Sidebar / Sticky Column -->
+        <aside class="w-full lg:w-80 flex-shrink-0">
+          <div class="sticky top-8 space-y-8">
+            
+            <!-- Table of Contents -->
+            {headings.length > 0 && (
+              <div class="bg-alabaster p-6 border border-gray-200">
+                <h3 class="text-xl font-heading font-black text-gray-900 uppercase tracking-tight mb-4 pb-4 border-b border-gray-300">In This Guide</h3>
+                <ul class="space-y-3">
+                  {headings.map(heading => (
+                    <li class={`font-sans text-sm ${heading.depth > 2 ? 'ml-4' : 'font-bold text-gray-900'}`}>
+                      <a href={`#${heading.slug}`} class="text-gray-600 hover:text-kivo-green transition-colors">
+                        {heading.text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <!-- Pinned CTA (Required by SEO Strategy) -->
+            <div class="bg-gray-900 p-8 text-center text-white border-b-4 border-kivo-green">
+              <h3 class="text-2xl font-heading font-black uppercase tracking-tight mb-4">Need a Pro?</h3>
+              <p class="text-gray-300 font-sans mb-6 text-sm">Don't risk further damage. Our technicians are ready to dispatch.</p>
+              <PhoneCTA 
+                phoneNumber="1-800-555-0199" 
+                className="w-full bg-kivo-green text-gray-900 font-black hover:bg-white hover:text-kivo-green" 
+                label="Call Now" 
+              />
+            </div>
+
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Inline CTAs handled manually in MD, or bottom CTA here -->
+  <CTASection headline="Looking for Professional Service?" subheadline="Contact Kivo Garage Door Services today for prompt, reliable repairs." />
+
+</BaseLayout>

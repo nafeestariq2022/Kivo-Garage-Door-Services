@@ -57,7 +57,33 @@ const locations = defineCollection({
   }),
 });
 
+const authors = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/authors" }),
+  schema: z.object({
+    name: z.string(),
+    role: z.string(),
+    image: z.string(),
+    shortBio: z.string(),
+    linkedin: z.string().url().optional(),
+  }),
+});
+
+const blog = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.date(),
+    author: z.string(), // references an author slug
+    category: z.string(), // corresponds to C-Node
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+  }),
+});
+
 export const collections = {
   locations,
   services,
+  authors,
+  blog,
 };

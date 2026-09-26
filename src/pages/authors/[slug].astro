@@ -1,0 +1,100 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTASection from '../../components/modules/CTASection.astro';
+
+export async function getStaticPaths() {
+  const authors = await getCollection('authors');
+  return authors.map(author => ({
+    params: { slug: author.id },
+    props: { author },
+  }));
+}
+
+const { author } = Astro.props;
+const { Content } = await render(author);
+
+const allPosts = await getCollection('blog');
+const authorPosts = allPosts.filter(post => post.data.author === author.id).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Person Schema
+const siteUrl = 'https://kivogaragedoorservices.com';
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": author.data.name,
+  "jobTitle": author.data.role,
+  "image": `${siteUrl}${author.data.image}`,
+  "url": `${siteUrl}/authors/${author.id}`,
+  "sameAs": author.data.linkedin ? [author.data.linkedin] : []
+};
+---
+
+<BaseLayout 
+  title={`${author.data.name}, ${author.data.role} | Kivo Authors`}
+  description={author.data.shortBio}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)}></script>
+
+  <!-- Author Header -->
+  <section class="bg-gray-900 pt-32 pb-20 border-b-8 border-kivo-green">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
+        <img src={author.data.image} alt={author.data.name} class="w-48 h-48 rounded-full object-cover border-4 border-kivo-green shadow-xl" />
+        <div class="text-center md:text-left text-white mt-4 md:mt-0">
+          <h1 class="text-4xl md:text-5xl font-heading font-black uppercase tracking-tight mb-2">{author.data.name}</h1>
+          <p class="text-kivo-green text-xl font-bold font-sans uppercase tracking-widest mb-6">{author.data.role}</p>
+          <div class="prose prose-lg text-gray-300 font-sans prose-p:leading-relaxed">
+            <Content />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles by Author -->
+  <section class="py-20 bg-alabaster">
+    <div class="container mx-auto px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-heading font-black text-gray-900 uppercase tracking-tight">Articles by {author.data.name}</h2>
+          <div class="ml-6 flex-grow h-px bg-gray-300"></div>
+        </div>
+
+        {authorPosts.length === 0 ? (
+          <p class="text-gray-600 font-sans text-lg">No articles published yet.</p>
+        ) : (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {authorPosts.map(post => (
+              <a href={`/blog/${post.id}`} class="group flex flex-col bg-white border border-gray-200 hover:border-kivo-green transition-colors duration-300">
+                {post.data.image ? (
+                  <div class="aspect-w-16 aspect-h-9 overflow-hidden border-b border-gray-200">
+                    <img src={post.data.image} alt={post.data.imageAlt || post.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                ) : (
+                  <div class="aspect-w-16 aspect-h-9 bg-gray-100 border-b border-gray-200 flex items-center justify-center">
+                    <span class="text-gray-400 font-heading font-bold text-xl uppercase">Kivo Guide</span>
+                  </div>
+                )}
+                <div class="p-8 flex-grow flex flex-col">
+                  <p class="text-kivo-green font-bold text-sm uppercase tracking-wider mb-3">
+                    {post.data.pubDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                  </p>
+                  <h3 class="text-2xl font-heading font-black text-gray-900 mb-4 group-hover:text-kivo-green transition-colors">{post.data.title}</h3>
+                  <div class="flex items-center text-kivo-green font-bold text-sm uppercase tracking-wider mt-auto">
+                    Read Article 
+                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <CTASection headline="Need Immediate Assistance?" subheadline="Our technicians are standing by to restore your garage door." />
+</BaseLayout>

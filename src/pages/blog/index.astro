@@ -1,0 +1,76 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import CTASection from '../../components/modules/CTASection.astro';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Group by category for C-Node organization
+const categories = [...new Set(sortedPosts.map(post => post.data.category))];
+---
+
+<BaseLayout 
+  title="Garage Door Repair Guides & Resources | Kivo"
+  description="Read expert garage door repair guides, troubleshooting tips, and maintenance advice from the professionals at Kivo Garage Door Services."
+>
+  <Hero 
+    eyebrow="Resource Center"
+    headline="EXPERT GARAGE DOOR GUIDES"
+    subheadline="From troubleshooting a noisy opener to understanding the lifespan of your torsion springs, our master technicians share their knowledge to help you maintain a safe and reliable garage door system."
+    imageSrc="/images/hero_installation.jpg"
+  />
+
+  <section class="py-20 md:py-32 bg-alabaster">
+    <div class="container mx-auto px-4">
+      {categories.length === 0 ? (
+        <div class="text-center py-20">
+          <h2 class="text-3xl font-heading font-black text-gray-900 mb-4">New Articles Coming Soon</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our master technicians are currently writing detailed guides and resources. Check back soon!</p>
+        </div>
+      ) : (
+        <div class="space-y-24">
+          {categories.map(category => (
+            <div>
+              <div class="flex items-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-heading font-black text-gray-900 uppercase tracking-tight">{category}</h2>
+                <div class="ml-6 flex-grow h-px bg-gray-300"></div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                {sortedPosts.filter(p => p.data.category === category).map(post => (
+                  <a href={`/blog/${post.id}`} class="group flex flex-col bg-white border border-gray-200 hover:border-kivo-green transition-colors duration-300">
+                    {post.data.image ? (
+                      <div class="aspect-w-16 aspect-h-9 overflow-hidden border-b border-gray-200">
+                        <img src={post.data.image} alt={post.data.imageAlt || post.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                      </div>
+                    ) : (
+                      <div class="aspect-w-16 aspect-h-9 bg-gray-100 border-b border-gray-200 flex items-center justify-center">
+                        <span class="text-gray-400 font-heading font-bold text-xl uppercase">Kivo Guide</span>
+                      </div>
+                    )}
+                    <div class="p-8 flex-grow flex flex-col">
+                      <p class="text-kivo-green font-bold text-sm uppercase tracking-wider mb-3">
+                        {post.data.pubDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                      </p>
+                      <h3 class="text-2xl font-heading font-black text-gray-900 mb-4 group-hover:text-kivo-green transition-colors">{post.data.title}</h3>
+                      <p class="text-gray-600 font-sans mb-6 flex-grow">{post.data.description}</p>
+                      <div class="flex items-center text-kivo-green font-bold text-sm uppercase tracking-wider">
+                        Read Article 
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <CTASection headline="Need Immediate Assistance?" subheadline="Don't wait for a small problem to become a major security risk. Our technicians are standing by." />
+</BaseLayout>

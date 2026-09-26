@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Koray Topical Map Schema",
+  "description": "Structured output format for a Koray Semantic SEO topical map",
+  "type": "object",
+  "required": ["site", "central_entity", "categories"],
+  "properties": {
+    "site": {
+      "type": "string",
+      "description": "Domain of the site (e.g. highriskmerchanthub.com)"
+    },
+    "central_entity": {
+      "type": "string",
+      "description": "The primary entity the site is about (e.g. high-risk merchant account)"
+    },
+    "central_topic": {
+      "type": "string",
+      "description": "The single keyword the homepage targets"
+    },
+    "categories": {
+      "type": "array",
+      "description": "Top-level category folders — each is an SCN",
+      "items": {
+        "type": "object",
+        "required": ["slug", "name", "target_keyword", "kd", "volume", "posts"],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "URL slug (e.g. high-risk-payments)"
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name (e.g. High-Risk Payments)"
+          },
+          "target_keyword": {
+            "type": "string",
+            "description": "Primary keyword for the category index C-node"
+          },
+          "kd": {
+            "type": "number",
+            "description": "Keyword difficulty score (0-100)"
+          },
+          "volume": {
+            "type": "number",
+            "description": "Monthly search volume"
+          },
+          "scn_coverage": {
+            "type": "object",
+            "description": "Coverage status across the 6 SCN tiers",
+            "properties": {
+              "tier_1_macro": { "type": "boolean" },
+              "tier_2_operational": { "type": "boolean" },
+              "tier_3_financial": { "type": "boolean" },
+              "tier_4_growth": { "type": "boolean" },
+              "tier_5_legal": { "type": "boolean" },
+              "tier_6_technology": { "type": "boolean" }
+            }
+          },
+          "posts": {
+            "type": "array",
+            "description": "S-node posts within this category",
+            "items": {
+              "type": "object",
+              "required": ["slug", "title", "target_keyword", "scn_tier"],
+              "properties": {
+                "slug": {
+                  "type": "string",
+                  "description": "Full URL path (e.g. /high-risk-payments/ach-fees-explained/)"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "H1 of the post (must match slug keyword)"
+                },
+                "target_keyword": {
+                  "type": "string",
+                  "description": "Primary keyword this post targets"
+                },
+                "kd": {
+                  "type": "number",
+                  "description": "Keyword difficulty (0-100)"
+                },
+                "volume": {
+                  "type": "number",
+                  "description": "Monthly search volume"
+                },
+                "scn_tier": {
+                  "type": "number",
+                  "enum": [1, 2, 3, 4, 5, 6],
+                  "description": "Which of the 6 SCN tiers this post covers"
+                },
+                "scn_tier_type": {
+                  "type": "string",
+                  "enum": ["macro", "operational", "financial", "growth", "legal", "technology"]
+                },
+                "internal_links_to": {
+                  "type": "array",
+                  "description": "Slugs this post should link to",
+                  "items": { "type": "string" }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["planned", "drafted", "published", "needs_refresh"],
+                  "default": "planned"
+                },
+                "priority": {
+                  "type": "number",
+                  "description": "Publishing priority (1 = highest). Calculated as volume / kd.",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
