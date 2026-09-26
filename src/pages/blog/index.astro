@@ -15,12 +15,19 @@ const categories = [...new Set(sortedPosts.map(post => post.data.category))];
   title="Garage Door Repair Guides & Resources | Kivo"
   description="Read expert garage door repair guides, troubleshooting tips, and maintenance advice from the professionals at Kivo Garage Door Services."
 >
-  <Hero 
-    eyebrow="Resource Center"
-    headline="EXPERT GARAGE DOOR GUIDES"
-    subheadline="From troubleshooting a noisy opener to understanding the lifespan of your torsion springs, our master technicians share their knowledge to help you maintain a safe and reliable garage door system."
-    imageSrc="/images/hero_installation.jpg"
-  />
+  <section class="bg-gray-900 pt-32 pb-20 border-b-8 border-kivo-green">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-kivo-green text-sm font-bold font-sans uppercase tracking-widest mb-4">Resource Center</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-white uppercase tracking-tight mb-6 leading-tight">
+          EXPERT GARAGE DOOR GUIDES
+        </h1>
+        <p class="text-gray-300 text-lg md:text-xl font-sans">
+          From troubleshooting a noisy opener to understanding the lifespan of your torsion springs, our master technicians share their knowledge to help you maintain a safe and reliable garage door system.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <section class="py-20 md:py-32 bg-alabaster">
     <div class="container mx-auto px-4">
@@ -39,23 +46,14 @@ const categories = [...new Set(sortedPosts.map(post => post.data.category))];
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {sortedPosts.filter(p => p.data.category === category).map(post => (
-                  <a href={`/blog/${post.id}`} class="group flex flex-col bg-white border border-gray-200 hover:border-kivo-green transition-colors duration-300">
-                    {post.data.image ? (
-                      <div class="aspect-w-16 aspect-h-9 overflow-hidden border-b border-gray-200">
-                        <img src={post.data.image} alt={post.data.imageAlt || post.data.title} class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
-                      </div>
-                    ) : (
-                      <div class="aspect-w-16 aspect-h-9 bg-gray-100 border-b border-gray-200 flex items-center justify-center">
-                        <span class="text-gray-400 font-heading font-bold text-xl uppercase">Kivo Guide</span>
-                      </div>
-                    )}
+                  <a href={`/blog/${post.id}`} class="group flex flex-col bg-white border border-gray-200 hover:border-kivo-green transition-colors duration-300 shadow-sm hover:shadow-md">
                     <div class="p-8 flex-grow flex flex-col">
                       <p class="text-kivo-green font-bold text-sm uppercase tracking-wider mb-3">
                         {post.data.pubDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                       </p>
                       <h3 class="text-2xl font-heading font-black text-gray-900 mb-4 group-hover:text-kivo-green transition-colors">{post.data.title}</h3>
-                      <p class="text-gray-600 font-sans mb-6 flex-grow">{post.data.description}</p>
-                      <div class="flex items-center text-kivo-green font-bold text-sm uppercase tracking-wider">
+                      <p class="text-gray-600 font-sans mb-8 flex-grow">{post.data.description}</p>
+                      <div class="flex items-center text-kivo-green font-bold text-sm uppercase tracking-wider mt-auto">
                         Read Article 
                         <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

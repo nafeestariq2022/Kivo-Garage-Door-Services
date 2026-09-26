@@ -16,6 +16,7 @@
   "dependencies": {
     "@astrojs/loaders": "^0.0.0-loaders-20230222174007",
     "@astrojs/sitemap": "^3.7.4",
+    "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.6.2",
     "astro": "^7.3.4",

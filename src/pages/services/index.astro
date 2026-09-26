@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import Hero from '../../components/Hero.astro';
 import ServiceGrid from '../../components/modules/ServiceGrid.astro';
 import WhyItMatters from '../../components/modules/WhyItMatters.astro';
@@ -39,6 +40,10 @@ const serviceFaqs = [
     imageSrc="/images/hero_installation.jpg"
     imageAlt="A wide shot of a residential driveway with a newly installed modern garage door"
   />
+
+  <Breadcrumbs crumbs={[
+    { label: 'Services' }
+  ]} />
 
   <ServiceGrid eyebrow="Service Directory" headline="Explore Our Service Capabilities" subheadline="Click on any service below to learn more about the common problems we solve and how the repair or installation process works." />
 

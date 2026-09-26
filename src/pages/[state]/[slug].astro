@@ -4,6 +4,7 @@ import { getStateSlug } from '../../utils/stateMap';
 import { parseSpintax, applySpintaxToObj, createRNG } from '../../utils/spintax';
 import { marked } from 'marked';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import LocalizedHero from '../../components/modules/LocalizedHero.astro';
 import SplitContent from '../../components/modules/SplitContent.astro';
 import CommonProblems from '../../components/modules/CommonProblems.astro';
@@ -101,6 +102,11 @@ const overviewImage = overviewImages[serviceId] || '/images/hero_homepage.jpg';
     city={location.city}
     state={location.state}
   />
+
+  <Breadcrumbs crumbs={[
+    { label: location.state.toUpperCase(), href: `/${stateSlug}` },
+    { label: `${service.title} in ${location.city}` }
+  ]} />
 
   <SplitContent 
     eyebrow="Local Overview"

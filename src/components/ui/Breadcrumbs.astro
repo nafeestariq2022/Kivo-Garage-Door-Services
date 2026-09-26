@@ -3,23 +3,42 @@ interface Crumb {
   label: string;
   href?: string;
 }
+
 interface Props {
   crumbs: Crumb[];
 }
+
 const { crumbs } = Astro.props;
+const siteUrl = 'https://kivogaragedoorservices.com';
+
+// Prepend Home to the list for Schema generation
+const fullPath = [{ label: 'Home', href: '/' }, ...crumbs];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": fullPath.map((crumb, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": crumb.label,
+    "item": crumb.href ? `${siteUrl}${crumb.href === '/' ? '' : crumb.href}` : undefined
+  }))
+};
 ---
-<nav aria-label="Breadcrumb" class="mb-8">
-  <ol class="flex items-center space-x-2 text-sm text-gray-600 font-sans">
+
+<nav aria-label="Breadcrumb" class="container mx-auto px-4 py-4 mb-4">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+  <ol class="flex items-center space-x-2 text-sm text-gray-500 font-sans font-bold uppercase tracking-wider overflow-x-auto whitespace-nowrap">
     <li>
-      <a href="/" class="hover:text-brand-accent focus:outline-none focus:underline">Home</a>
+      <a href="/" class="hover:text-kivo-green transition-colors focus:outline-none focus:underline">Home</a>
     </li>
     {crumbs.map((crumb, i) => (
       <li class="flex items-center space-x-2">
-        <span class="text-gray-400">/</span>
+        <span class="text-kivo-green">/</span>
         {crumb.href && i !== crumbs.length - 1 ? (
-          <a href={crumb.href} class="hover:text-brand-accent focus:outline-none focus:underline">{crumb.label}</a>
+          <a href={crumb.href} class="hover:text-kivo-green transition-colors focus:outline-none focus:underline">{crumb.label}</a>
         ) : (
-          <span class="text-brand-charcoal font-medium" aria-current="page">{crumb.label}</span>
+          <span class="text-gray-900" aria-current="page">{crumb.label}</span>
         )}
       </li>
     ))}

@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { parseSpintax, applySpintaxToObj, createRNG } from '../../utils/spintax';
 import { marked } from 'marked';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import Hero from '../../components/Hero.astro';
 import SplitContent from '../../components/modules/SplitContent.astro';
 import CommonProblems from '../../components/modules/CommonProblems.astro';
@@ -60,6 +61,11 @@ const overviewImage = overviewImages[serviceEntry.id] || '/images/hero_homepage.
     imageSrc={service.hero.imageSrc}
     imageAlt={service.hero.imageAlt}
   />
+
+  <Breadcrumbs crumbs={[
+    { label: 'Services', href: '/services' },
+    { label: service.title }
+  ]} />
 
   <SplitContent 
     eyebrow="Service Overview"
