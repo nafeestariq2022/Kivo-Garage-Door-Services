@@ -54,6 +54,10 @@ const genericBenefits = [
   title={`Garage Door Repair & Installation in ${stateName} | Kivo`}
   description={`Reliable garage door services across ${stateName}. We fix broken springs, off-track doors, and faulty openers. Professional installation and repair.`}
 >
+  <Breadcrumbs crumbs={[
+    { label: stateName.toUpperCase() }
+  ]} />
+
   <Hero 
     eyebrow="Local Coverage"
     headline={`GARAGE DOOR SERVICES IN ${stateName}`}
@@ -61,10 +65,6 @@ const genericBenefits = [
     imageSrc="/images/hero_repair.jpg"
     imageAlt={`Professional garage door technician performing maintenance in ${stateName}`}
   />
-
-  <Breadcrumbs crumbs={[
-    { label: stateName.toUpperCase() }
-  ]} />
 
   <ServiceGrid eyebrow="What We Handle" headline="Available Services" subheadline="Comprehensive solutions for every component of your garage door system." />
 

@@ -93,6 +93,11 @@ const overviewImage = overviewImages[serviceId] || '/images/hero_homepage.jpg';
 
 <BaseLayout title={pageTitle} description={metaDesc}>
   
+  <Breadcrumbs crumbs={[
+    { label: location.state.toUpperCase(), href: `/${stateSlug}` },
+    { label: `${service.title} in ${location.city}` }
+  ]} />
+
   <LocalizedHero 
     eyebrow="Local Service Expert"
     h1Template={service.seo.h1Template}
@@ -102,11 +107,6 @@ const overviewImage = overviewImages[serviceId] || '/images/hero_homepage.jpg';
     city={location.city}
     state={location.state}
   />
-
-  <Breadcrumbs crumbs={[
-    { label: location.state.toUpperCase(), href: `/${stateSlug}` },
-    { label: `${service.title} in ${location.city}` }
-  ]} />
 
   <SplitContent 
     eyebrow="Local Overview"

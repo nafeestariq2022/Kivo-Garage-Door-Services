@@ -26,9 +26,10 @@ const schema = {
 };
 ---
 
-<nav aria-label="Breadcrumb" class="container mx-auto px-4 py-4 mb-4">
-  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-  <ol class="flex items-center space-x-2 text-sm text-gray-500 font-sans font-bold uppercase tracking-wider overflow-x-auto whitespace-nowrap">
+<div class="bg-white border-b border-gray-200">
+  <nav aria-label="Breadcrumb" class="container mx-auto px-4 py-3">
+    <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+    <ol class="flex items-center space-x-2 text-xs md:text-sm text-gray-500 font-sans font-bold uppercase tracking-wider overflow-x-auto whitespace-nowrap">
     <li>
       <a href="/" class="hover:text-kivo-green transition-colors focus:outline-none focus:underline">Home</a>
     </li>
@@ -43,4 +44,5 @@ const schema = {
       </li>
     ))}
   </ol>
-</nav>
+  </nav>
+</div>

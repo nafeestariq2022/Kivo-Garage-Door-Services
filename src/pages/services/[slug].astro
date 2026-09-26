@@ -54,6 +54,11 @@ const overviewImage = overviewImages[serviceEntry.id] || '/images/hero_homepage.
 
 <BaseLayout title={pageTitle} description={metaDesc}>
   
+  <Breadcrumbs crumbs={[
+    { label: 'Services', href: '/services' },
+    { label: service.title }
+  ]} />
+
   <Hero 
     eyebrow="Specialized Service"
     headline={h1}
@@ -61,11 +66,6 @@ const overviewImage = overviewImages[serviceEntry.id] || '/images/hero_homepage.
     imageSrc={service.hero.imageSrc}
     imageAlt={service.hero.imageAlt}
   />
-
-  <Breadcrumbs crumbs={[
-    { label: 'Services', href: '/services' },
-    { label: service.title }
-  ]} />
 
   <SplitContent 
     eyebrow="Service Overview"

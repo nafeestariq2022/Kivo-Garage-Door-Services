@@ -33,6 +33,10 @@ const serviceFaqs = [
   title="Garage Door Services | Kivo Garage Door Services"
   description="Explore our full range of garage door services, including emergency repairs, spring replacement, opener troubleshooting, and complete new installations."
 >
+  <Breadcrumbs crumbs={[
+    { label: 'Services' }
+  ]} />
+
   <Hero 
     eyebrow="Our Capabilities"
     headline="COMPREHENSIVE GARAGE DOOR SERVICES."
@@ -40,10 +44,6 @@ const serviceFaqs = [
     imageSrc="/images/hero_installation.jpg"
     imageAlt="A wide shot of a residential driveway with a newly installed modern garage door"
   />
-
-  <Breadcrumbs crumbs={[
-    { label: 'Services' }
-  ]} />
 
   <ServiceGrid eyebrow="Service Directory" headline="Explore Our Service Capabilities" subheadline="Click on any service below to learn more about the common problems we solve and how the repair or installation process works." />
 
