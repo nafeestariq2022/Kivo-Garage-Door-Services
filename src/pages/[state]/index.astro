@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import { getStateSlug } from '../../utils/stateMap';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import Hero from '../../components/Hero.astro';
 import ServiceGrid from '../../components/modules/ServiceGrid.astro';
 import WhyItMatters from '../../components/modules/WhyItMatters.astro';
@@ -54,12 +53,10 @@ const genericBenefits = [
   title={`Garage Door Repair & Installation in ${stateName} | Kivo`}
   description={`Reliable garage door services across ${stateName}. We fix broken springs, off-track doors, and faulty openers. Professional installation and repair.`}
 >
-  <Breadcrumbs crumbs={[
-    { label: stateName.toUpperCase() }
-  ]} />
-
   <Hero 
-    eyebrow="Local Coverage"
+    crumbs={[
+      { label: stateName.toUpperCase() }
+    ]}
     headline={`GARAGE DOOR SERVICES IN ${stateName}`}
     subheadline={`Expert residential garage door repair, replacement, and installation services across ${stateName}. When your door fails, our professional network is ready to help.`}
     imageSrc="/images/hero_repair.jpg"

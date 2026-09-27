@@ -4,7 +4,6 @@ import { getStateSlug } from '../../utils/stateMap';
 import { parseSpintax, applySpintaxToObj, createRNG } from '../../utils/spintax';
 import { marked } from 'marked';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import LocalizedHero from '../../components/modules/LocalizedHero.astro';
 import SplitContent from '../../components/modules/SplitContent.astro';
 import CommonProblems from '../../components/modules/CommonProblems.astro';
@@ -93,13 +92,11 @@ const overviewImage = overviewImages[serviceId] || '/images/hero_homepage.jpg';
 
 <BaseLayout title={pageTitle} description={metaDesc}>
   
-  <Breadcrumbs crumbs={[
-    { label: location.state.toUpperCase(), href: `/${stateSlug}` },
-    { label: `${service.title} in ${location.city}` }
-  ]} />
-
   <LocalizedHero 
-    eyebrow="Local Service Expert"
+    crumbs={[
+      { label: location.state.toUpperCase(), href: `/${stateSlug}` },
+      { label: `${service.title} in ${location.city}` }
+    ]}
     h1Template={service.seo.h1Template}
     subtitleTemplate={service.hero.subtitleTemplate}
     imageSrc={service.hero.imageSrc}

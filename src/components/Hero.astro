@@ -2,15 +2,17 @@
 import PhoneCTA from './ui/PhoneCTA.astro';
 import Container from './ui/Container.astro';
 import Eyebrow from './ui/Eyebrow.astro';
+import Breadcrumbs from './ui/Breadcrumbs.astro';
 
 interface Props {
   eyebrow?: string;
+  crumbs?: { label: string; href?: string }[];
   headline: string;
   subheadline: string;
   imageSrc: string;
   imageAlt: string;
 }
-const { eyebrow, headline, subheadline, imageSrc, imageAlt } = Astro.props;
+const { eyebrow, crumbs, headline, subheadline, imageSrc, imageAlt } = Astro.props;
 ---
 <section class="relative w-full pt-16 pb-24 lg:pt-32 lg:pb-40 overflow-hidden bg-gradient-to-br from-brand-alabaster via-white to-gray-50">
   <!-- Modern subtle background glow -->
@@ -22,7 +24,11 @@ const { eyebrow, headline, subheadline, imageSrc, imageAlt } = Astro.props;
   <Container class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
     <!-- Left: Typography -->
     <div class="lg:col-span-6 flex flex-col items-start">
-      {eyebrow && <Eyebrow text={eyebrow} />}
+      {crumbs ? (
+        <Breadcrumbs crumbs={crumbs} />
+      ) : (
+        eyebrow && <Eyebrow text={eyebrow} />
+      )}
       <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] 2xl:text-7xl font-heading font-black text-brand-charcoal leading-[1.1] uppercase tracking-tight">
         {headline}
       </h1>

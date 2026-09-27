@@ -26,10 +26,9 @@ const schema = {
 };
 ---
 
-<div class="bg-white border-b border-gray-200">
-  <nav aria-label="Breadcrumb" class="container mx-auto px-4 py-3">
-    <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-    <ol class="flex items-center space-x-2 text-xs md:text-sm text-gray-500 font-sans font-bold uppercase tracking-wider overflow-x-auto whitespace-nowrap">
+<nav aria-label="Breadcrumb" class="mb-4">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+  <ol class="flex items-center space-x-2 text-xs md:text-sm text-gray-500 font-sans font-bold uppercase tracking-wider overflow-x-auto whitespace-nowrap">
     <li>
       <a href="/" class="hover:text-kivo-green transition-colors focus:outline-none focus:underline">Home</a>
     </li>
@@ -39,10 +38,9 @@ const schema = {
         {crumb.href && i !== crumbs.length - 1 ? (
           <a href={crumb.href} class="hover:text-kivo-green transition-colors focus:outline-none focus:underline">{crumb.label}</a>
         ) : (
-          <span class="text-gray-900" aria-current="page">{crumb.label}</span>
+          <span class="text-brand-accent" aria-current="page">{crumb.label}</span>
         )}
       </li>
     ))}
   </ol>
-  </nav>
-</div>
+</nav>

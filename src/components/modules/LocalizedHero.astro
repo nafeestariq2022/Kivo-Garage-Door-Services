@@ -2,9 +2,11 @@
 import { generateSEO } from '../../utils/seo';
 import PhoneCTA from '../ui/PhoneCTA.astro';
 import Eyebrow from '../ui/Eyebrow.astro';
+import Breadcrumbs from '../ui/Breadcrumbs.astro';
 
 interface Props {
   eyebrow?: string;
+  crumbs?: { label: string; href?: string }[];
   h1Template: string;
   subtitleTemplate: string;
   imageSrc: string;
@@ -13,7 +15,7 @@ interface Props {
   state: string;
 }
 
-const { eyebrow, h1Template, subtitleTemplate, imageSrc, imageAlt, city, state } = Astro.props;
+const { eyebrow, crumbs, h1Template, subtitleTemplate, imageSrc, imageAlt, city, state } = Astro.props;
 
 const h1Text = generateSEO(h1Template, { city, state });
 const subtitleText = generateSEO(subtitleTemplate, { city, state });
@@ -29,7 +31,11 @@ const subtitleText = generateSEO(subtitleTemplate, { city, state });
   <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
     <!-- Left: Typography -->
     <div class="lg:col-span-6 flex flex-col items-start">
-      {eyebrow && <Eyebrow text={eyebrow} />}
+      {crumbs ? (
+        <Breadcrumbs crumbs={crumbs} />
+      ) : (
+        eyebrow && <Eyebrow text={eyebrow} />
+      )}
       <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] 2xl:text-7xl font-heading font-black text-brand-charcoal leading-[1.1] uppercase tracking-tight">
         {h1Text}
       </h1>

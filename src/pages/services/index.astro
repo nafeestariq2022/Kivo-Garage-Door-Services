@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../components/ui/Breadcrumbs.astro';
 import Hero from '../../components/Hero.astro';
 import ServiceGrid from '../../components/modules/ServiceGrid.astro';
 import WhyItMatters from '../../components/modules/WhyItMatters.astro';
@@ -33,12 +32,10 @@ const serviceFaqs = [
   title="Garage Door Services | Kivo Garage Door Services"
   description="Explore our full range of garage door services, including emergency repairs, spring replacement, opener troubleshooting, and complete new installations."
 >
-  <Breadcrumbs crumbs={[
-    { label: 'Services' }
-  ]} />
-
   <Hero 
-    eyebrow="Our Capabilities"
+    crumbs={[
+      { label: 'Services' }
+    ]}
     headline="COMPREHENSIVE GARAGE DOOR SERVICES."
     subheadline="From emergency repairs that restore your security to beautiful new installations that elevate your home's exterior, our professional network handles it all."
     imageSrc="/images/hero_installation.jpg"
