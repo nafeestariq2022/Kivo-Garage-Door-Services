@@ -6,9 +6,10 @@ interface Crumb {
 
 interface Props {
   crumbs: Crumb[];
+  centered?: boolean;
 }
 
-const { crumbs } = Astro.props;
+const { crumbs, centered = false } = Astro.props;
 const siteUrl = 'https://kivogaragedoorservices.com';
 
 // Prepend Home to the list for Schema generation
@@ -26,21 +27,25 @@ const schema = {
 };
 ---
 
-<nav aria-label="Breadcrumb" class="mb-4">
+<nav aria-label="Breadcrumb" class={`mb-4 w-full ${centered ? 'flex justify-center' : ''}`}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
-  <ol class="flex items-center space-x-2 text-xs md:text-sm text-gray-500 font-sans font-bold uppercase tracking-wider overflow-x-auto whitespace-nowrap">
-    <li>
-      <a href="/" class="hover:text-kivo-green transition-colors focus:outline-none focus:underline">Home</a>
-    </li>
-    {crumbs.map((crumb, i) => (
-      <li class="flex items-center space-x-2">
-        <span class="text-kivo-green">/</span>
-        {crumb.href && i !== crumbs.length - 1 ? (
-          <a href={crumb.href} class="hover:text-kivo-green transition-colors focus:outline-none focus:underline">{crumb.label}</a>
-        ) : (
-          <span class="text-brand-accent" aria-current="page">{crumb.label}</span>
-        )}
+  <div class={`flex items-center gap-4 text-sm font-sans font-medium text-brand-accent uppercase tracking-widest overflow-x-auto whitespace-nowrap ${centered ? 'justify-center' : ''}`}>
+    <span class="w-8 h-[2px] bg-brand-accent flex-shrink-0"></span>
+    <ol class="flex items-center space-x-2">
+      <li>
+        <a href="/" class="opacity-80 hover:opacity-100 transition-opacity focus:outline-none focus:underline">Home</a>
       </li>
-    ))}
-  </ol>
+      {crumbs.map((crumb, i) => (
+        <li class="flex items-center space-x-2">
+          <span class="text-brand-accent/50">/</span>
+          {crumb.href && i !== crumbs.length - 1 ? (
+            <a href={crumb.href} class="opacity-80 hover:opacity-100 transition-opacity focus:outline-none focus:underline">{crumb.label}</a>
+          ) : (
+            <span aria-current="page">{crumb.label}</span>
+          )}
+        </li>
+      ))}
+    </ol>
+    {centered && <span class="w-8 h-[2px] bg-brand-accent flex-shrink-0 hidden sm:block"></span>}
+  </div>
 </nav>
