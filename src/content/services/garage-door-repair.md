@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Repair"
-shortDescription: "Professional garage door repair services."
+shortDescription: "{Professional|Expert|Reliable} garage door repair services {for homeowners|to fix any issue|to restore safety}."
 description: "Expert garage door repair to address broken springs, snapped cables, and off-track doors quickly and safely."
 isPriority: true
 seo:

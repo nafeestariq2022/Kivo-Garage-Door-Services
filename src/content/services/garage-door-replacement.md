@@ -1,6 +1,6 @@
 ---
 title: "Garage Door Replacement"
-shortDescription: "Professional garage door replacement services to upgrade your home."
+shortDescription: "{Professional|Expert|Reliable} garage door {replacement|upgrade} services to {upgrade|enhance|modernize} your {home|property}."
 description: "Expert garage door replacement addressing severe damage, outdated styles, and poor insulation to enhance security and curb appeal."
 isPriority: true
 seo:
